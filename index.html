@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>덕구</title>
+  <script src="js/change_color.js"></script>
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="shortcut icon" href="images/header_logo.png">
+</head>
+
+<body>
+  <!-- 헤더> 네비게이션 메뉴바 -->
+  <div class="navbar">
+    <!-- 로고 메뉴 -->
+    <div class="menu-margin-left">
+      <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
+    </div>
+    <!-- 검색창 메뉴 -->
+    <div class="search" id="search-margin">
+      <input type="text" placeholder="검색어를 입력해주세요.">
+    </div>
+    <!-- 텍스트 메뉴 -->
+    <div class="tab">
+      <li class="menu"><a href="mate.html">MATE</a></li>
+      <li class="menu"><a href="exchange.html">EXCHANGE</a></li>
+      <li class="menu"><a href="talk.html">TALK</a></li>
+    </div>
+    <!-- 프로필 메뉴 -->
+    <div class="menu-margin-right">
+      <button class="trigger" onclick="toggleImg()" id="profile-button">
+        <img id="img" class="profile-image" src="images/profile.png">
+      </button>
+    </div>
+  </div>
+
+  <!-- 모달 창 -->
+  <div class="modal">
+    <div class="modal-content">
+      <!-- 모달 창 내용 -->
+      <p class="modal-title-text">로그인을 해주세요.</p>
+      <p class="modal-text">
+        본인 인증 상의 문제로 카카오톡<br>
+        로그인만 지원하는 점 양해 부탁드립니다.
+      </p>
+      <!-- 모달 카카오로그인 버튼 -->
+      <button id="login-button">카카오계정으로 로그인</button>
+    </div>
+  </div>
+
+  <!-- 모달 창 JS -->
+  <script type="text/javascript">
+    var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+
+    // 클릭시 모달 창 보이게 하는 함수
+    function toggleModal() {
+      modal.classList.toggle("show-modal");
+    }
+
+    // 모달 창 외 다른 화면 클릭시 자동 꺼짐 & 버튼 색깔 회색으로 돌아옴
+    function windowOnClick(event) {
+      if (event.target === modal) {
+        toggleModal();
+        document.getElementById("img").src = "images/profile.png";
+      }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+
+  </script>
+
+  <!-- 메뉴바 아래 본문 -->
+
+
+
+
+
+</body>
+
+</html>

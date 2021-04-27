@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 검색 창 위치 */
+.search {
+  position: absolute;
+  /* 로고 140 + 기본여백 450 + 로고와 검색창 여백 50 */
+  margin: 640px;
+}
+/* 검색 창 설정 */
+input {
+  width: 420px;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  padding: 6px;
+  outline: none;
+  font-family: "나눔스퀘어라운드OTF Light";
+}
+/* 검색 창 안 검색 이미지 */
+.navbar input{
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: 12px;
+  padding-left: 41px;
+  box-sizing: border-box;
+}
