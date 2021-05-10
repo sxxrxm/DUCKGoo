@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+#banner{
+    margin-left: -8px;
+    width: 1920px;
+    height: 590px;
+}
+
+/* 구하러가기 버튼 */
+#mate-button{
+    position: absolute;
+    background-color: transparent;
+    border-radius: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    width: 230px;
+    height: 52px;
+    padding: 3px;
+    /* 폰트 값 적용 */
+    font-family: "나눔스퀘어라운드OTF ExtraBold";  
+    color: white;
+    text-align: center;
+    font-size: 12pt;
+    top: 400px;
+    left: 370px;
+  }
+
+/* 위 제목 폰트 */
+.banner-title-text{
+  position: absolute;
+    font-family: "나눔스퀘어라운드OTF Regular";
+    font-size: 20pt;
+    color: white;
+    top: 160px;
+    left: 370px;
+  }
+  
+/* 아래 본문 폰트 */
+.banner-text1{
+  position: absolute;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  font-size: 40pt;
+  word-spacing: -5px;
+  color: white;
+  top: 180px;
+  left: 370px;
+}
+.banner-text2{
+  position: absolute;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  font-size: 40pt;
+  word-spacing: -5px;
+  color: white;
+  top: 250px;
+  left: 370px;
+}
