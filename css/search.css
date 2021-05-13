@@ -4,7 +4,7 @@
 .search {
   position: absolute;
   /* 로고 140 + 기본여백 450 + 로고와 검색창 여백 50 */
-  margin: 640px;
+  margin-left: 280px;
 }
 /* 검색 창 설정 */
 input {
