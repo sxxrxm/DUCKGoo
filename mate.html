@@ -11,28 +11,35 @@
 </head>
 
 <body>
-  <!-- 헤더> 네비게이션 메뉴바 -->
-  <div class="navbar">
-    <!-- 로고 메뉴 -->
-    <div class="menu-margin-left">
-      <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
-    </div>
-    <!-- 검색창 메뉴 -->
-    <div class="search" id="search-margin">
-      <input type="text" placeholder="검색어를 입력해주세요.">
-    </div>
-    <!-- 텍스트 메뉴 -->
-    <div class="tab">
-      <li class="menu"><a href="mate.html" id="click">MATE</a></li>
-      <li class="menu"><a href="exchange.html">EXCHANGE</a></li>
-      <li class="menu"><a href="talk.html">TALK</a></li>
-    </div>
-    <!-- 프로필 메뉴 -->
-    <div class="menu-margin-right">
-      <button class="trigger" onclick="toggleImg()" id="profile-button">
-        <img id="img" class="profile-image" src="images/profile.png">
-      </button>
-    </div>
+  <div class="container">
+    <aside id="aisdeLeft"></aside>
+    <section id="section">
+      <div class="header">
+        <div class="navbar">
+          <!-- 로고 -->
+          <div class="menu-margin-left">
+            <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
+          </div>
+          <!-- 검색창 메뉴 -->
+          <div class="search" id="search-margin">
+            <input type="text" placeholder="검색어를 입력해주세요.">
+          </div>
+          <!-- 텍스트 메뉴 -->
+          <div class="tab">
+            <li class="menu"><a href="mate.html" id="click">MATE</a></li>
+            <li class="menu"><a href="exchange.html">EXCHANGE</a></li>
+            <li class="menu"><a href="talk.html">TALK</a></li>
+          </div>
+          <!-- 프로필 메뉴 -->
+          <div class="menu-margin-right">
+            <button class="trigger" onclick="toggleImg()" id="profile-button">
+              <img id="img" class="profile-image" src="images/profile.png">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside id="aisdeRight"></aside>
   </div>
 
   <!-- 모달 창 -->
