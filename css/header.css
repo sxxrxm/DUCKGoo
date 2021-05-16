@@ -84,3 +84,8 @@ a {
   margin-right: 40px;
   list-style-type: none;
 }
+
+/* 프로필 버튼 배경 색 설정 */
+#profile-button{
+  background-color: transparent;
+}
