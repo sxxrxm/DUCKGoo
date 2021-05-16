@@ -96,14 +96,13 @@ button{
 .modal-content { 
   position: absolute; 
   top: 60px; 
-  left: 62%; 
+  left: 60%; 
   background-color: white;
   width: 380px; 
   height: 400px; 
   border-radius: 30px;
   box-shadow: 0px 0px 10px 2px #e6e6e6;
 }
-
 /* 모달 창 보이게 적용 */
 .show-modal { 
   opacity: 1; 

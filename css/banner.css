@@ -11,15 +11,15 @@
   background-color: transparent;
   border: 1px solid white;
   border-radius: 30px;
-  width: 230px;
-  height: 52px;
+  width: 280px;
+  height: 65px;
   padding: 3px;
   /* 폰트 값 적용 */
   font-family: "나눔스퀘어라운드OTF ExtraBold";  
   color: white;
   text-align: center;
-  font-size: 12pt;
-  top: 360px;
+  font-size: 16pt;
+  top: 460px;
   left: 370px;
 }
 
@@ -27,9 +27,9 @@
 .banner-title-text{
   position: absolute;
     font-family: "나눔스퀘어라운드OTF Regular";
-    font-size: 18pt;
+    font-size: 22pt;
     color: white;
-    top: 120px;
+    top: 180px;
     left: 370px;
   }
   
@@ -37,19 +37,19 @@
 .banner-text1{
   position: absolute;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
-  font-size: 36pt;
+  font-size: 44pt;
   word-spacing: -5px;
   color: white;
-  top: 140px;
+  top: 210px;
   left: 370px;
 }
 
 .banner-text2{
   position: absolute;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
-  font-size: 36pt;
+  font-size: 44pt;
   word-spacing: -5px;
   color: white;
-  top: 210px;
+  top: 300px;
   left: 370px;
 }
