@@ -45,7 +45,7 @@ a {
 /* 네비게이션 메뉴바*/
 .navbar{
   display: flex;
-  flex-grow:0;
+  flex-grow: 0;
   background: #ffffff;
   width: 1180px;
   height: 70px;

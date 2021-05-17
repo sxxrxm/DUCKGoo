@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 검색 창 위치 */
+.chat-location {
+  position: absolute;
+  /* 로고 140 + 기본여백 450 + 로고와 검색창 여백 50 */
+  margin-left: 19%;
+  top: 130px;
+}
+/* 검색 창 설정 */
+.chat-search {
+  width: 300px;
+  border-radius: 17px;
+  border: none;
+  background-color: #dadada;
+  padding: 9px;
+  outline: none;
+  font-family: "나눔스퀘어라운드OTF Regular";
+  font-size: 11pt;
+  background-image: url(../images/chat-search.png);
+  background-repeat: no-repeat;
+  background-position: 12px;
+  padding-left: 34px;
+  box-sizing: border-box;
+}

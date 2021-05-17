@@ -5,10 +5,12 @@
   <title>덕구</title>
   <script src="js/change_color.js"></script>
   <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/chat-search.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/chat.css">
   <link rel="shortcut icon" href="images/header_logo.png">
 </head>
 
@@ -23,7 +25,7 @@
             <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
           </div>
           <!-- 검색창 메뉴 -->
-          <div class="search" id="search-margin">
+          <div class="search">
             <input type="text" placeholder="검색어를 입력해주세요.">
           </div>
           <!-- 텍스트 메뉴 -->
@@ -79,15 +81,21 @@
     window.addEventListener("click", windowOnClick);
   </script>
 
-  <!-- 메뉴바 아래 본문 -->
-  <img id="banner" src="images/banner1.png">
-  <p class="banner-title-text">덕구를 이용해</p>
-  <p class="banner-text1">함께할 덕질 메이트를</p> 
-  <p class="banner-text2">구해보세요!</p>
-  <button id="mate-button">구하러가기</button>
+  <div class="chat-container">
+    <aside id="chatLeft">
+      <p class="chat-title">채팅</p>
+      <div class="chat-location">
+        <input class="chat-search" type="text" placeholder="사용자 검색">
+      </div>
+    </aside>
+    <section id="chat">
+        <div id="chat-size"></div>
+    </section>
+    <aside id="chatRight"></aside>
+  </div>
 
 
-
+  
 
 
 </body>
