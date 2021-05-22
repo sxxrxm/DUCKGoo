@@ -26,16 +26,18 @@
 /* 위 제목 폰트 */
 .banner-title-text{
   position: absolute;
-    font-family: "나눔스퀘어라운드OTF Regular";
-    font-size: 22pt;
-    color: white;
-    top: 180px;
-    left: 370px;
-  }
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF Regular";
+  font-size: 22pt;
+  color: white;
+  top: 180px;
+  left: 370px;
+}
   
 /* 아래 본문 폰트 */
 .banner-text1{
   position: absolute;
+  white-space: nowrap;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
   font-size: 44pt;
   word-spacing: -5px;
@@ -45,7 +47,8 @@
 }
 
 .banner-text2{
-  position: absolute;
+  position: absolute;  
+  white-space: nowrap;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
   font-size: 44pt;
   word-spacing: -5px;

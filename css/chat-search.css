@@ -23,3 +23,16 @@
   padding-left: 34px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1170px) {
+  .chat-search {
+    width: 230px;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  .chat-search {
+    width: 155px;
+  }
+}

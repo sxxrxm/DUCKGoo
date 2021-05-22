@@ -4,36 +4,57 @@
   display: flex;
   margin: 0 auto;
 }
+
 #chatLeft {
   flex-grow: 0;
-  border: solid 1px black;
   width: 870px;
 }
-#chat {
-  flex-grow: 1;
-  border: solid 1px black;
-  width: 680px;
-}
+
 #chatRight {
   flex-grow: 1;
-  border: solid 1px black;
   width: 370px;
 }
+
+#chat {
+  flex-grow: 1;
+  border: solid 1px #dadada;
+  width: 680px;
+}
+
 #chat-size {
   flex-grow: 1;
   height: 1000px;
 }
 
-@media screen and (max-width: 1400px) {
-  #chatRight {
-    display:none;
-  }
-}
-
 .chat-title{
-  flex-grow: 0;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
   font-size: 16pt;
   margin-left: 43%;
   color: #454545;
 }
+
+.chat-name{
+  position: absolute;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  font-size: 14pt;
+  color: #454545;
+}
+
+.chat-profile-image{
+  width: 80px;
+  height: 80px;
+  margin-left: 40%;
+  padding: 19px;
+}
+
+#chat-square{
+  border: solid 1px #dadada;
+  height: 120px;
+}
+
+#chat-square-color{
+  border: solid 1px #dadada;
+  height: 120px;
+  background-color: rgba(0, 68, 239, 0.2);
+}
+
