@@ -7,11 +7,13 @@
 
 #chatLeft {
   flex-grow: 0;
+  border: solid 1px #dadada;
   width: 870px;
 }
 
 #chatRight {
   flex-grow: 1;
+  border: solid 1px #dadada;
   width: 370px;
 }
 
@@ -36,6 +38,7 @@
 .chat-name{
   position: absolute;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
+  margin-top: 30px;
   font-size: 14pt;
   color: #454545;
 }
@@ -48,7 +51,7 @@
 }
 
 #chat-square{
-  border: solid 1px #dadada;
+  border: solid 0.1px #dadada;
   height: 120px;
 }
 
