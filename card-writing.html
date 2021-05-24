@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/writing.css">
   <link rel="shortcut icon" href="images/header_logo.png">
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
@@ -64,7 +65,7 @@
       <p class="modal-name">김지연</p>
       <p class="modal-email">s2019w24@e-mirim.hs.kr</p>
       <button id="lookfor-mate-button">덕메 구하기</button>
-      <button id="cardtext-button" onclick="location.href='card-writing.html'">포카 교환글 작성</button>
+      <button id="cardtext-button" onclick="location.reload();">포카 교환글 작성</button>
       <button id="logout-button">로그아웃</button>
     </div>
   </div>
@@ -138,6 +139,50 @@
   <p class="banner-text2">구해보세요!</p>
   <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button>
 
+  <p class="writing-title-text">포토카드 교환하기</p>
+  
+  <p class="writing-title">제목</p>
+  <input class="writing-input-title" type="text" placeholder="제목을 입력해주세요.">
+  <p class="writing-gender">상대 성별</p>
+  <select class="gender-select" name="gender">
+    <option value="여자">여자</option>
+    <option value="남자">남자</option>
+    <option value="상관없음">상관없음</option>
+  </select>
+  <p class="writing-group">그룹</p>
+  <select class="group-select" name="group">
+    <optgroup label="남돌">
+      <option value="BTS">BTS</option>
+      <option value="TXT">TXT</option>
+      <option value="SHINee">SHINee</option>
+      <option value="EXO">EXO</option>
+      <option value="NCT 127">NCT 127</option>
+      <option value="NCT DREAM">NCT DREAM</option>
+      <option value="SEVENTEEN">SEVENTEEN</option>
+      <option value="THE BOYZ">THE BOYZ</option>
+      <option value="Stray Kids">Stray Kids</option>
+      <option value="기타">기타</option>
+    </optgroup>
+    <optgroup label="여돌">
+      <option value="BLACKPINK">BLACKPINK</option>
+      <option value="TWICE">TWICE</option>
+      <option value="ITZY">ITZY</option>
+      <option value="(G)I-DLE">(G)I-DLE</option>
+      <option value="OH MY GIRL">OH MY GIRL</option>
+      <option value="Red Velvet">Red Velvet</option>
+      <option value="IU">IU</option>
+      <option value="기타">기타</option>
+    </optgroup>
+  </select>
+  <p class="writing-possession">소유 멤버</p>
+  <input class="possession-input" type="text" placeholder="활동명을 정확히 입력해주세요.">
+  <p class="writing-exchange">교환 멤버</p>
+  <input class="exchange-input" type="text" placeholder="활동명을 정확히 입력해주세요.">
+  
+  <p class="writing-delivery">배송 방식</p>
+  <!-- <p class="writing-input-text">포카 상태</p>
+  <p class="writing-input-text">첨부 파일</p>
+  <p class="writing-input-text">내용</p> -->
 </body>
 
 </html>

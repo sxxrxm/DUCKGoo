@@ -29,6 +29,7 @@ a {
   width: 30px;
   height: 30px;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 /* 왼쪽부터 로고까지 마진 */

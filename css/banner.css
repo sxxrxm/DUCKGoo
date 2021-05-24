@@ -14,6 +14,7 @@
   width: 280px;
   height: 65px;
   padding: 3px;
+  cursor: pointer;
   /* 폰트 값 적용 */
   font-family: "나눔스퀘어라운드OTF ExtraBold";  
   color: white;
