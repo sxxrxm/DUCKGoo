@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/banner.css">
   <link rel="shortcut icon" href="images/header_logo.png">
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -132,11 +133,39 @@
   </script>
 
   <!-- 메뉴바 아래 본문 -->
-  <img id="banner" src="images/banner1.png">
+  <!-- <img id="banner" src="images/banner1.png">
   <p class="banner-title-text">덕구를 이용해</p>
   <p class="banner-text1">함께할 덕질 메이트를</p> 
   <p class="banner-text2">구해보세요!</p>
-  <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button>
+  <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button> -->
+
+
+  <div id="banner">
+    <input type="radio" name="rb" id="rb1" checked>
+    <input type="radio" name="rb" id="rb2">
+    <input type="radio" name="rb" id="rb3">
+    <input type="radio" name="rb" id="rb4">
+    <ul>
+      <li>
+        <img id="banner" src="images/banner1.png">
+        <p class="banner-title-text">덕구를 이용해</p>
+        <p class="banner-text1">함께할 덕질 메이트를</p> 
+        <p class="banner-text2">구해보세요!</p>
+        <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button>
+
+        <!-- <img id="banner" src="images/banner1.png"> -->
+      </li>
+      <li><img id="banner" src="images/banner2.jpg"></li>
+      <li><img id="banner" src="images/banner3.jpg"></li>
+      <li><img id="banner" src="images/banner4.jpg"></li>
+    </ul>
+    <p class="rb">
+      <label for="rb1"></label>
+      <label for="rb2"></label>
+      <label for="rb3"></label>
+      <label for="rb4"></label>
+    </p>
+  </div>
 
 </body>
 

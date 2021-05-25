@@ -1,5 +1,83 @@
 @charset "utf-8";
 
+/* 메뉴바 바로 밑에 나오게 */
+*{
+  margin:0;
+  padding:0;
+}
+
+ul,li{
+  list-style:none; /* 앞에 글머리 기호 없게 */
+}
+
+#banner{
+  height:300%;
+  position:relative;
+  overflow:hidden; /* 이미지가 크다면, 잘라서 보여줌 */
+}
+
+#banner ul{
+  width:400%;
+  height:100%;
+  transition:0.5s;
+}
+
+#banner li{
+  float:left;
+  width:25%;
+  height:100%;
+}
+#banner input{
+  display:none;
+}
+/* 라디오 버튼 */
+#banner label{
+  display:inline-block;
+  vertical-align:middle;
+  width:13px;
+  height:13px;
+  border:2px solid #0044ef;
+  background:#fff;
+  border-radius:60%;
+  cursor:pointer;
+}
+#banner .rb{
+  text-align:center;
+  position:absolute;
+  bottom:23px;
+  width:100%;
+}
+/* 라디오 버튼을 누르면, 100%씩 왼쪽으로 이동 */
+#rb1:checked~ul{
+  margin-left:0%;
+}
+#rb2:checked~ul{
+  margin-left:-100%;
+}
+#rb3:checked~ul{
+  margin-left:-200%;
+}
+#rb4:checked~ul{
+  margin-left:-300%;
+}
+
+/* 1번째 라디오 버튼을 클릭했을 때 라디오 버튼의 상태 */
+#rb1:checked~.rb>label:nth-child(1){
+  background:#0044ef;
+}
+/* 2번째 라디오 버튼을 클릭했을 때 라디오 버튼의 상태 */
+#rb2:checked~.rb>label:nth-child(2){
+  background:#0044ef;
+}
+/* 3번째 라디오 버튼을 클릭했을 때 라디오 버튼의 상태 */
+#rb3:checked~.rb>label:nth-child(3){
+  background:#0044ef;
+}
+/* 4번째 라디오 버튼을 클릭했을 때 라디오 버튼의 상태 */
+#rb4:checked~.rb>label:nth-child(4){
+  background:#0044ef;
+}
+
 #banner{
   width: 1920px;
   height: 100%;
