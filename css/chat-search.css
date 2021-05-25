@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 .chat-search {
-  position: absolute;
-  margin-top: -5px;
+  position: relative;
+  margin-top: 15px;
   margin-left: 370px;
   width: 300px;
   border-radius: 17px;
@@ -16,5 +16,21 @@
   background-repeat: no-repeat;
   background-position: 12px;
   padding-left: 34px;
+  box-sizing: border-box;
+}
+
+.chatting-message {
+  position: absolute;
+  margin-top: 23px;
+  margin-left: 113px;
+  width: 500px;
+  border-radius: 17.5px;
+  border: none;
+  background-color: #dadada;
+  padding: 9px;
+  outline: none;
+  font-family: "나눔스퀘어라운드OTF Regular";
+  font-size: 11pt;
+  padding-left: 30px;
   box-sizing: border-box;
 }
