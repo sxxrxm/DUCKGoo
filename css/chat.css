@@ -51,6 +51,25 @@
   color: #454545;
 }
 
+.chat-new-content{
+  position: absolute;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  margin-top: 62px;
+  margin-left: 470px;
+  font-size: 12pt;
+  color: #0044ef;
+}
+
+.new-chat-image{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-top: 37px;
+  margin-left: 68px;
+}
+
+
 .chatting-name{
   position: absolute;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
