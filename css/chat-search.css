@@ -1,14 +1,9 @@
 @charset "utf-8";
 
-/* 검색 창 위치 */
-.chat-location {
-  position: absolute;
-  /* 로고 140 + 기본여백 450 + 로고와 검색창 여백 50 */
-  margin-left: 19%;
-  top: 130px;
-}
-/* 검색 창 설정 */
 .chat-search {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 370px;
   width: 300px;
   border-radius: 17px;
   border: none;
@@ -22,17 +17,4 @@
   background-position: 12px;
   padding-left: 34px;
   box-sizing: border-box;
-}
-
-@media screen and (max-width: 1170px) {
-  .chat-search {
-    width: 230px;
-  }
-  
-}
-
-@media screen and (max-width: 900px) {
-  .chat-search {
-    width: 155px;
-  }
 }

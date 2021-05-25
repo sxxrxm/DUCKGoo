@@ -160,3 +160,15 @@
   margin-left: 370px;
 }
 
+.delivery-checkbox{
+  float: left;
+  font-family: "나눔스퀘어라운드OTF Regular";
+  font-size: 15pt;
+  color: #454545;
+  margin-top: 250px;
+}
+
+.delivery-checkbox-input{
+  margin-left: 4px;
+  margin-right: 4px;
+}

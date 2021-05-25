@@ -1,53 +1,107 @@
 @charset "utf-8";
 
 .chat-container {
+  position: absolute;
   display: flex;
   margin: 0 auto;
+  height: 1000px;
 }
 
 #chatLeft {
-  flex-grow: 0;
-  border: solid 1px #dadada;
+  border: solid 0.1px #dadada;
   width: 870px;
 }
 
 #chatRight {
-  flex-grow: 1;
-  border: solid 1px #dadada;
+  border: solid 0.1px #dadada;
   width: 370px;
 }
 
 #chat {
-  flex-grow: 1;
-  border: solid 1px #dadada;
+  border: solid 0.1px #dadada;
   width: 680px;
 }
 
 #chat-size {
-  flex-grow: 1;
-  height: 1000px;
+  height: 700px;
 }
 
 .chat-title{
   font-family: "나눔스퀘어라운드OTF ExtraBold";
   font-size: 16pt;
-  margin-left: 43%;
+  margin-left: 370px;
   color: #454545;
 }
 
 .chat-name{
   position: absolute;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
-  margin-top: 30px;
+  margin-top: 32px;
+  margin-left: 470px;
   font-size: 14pt;
   color: #454545;
+}
+
+.chat-content{
+  position: absolute;
+  font-family: "나눔스퀘어라운드OTF Regular";
+  margin-top: 62px;
+  margin-left: 470px;
+  font-size: 12pt;
+  color: #454545;
+}
+
+.chatting-name{
+  position: absolute;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  margin-top: -95px;
+  margin-left: 140px;
+  font-size: 14pt;
+  color: #454545;
+}
+
+.chatting-content{
+  position: absolute;
+  font-family: "나눔스퀘어라운드OTF Regular";
+  margin-top: -65px;
+  margin-left: 140px;
+  font-size: 12pt;
+  color: #454545;
+}
+
+.chat-profile-details{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 45px;
+  margin-left: 400px;
+}
+
+.chat-writting{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 45px;
+  margin-left: 450px;
 }
 
 .chat-profile-image{
   width: 80px;
   height: 80px;
-  margin-left: 40%;
+  margin-left: 350px;
   padding: 19px;
+}
+
+.chat-profile{
+  width: 80px;
+  height: 80px;
+  margin-left: 17px;
+  padding: 24px;
+}
+
+#chatting-square{
+  border: solid 0.1px #dadada;
+  height: 700px;
 }
 
 #chat-square{
@@ -56,7 +110,7 @@
 }
 
 #chat-square-color{
-  border: solid 1px #dadada;
+  border: solid 0.1px #dadada;
   height: 120px;
   background-color: rgba(0, 68, 239, 0.2);
 }
