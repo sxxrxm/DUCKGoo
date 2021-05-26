@@ -52,14 +52,15 @@
 }
 
 /* 스크롤 디자인 */
-
 #chat-profile::-webkit-scrollbar {
   width: 11px;
 }
+
 #chat-profile::-webkit-scrollbar-thumb {
   background-color: #0044ef;
   border-radius: 5px;
 }
+
 #chat-profile::-webkit-scrollbar-track {
   background-color: #dadada;
 }
@@ -121,19 +122,18 @@
   color: #0044ef;
 }
 
+/* 채팅이 새로 왔을 때 이름 옆에 뜨는 이미지  */
 .new-chat-image{
   position: absolute;
   width: 10px;
   height: 10px;
   margin-top: 39px;
-  margin-left: 550px;
+  margin-left: 540px;
 }
-
-
 
 /* 채팅 */
 
-
+/* 채팅 프로필 사진 */
 .chat-profile{
   position: relative;
   width: 80px;
@@ -142,85 +142,80 @@
   padding: 22px;
 }
 
-
-
-
-
-
-
-
-
-/* .chatting-name{
-  position: absolute;
+/* 상단 박스 이름  */
+.chatting-name{
+  position: relative;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
-  margin-top: -95px;
-  margin-left: 140px;
   font-size: 14pt;
-  color: #454545;
-} */
-
-/* .chatting-content{
-  position: absolute;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  margin-top: -65px;
+  margin-top: -90px;
   margin-left: 140px;
-  font-size: 12pt;
   color: #454545;
-} */
+}
 
-/* .chatting-send-image{
-  position: absolute;
-  width: 30px;
-  height: 24px;
-  margin-top: 28px;
-  margin-left: 620px;
-} */
+/* 상단 박스 한줄 소개  */
+.chatting-content{
+  position: relative;
+  font-family: "나눔스퀘어라운드OTF Regular";
+  font-size: 12pt;
+  margin-top: 10px;
+  margin-left: 140px;
+  color: #454545;
+}
 
-/* .chatting-emoticon-image{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  margin-top: 24px;
-  margin-left: 22px;
-} */
-
-/* .chatting-picture-image{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  margin-top: 24px;
-  margin-left: 62px;
-} */
-
-/* .chat-profile-details{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  margin-top: 45px;
-  margin-left: 400px;
-} */
-
-/* .chat-writting{
+/* i버튼 / 프로필 자세히 보기 */
+.chat-profile-details{
   position: relative;
   width: 30px;
   height: 30px;
-  top: -54px;
-  margin-left: 450px;
-} */
+  top: -40px;
+  margin-left: 542px;
+}
 
+/* 글쓰기 버튼 */
+.chat-writting{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: -75px;
+  margin-left: 590px;
+}
 
-
-
-/* #chatting-square{
+/* 채팅 내용 박스 */
+#chatting-square{
   border: solid 0.1px #dadada;
-  height: 700px;
-} */
+  height: 620px;
+}
 
-/* #chatting-text-square{
+/* 하단 채팅 입력 박스 */
+#chatting-text-square{
   border: solid 0.1px #dadada;
   height: 81px;
-  box-shadow: -7px -2px 10px 2px #f1f1f1;
-} */
+  box-shadow: -2px -2px 10px 2px #f1f1f1;
+}
 
+/* 이모티콘 버튼 */
+.chatting-emoticon-image{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-top: 25px;
+  margin-left: 23px;
+}
 
+/* 사진 불러오기 버튼 */
+.chatting-picture-image{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
 
+/* 보내기 버튼 */
+.chatting-send-image{
+  position: relative;
+  width: 30px;
+  height: 24px;
+  top: -2px;
+  margin-left: 8px;
+}
