@@ -2,28 +2,28 @@
 
 /* 채팅 기본 값 */
 .chat-container {
-  position: relative;
   display: flex;
+  position: relative;
   margin: 0 auto;
   height: 830px;
 }
 
 /* 채팅 왼쪽 */
 #chatLeft {
-  border: solid 0.1px #dadada;
   width: 870px;
+  border: solid 0.1px #dadada;
 }
 
 /* 채팅 오른쪽 */
 #chatRight {
-  border: solid 0.1px #dadada;
   width: 370px;
+  border: solid 0.1px #dadada;
 }
 
 /* 채팅 가운데 */
 #chat {
-  border: solid 0.1px #dadada;
   width: 680px;
+  border: solid 0.1px #dadada;
 }
 
 /* 채팅 총 크기 */
@@ -33,24 +33,24 @@
 
 /* 현재 클릭한 채팅 상자 */
 #chat-square-color{
-  border: solid 0.1px #dadada;
   height: 120px;
+  border: solid 0.1px #dadada;
   background-color: rgba(0, 68, 239, 0.2);
 }
 
 /* 기본적인 채팅 상자 */
 #chat-square{
-  border: solid 0.1px #dadada;
   height: 120px;
+  border: solid 0.1px #dadada;
 }
 
 /* 오른쪽 스크롤을 주기 위해 위 아래 레이아웃 나눔 */
 #chat-profile{
   position: relative;
+  height: 708px;
   overflow: auto; 
   overflow-x: hidden; 
   overflow-y: auto;
-  height: 708px;
 }
 
 /* 스크롤 디자인 */
@@ -59,8 +59,8 @@
 }
 
 #chat-profile::-webkit-scrollbar-thumb {
-  background-color: #0044ef;
   border-radius: 5px;
+  background-color: #0044ef;
 }
 
 #chat-profile::-webkit-scrollbar-track {
@@ -70,13 +70,13 @@
 /* 메인 - 채팅 text 값 */
 .chat-title{
   position: relative;
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
-  font-size: 16pt;
   margin-top: 25px;
   margin-bottom: 0px;
   margin-left: 370px;
-  white-space: nowrap;
   color: #454545;
+  font-size: 16pt;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  white-space: nowrap;
 }
 
 /* 채팅 프로필 이미지 사이즈 */
@@ -92,40 +92,41 @@
 /* 채팅 이름 */
 .chat-name{
   position: relative;
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
   margin-top: 35px;
   margin-left: 470px;
   margin-bottom: 0px;
-  white-space: nowrap;
   font-size: 15pt;
   color: #454545;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
 }
 
 /* 채팅 내용 */
 .chat-content{
   position: relative;
-  font-family: "나눔스퀘어라운드OTF Regular";
   margin-top: 10px;
   margin-left: 470px;
-  white-space: nowrap;
   font-size: 12pt;
-  overflow: hidden; 
-  text-overflow: ellipsis;
   color: #454545;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: "나눔스퀘어라운드OTF Regular";
+ 
 }
 
 /* 채팅이 새로왔을 때 색상 값 */
 .chat-new-content{
   position: relative;
-  font-family: "나눔스퀘어라운드OTF";
-  font-weight: bold;
   margin-top: 10px;
   margin-left: 470px;
-  white-space: nowrap;
   font-size: 12pt;
-  overflow: hidden; 
-  text-overflow: ellipsis;
   color: #0044ef;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
 }
 
 /* 채팅이 새로 왔을 때 이름 옆에 뜨는 이미지  */

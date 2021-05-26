@@ -83,12 +83,16 @@
     window.addEventListener("click", windowOnClick);
   </script>
 
+  <!-- 채팅 -->
   <div class="chat-container">
+    <!-- 왼쪽 영영 -->
     <div id="chatLeft">
+      <!-- 왼쪽 상단 - 타이틀 & 사용자 검색 -->
       <div id="chat-square">
         <p class="chat-title">채팅</p>
         <input class="chat-search" type="text" placeholder="사용자 검색">
       </div>
+      <!-- 왼쪽 하단 - 사용자 & 채팅 미리보기 -->
       <div id="chat-profile">
         <div id="chat-square-color">
           <p class="chat-name">김지연</p>
@@ -128,10 +132,11 @@
           <img class="chat-profile-image" src="images/chat-profile.png">
         </div>
       </div>
-
     </div>
+    <!-- 가운데 영역 -->
     <div id="chat">
       <div id="chat-size">
+        <!-- 가운데 상단 - 사용자 정보 -->
         <div id="chat-square">
           <img class="chat-profile" src="images/chat-profile.png">
           <p class="chatting-name">김지연</p>
@@ -147,25 +152,27 @@
           <!-- 채팅 내용 -->
           <div class="chatting">
             <div class="chat-view">
+              <!-- 내 메세지 -->
               <li class="clearfix">
-                <div class="message my-message">
+                <p class="message my-message">
                   저기..
-                </div>
+                </p>
               </li>
               <li class="clearfix">
-                <div class="message my-message">
+                <p class="message my-message">
                   혹시 루카스 포카 양도 됐나요?
-                </div>
+                </p>
               </li>
+              <!-- 상대 메세지 -->
               <li>
                 <p class="message other-message">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 </p>
               </li>
               <li class="clearfix">
-                <div class="message my-message">
+                <p class="message my-message">
                   루카스 포카 교환 가능 할까요??
-                </div>
+                </p>
               </li>
               <li>
                 <p class="message other-message">
@@ -183,27 +190,33 @@
                 </p>
               </li>
               <li class="clearfix">
-                <div class="message my-message">
+                <p class="message my-message">
                   포카 교환 되었나요?
-                </div>
+                </p>
               </li>
             </div>
           </div>
         </div>
+        <!-- 가운데 하단 영역 -->
         <div id="chatting-text-square">
+          <!-- 이모티콘 버튼 -->
           <button id="profile-button">
             <img class="chatting-emoticon-image" src="images/emoticon.png">
           </button>
+          <!-- 사진 버튼 -->
           <button id="profile-button">
             <img class="chatting-picture-image" src="images/picture.png">
           </button>
+          <!-- 채팅 입력창 -->
           <input class="chatting-message" type="text" placeholder="내용을 입력하세요.">
+          <!-- 보내기 버튼 -->
           <button id="profile-button">
             <img class="chatting-send-image" src="images/send.png">
           </button>
         </div>
       </div>
     </div>
+    <!-- 오른쪽 영억 -->
     <div id="chatRight"></div>
   </div>
 

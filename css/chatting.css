@@ -7,55 +7,55 @@
   position: relative;
   width: 80px;
   height: 80px;
-  margin-left: 17px;
   padding: 22px;
+  margin-left: 17px;
 }
 
 /* 상단 박스 이름  */
 .chatting-name{
   position: relative;
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
-  font-size: 15pt;
   margin-top: -90px;
   margin-left: 140px;
+  font-size: 15pt;
   color: #454545;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
 }
 
 /* 상단 박스 한줄 소개  */
 .chatting-content{
   position: relative;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  font-size: 12pt;
   margin-top: 10px;
   margin-left: 140px;
+  font-size: 12pt;
   color: #454545;
+  font-family: "나눔스퀘어라운드OTF Regular";
 }
 
 /* i버튼 / 프로필 자세히 보기 */
 .chat-profile-details{
   position: relative;
+  top: -40px;
   width: 30px;
   height: 30px;
-  top: -40px;
   margin-left: 542px;
 }
 
 /* 글쓰기 버튼 */
 .chat-writting{
   position: relative;
+  top: -75px;
   width: 30px;
   height: 30px;
-  top: -75px;
   margin-left: 590px;
 }
 
 /* 채팅 내용 박스 */
 #chatting-square{
-  border: solid 0.1px #dadada;
   height: 620px;
   overflow: auto; 
   overflow-x: hidden; 
   overflow-y: auto;
+  border: solid 0.1px #dadada;
 }
 
 /* 스크롤 디자인 */
@@ -64,8 +64,8 @@
 }
 
 #chatting-square::-webkit-scrollbar-thumb {
-  background-color: #0044ef;
   border-radius: 5px;
+  background-color: #0044ef;
 }
 
 #chatting-square::-webkit-scrollbar-track {
@@ -74,8 +74,8 @@
 
 /* 하단 채팅 입력 박스 */
 #chatting-text-square{
-  border: solid 0.1px #dadada;
   height: 81px;
+  border: solid 0.1px #dadada;
   box-shadow: -2px -2px 10px 2px #f1f1f1;
 }
 
@@ -100,56 +100,60 @@
 /* 보내기 버튼 */
 .chatting-send-image{
   position: relative;
+  top: -2px;
   width: 30px;
   height: 24px;
-  top: -2px;
   margin-left: 8px;
 }
 
 /* 채팅 */
-
 .chatting {
-  width: 680px;
   float: left;
+  width: 680px;
 }
 
+/* 채팅 위치 */
 .chatting .chat-view {
   padding: 30px 60px;
 }
 
+/* 채팅 메세지 기본값 */
 .chatting .chat-view .message {
   position: relative;
-  font-family: "나눔스퀘어라운드OTF";
-  font-weight: bold;
+  width: 50%;
   padding: 10px 22px;
   font-size: 19px;
   line-height: 24pt;
-  width: 50%;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
 }
 
+/* 내 메세지 */
 .chatting .chat-view .my-message {
   float: right;
-  background: #0044ef;
   margin-top: 10px;
   color: white;
   overflow: hidden; 
   text-align: right;
+  background-color: #0044ef;
   border-radius: 25px 25px 0px 25px;
 }
 
+/* 상대방 메세지 */
 .chatting .chat-view .other-message {
-  background: #dadada;
-  color: #454545;
   margin-top: 20px;
   margin-bottom: 10px;
+  color: #454545;
   overflow: hidden; 
   text-align: left;
+  background-color: #dadada;
   border-radius: 25px 25px 25px 0px;
 }
 
+/* float 취소 */
 .clearfix::after {
-  visibility: hidden;
   display: block;
-  content: " ";
   clear: both;
+  content: " ";
+  visibility: hidden;
 }
