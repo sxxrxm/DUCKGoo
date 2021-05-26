@@ -107,6 +107,8 @@
   margin-left: 470px;
   white-space: nowrap;
   font-size: 12pt;
+  overflow: hidden; 
+  text-overflow: ellipsis;
   color: #454545;
 }
 
@@ -119,6 +121,8 @@
   margin-left: 470px;
   white-space: nowrap;
   font-size: 12pt;
+  overflow: hidden; 
+  text-overflow: ellipsis;
   color: #0044ef;
 }
 
