@@ -47,7 +47,9 @@
 /* 오른쪽 스크롤을 주기 위해 위 아래 레이아웃 나눔 */
 #chat-profile{
   position: relative;
-  overflow: auto;
+  overflow: auto; 
+  overflow-x: hidden; 
+  overflow-y: auto;
   height: 708px;
 }
 
@@ -95,7 +97,7 @@
   margin-left: 470px;
   margin-bottom: 0px;
   white-space: nowrap;
-  font-size: 14pt;
+  font-size: 15pt;
   color: #454545;
 }
 
@@ -133,93 +135,4 @@
   height: 10px;
   margin-top: 39px;
   margin-left: 540px;
-}
-
-/* 채팅 */
-
-/* 채팅 프로필 사진 */
-.chat-profile{
-  position: relative;
-  width: 80px;
-  height: 80px;
-  margin-left: 17px;
-  padding: 22px;
-}
-
-/* 상단 박스 이름  */
-.chatting-name{
-  position: relative;
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
-  font-size: 14pt;
-  margin-top: -90px;
-  margin-left: 140px;
-  color: #454545;
-}
-
-/* 상단 박스 한줄 소개  */
-.chatting-content{
-  position: relative;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  font-size: 12pt;
-  margin-top: 10px;
-  margin-left: 140px;
-  color: #454545;
-}
-
-/* i버튼 / 프로필 자세히 보기 */
-.chat-profile-details{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  top: -40px;
-  margin-left: 542px;
-}
-
-/* 글쓰기 버튼 */
-.chat-writting{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  top: -75px;
-  margin-left: 590px;
-}
-
-/* 채팅 내용 박스 */
-#chatting-square{
-  border: solid 0.1px #dadada;
-  height: 620px;
-}
-
-/* 하단 채팅 입력 박스 */
-#chatting-text-square{
-  border: solid 0.1px #dadada;
-  height: 81px;
-  box-shadow: -2px -2px 10px 2px #f1f1f1;
-}
-
-/* 이모티콘 버튼 */
-.chatting-emoticon-image{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  margin-top: 25px;
-  margin-left: 23px;
-}
-
-/* 사진 불러오기 버튼 */
-.chatting-picture-image{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  margin-top: 25px;
-  margin-left: 10px;
-}
-
-/* 보내기 버튼 */
-.chatting-send-image{
-  position: relative;
-  width: 30px;
-  height: 24px;
-  top: -2px;
-  margin-left: 8px;
 }

@@ -22,7 +22,7 @@
 .chatting-message {
   position: relative;
   top: -10px;
-  margin-left: 20px;
+  margin-left: 12px;
   width: 500px;
   border-radius: 17.5px;
   border: none;
@@ -33,10 +33,4 @@
   font-size: 11pt;
   padding-left: 20px;
   box-sizing: border-box;
-}
-
-@media screen and (max-width: 1920px) {
-  .chatting-message {
-    width: 450px;
-  }
 }
