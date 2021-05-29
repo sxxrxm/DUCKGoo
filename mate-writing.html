@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/writing.css">
   <link rel="shortcut icon" href="images/header_logo.png">
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -64,8 +64,8 @@
       <img class="user-image" src="images/user-image.jpg">
       <p class="modal-name">김지연</p>
       <p class="modal-email">s2019w24@e-mirim.hs.kr</p>
-      <button id="lookfor-mate-button" onclick="location.href='mate-writing.html'">덕메 구하기</button>
-      <button id="cardtext-button" onclick="location.href='card-writing.html'">포카 교환글 작성</button>
+      <button id="lookfor-mate-button">덕메 구하기</button>
+      <button id="cardtext-button" onclick="location.reload();">포카 교환글 작성</button>
       <button id="logout-button">로그아웃</button>
     </div>
   </div>
@@ -133,40 +133,80 @@
   </script>
 
   <!-- 메뉴바 아래 본문 -->
-  <!-- <img id="banner" src="images/banner1.png">
+  <img id="banner" src="images/banner1.png">
   <p class="banner-title-text">덕구를 이용해</p>
   <p class="banner-text1">함께할 덕질 메이트를</p> 
   <p class="banner-text2">구해보세요!</p>
-  <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button> -->
+  <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button>
 
-
-  <div id="banner">
-    <input type="radio" name="rb" id="rb1" checked>
-    <input type="radio" name="rb" id="rb2">
-    <input type="radio" name="rb" id="rb3">
-    <input type="radio" name="rb" id="rb4">
-    <ul>
-      <li>
-        <img id="banner" src="images/banner1.png">
-        <p class="banner-title-text">덕구를 이용해</p>
-        <p class="banner-text1">함께할 덕질 메이트를</p> 
-        <p class="banner-text2">구해보세요!</p>
-        <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button>
-
-        <!-- <img id="banner" src="images/banner1.png"> -->
-      </li>
-      <li><img id="banner" src="images/banner2.jpg"></li>
-      <li><img id="banner" src="images/banner3.jpg"></li>
-      <li><img id="banner" src="images/banner4.jpg"></li>
-    </ul>
-    <p class="rb">
-      <label for="rb1"></label>
-      <label for="rb2"></label>
-      <label for="rb3"></label>
-      <label for="rb4"></label>
-    </p>
+  <!-- 본문 -->
+  <p class="writing-title-text">포토카드 교환하기</p>
+  
+  <!-- 제목 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">제목</p>
+    <input class="input-title" type="text" placeholder="제목을 입력해주세요.">
+  </div>
+  
+  <!-- 성별 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">성별</p>
+    <select class="select-gender" name="gender">
+      <option value="여자">여자</option>
+      <option value="남자">남자</option>
+      <option value="상관없음">상관없음</option>
+    </select>
+  </div>
+  
+  <!-- 카테고리 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">카테고리</p>
+  </div>
+  
+  <!-- 소유멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">회차 정보</p>
+    <input class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
   </div>
 
+  <!-- 교환멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">장소</p>
+    <input class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
+  </div>
+
+  <!-- 배송방식 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">해시태그</p>
+    <label class="delivery-checkbox">
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="직거래">직거래
+      <!-- <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="우편">우편
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="준등기">준등기
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="등기">등기
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="택배">택배
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="반값택배">반값택배
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="편의점택배">편의점택배 -->
+    </label>
+  </div>
+
+  <div id="card-exchange">  
+    <p class="writing-title-long">장소</p>
+  </div>
+
+  <div id="card-exchange">  
+    <p class="writing-title-long">첨부 파일</p>
+    <div class="filebox"> 
+      <label for="file">업로드</label> 
+      <input type="file" id="file"> 
+      <input class="upload-name" value="파일선택">
+    </div>
+  </div>
+  
+  <div id="card-exchange">  
+    <p class="writing-title-short">내용</p>
+    <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
+  </div>
+  <button class="submit-button">등록</button>
 </body>
 
 </html>
