@@ -139,59 +139,105 @@
   <p class="banner-text2">구해보세요!</p>
   <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button>
 
+  <!-- 본문 -->
   <p class="writing-title-text">포토카드 교환하기</p>
   
-  <p class="writing-title">제목</p>
-  <input class="writing-input-title" type="text" placeholder="제목을 입력해주세요.">
-  <p class="writing-gender">상대 성별</p>
-  <select class="gender-select" name="gender">
-    <option value="여자">여자</option>
-    <option value="남자">남자</option>
-    <option value="상관없음">상관없음</option>
-  </select>
-  <p class="writing-group">그룹</p>
-  <select class="group-select" name="group">
-    <optgroup label="남돌">
-      <option value="BTS">BTS</option>
-      <option value="TXT">TXT</option>
-      <option value="SHINee">SHINee</option>
-      <option value="EXO">EXO</option>
-      <option value="NCT 127">NCT 127</option>
-      <option value="NCT DREAM">NCT DREAM</option>
-      <option value="SEVENTEEN">SEVENTEEN</option>
-      <option value="THE BOYZ">THE BOYZ</option>
-      <option value="Stray Kids">Stray Kids</option>
-      <option value="기타">기타</option>
-    </optgroup>
-    <optgroup label="여돌">
-      <option value="BLACKPINK">BLACKPINK</option>
-      <option value="TWICE">TWICE</option>
-      <option value="ITZY">ITZY</option>
-      <option value="(G)I-DLE">(G)I-DLE</option>
-      <option value="OH MY GIRL">OH MY GIRL</option>
-      <option value="Red Velvet">Red Velvet</option>
-      <option value="IU">IU</option>
-      <option value="기타">기타</option>
-    </optgroup>
-  </select>
-  <p class="writing-possession">소유 멤버</p>
-  <input class="possession-input" type="text" placeholder="활동명을 정확히 입력해주세요.">
-  <p class="writing-exchange">교환 멤버</p>
-  <input class="exchange-input" type="text" placeholder="활동명을 정확히 입력해주세요.">
+  <!-- 제목 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">제목</p>
+    <input class="input-title" type="text" placeholder="제목을 입력해주세요.">
+  </div>
   
-  <p class="writing-delivery">배송 방식</p>
-  <!-- <label class="delivery-checkbox">
-    <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="직거래">직거래
-    <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="우편">우편
-    <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="준등기">준등기
-    <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="등기">등기
-    <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="택배">택배
-    <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="반값택배">반값택배
-    <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="편의점택배">편의점택배
-</label> -->
-  <!-- <p class="writing-input-text">포카 상태</p>
-  <p class="writing-input-text">첨부 파일</p>
-  <p class="writing-input-text">내용</p> -->
+  <!-- 상대성별 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">상대 성별</p>
+    <select class="select-gender" name="gender">
+      <option value="여자">여자</option>
+      <option value="남자">남자</option>
+      <option value="상관없음">상관없음</option>
+    </select>
+  </div>
+  
+  <!-- 그룹 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">그룹</p>
+    <select class="select-group" name="group">
+      <optgroup label="남돌">
+        <option value="BTS">BTS</option>
+        <option value="TXT">TXT</option>
+        <option value="SHINee">SHINee</option>
+        <option value="EXO">EXO</option>
+        <option value="NCT 127">NCT 127</option>
+        <option value="NCT DREAM">NCT DREAM</option>
+        <option value="SEVENTEEN">SEVENTEEN</option>
+        <option value="THE BOYZ">THE BOYZ</option>
+        <option value="Stray Kids">Stray Kids</option>
+        <option value="기타">기타</option>
+      </optgroup>
+      <optgroup label="여돌">
+        <option value="BLACKPINK">BLACKPINK</option>
+        <option value="TWICE">TWICE</option>
+        <option value="ITZY">ITZY</option>
+        <option value="(G)I-DLE">(G)I-DLE</option>
+        <option value="OH MY GIRL">OH MY GIRL</option>
+        <option value="Red Velvet">Red Velvet</option>
+        <option value="IU">IU</option>
+        <option value="기타">기타</option>
+      </optgroup>
+    </select>
+  </div>
+  
+  <!-- 소유멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">소유 멤버</p>
+    <input class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
+  </div>
+
+  <!-- 교환멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">교환 멤버</p>
+    <input class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
+  </div>
+
+  <!-- 배송방식 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">배송 방식</p>
+    <label class="delivery-checkbox">
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="직거래">직거래
+      <!-- <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="우편">우편
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="준등기">준등기
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="등기">등기
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="택배">택배
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="반값택배">반값택배
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="편의점택배">편의점택배 -->
+    </label>
+  </div>
+
+  <div id="card-exchange">  
+    <p class="writing-title-long">포카 상태</p>
+    <select class="select-condition" name="condition">
+      <option value="표면 스크래치">표면 스크래치</option>
+      <option value="모서리 눌림">모서리 눌림</option>
+      <option value="오염">오염</option>
+      <option value="기타">기타</option>
+      <option value="이상 없음">이상 없음</option>
+    </select>
+  </div>
+
+  <div id="card-exchange">  
+    <p class="writing-title-long">첨부 파일</p>
+    <div class="filebox"> 
+      <label for="file">업로드</label> 
+      <input type="file" id="file"> 
+      <input class="upload-name" value="파일선택">
+    </div>
+  </div>
+  
+  <div id="card-exchange">  
+    <p class="writing-title-short">내용</p>
+    <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
+  </div>
+  <button class="submit-button">등록</button>
 </body>
 
 </html>
