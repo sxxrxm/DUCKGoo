@@ -56,6 +56,36 @@
   box-sizing: border-box;
 }
 
+.input-age{
+  width: 200px;
+  margin-right: 5px;
+
+  float: left;
+  font-family: "나눔스퀘어라운드OTF Light";
+  font-size: 15px;
+  color: #454545;
+
+  border-radius: 15px;
+  border: 1px solid #454545;
+  padding: 6px;
+  outline: none;
+  background-position: 12px;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+.text-age{
+  position: relative;
+  float: left;
+  top: 7px;
+  margin-bottom: 38px;
+  margin-right: 40px;
+  
+  font-family: "나눔스퀘어라운드OTF Light";
+  font-size: 17px;
+  color: #454545;
+}
+
 .select-gender {
   width: 120px;
 
@@ -156,13 +186,12 @@
   border-radius: 15px;
 }
 
-/* named upload */
 .filebox .upload-name {
   width: 270px;
   display: inline-block;
   padding: 6px 15px;
-  /* height: 30px; */
   
+  outline: none;
   font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
   color: #454545;
