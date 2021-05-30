@@ -7,7 +7,7 @@
   margin-left: 280px;
 }
 /* 검색 창 설정 */
-input {
+.search-input {
   width: 420px;
   border-radius: 15px;
   border: 1px solid #454545;
