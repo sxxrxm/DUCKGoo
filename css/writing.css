@@ -101,19 +101,23 @@
   font-size: 15px;
 }
 
-.delivery-checkbox{
+.checkbox-delivery{
   position: relative;
-  font-family: "나눔스퀘어라운드OTF Regular";
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
   font-size: 15pt;
   color: #454545;
-  display: inline-block; 
-  width: 100px; 
+  display: inline-block;
 }
 
-/* .delivery-checkbox-input{
-  margin-left: 4px;
+.delivery-checkbox-input-first{
   margin-right: 4px;
-} */
+}
+
+.delivery-checkbox-input{
+  margin-left: 10px;
+  margin-right: 4px;
+}
 
 .select-condition {
   width: 200px;
@@ -190,6 +194,7 @@
   display: block;
   background-color: #0044ef;
   border-radius: 25px;
+  margin-bottom: 100px;
 
   position: relative;
   width: 220px;

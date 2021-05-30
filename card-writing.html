@@ -26,7 +26,7 @@
           </div>
           <!-- 검색창 메뉴 -->
           <div class="search" id="search-margin">
-            <input type="text" placeholder="검색어를 입력해주세요.">
+            <input class="search-input" type="text" placeholder="검색어를 입력해주세요.">
           </div>
           <!-- 텍스트 메뉴 -->
           <div class="tab">
@@ -202,14 +202,14 @@
   <!-- 배송방식 -->
   <div id="card-exchange">
     <p class="writing-title-long">배송 방식</p>
-    <label class="delivery-checkbox">
-      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="직거래">직거래
-      <!-- <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="우편">우편
+    <label class="checkbox-delivery">
+      <input class="delivery-checkbox-input-first" type="checkbox" name="delivery" value="직거래">직거래
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="우편">우편
       <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="준등기">준등기
       <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="등기">등기
       <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="택배">택배
-      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="반값택배">반값택배
-      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="편의점택배">편의점택배 -->
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="반값 택배">반값 택배
+      <input class="delivery-checkbox-input" type="checkbox" name="delivery" value="편의점 택배">편의점 택배
     </label>
   </div>
 
@@ -238,6 +238,7 @@
     <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
   </div>
   <button class="submit-button">등록</button>
+
 </body>
 
 </html>
