@@ -270,3 +270,32 @@ display:none;
   cursor: pointer;
   font-size: 14pt;
 }
+
+.star .star-button {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.star .star-button + label {
+  position: relative;
+  display: inline-block;
+  margin-left: -4px;
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  background-image: url(../images/star.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.star .star-button:checked + label {
+  background-image: url(../images/check-star.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
