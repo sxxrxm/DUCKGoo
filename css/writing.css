@@ -1,5 +1,17 @@
 @charset "utf-8";
 
+/* @media screen and (max-width: 1200px) {
+  .input-title, .select-gender, .select-group, .input-member, .checkbox-delivery, .select-condition, .filebox, .input-text{
+    display:none;
+    overflow: hidden;
+  }
+  .delivery-checkbox-input, .delivery-checkbox-input-first{
+display:none;
+    overflow:hidden;
+    
+  }
+} */
+
 .writing-title-text{
   margin-top: 96px;
   margin-bottom: 67px;
@@ -84,6 +96,23 @@
   font-family: "나눔스퀘어라운드OTF Light";
   font-size: 17px;
   color: #454545;
+}
+
+.select-age {
+  width: 120px;
+  float: left;
+  margin-right: 10px;
+
+  outline: none;
+  padding: 6px 15px;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  background: url(../images/select-list.png) no-repeat 90% 50%;
+  -webkit-appearance: none;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .select-gender {
