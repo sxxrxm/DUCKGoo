@@ -88,10 +88,9 @@ display:none;
 
 .text-age{
   position: relative;
-  float: left;
-  top: 7px;
-  margin-bottom: 38px;
-  margin-right: 40px;
+  display: inline-block;
+  top: 3px;
+  margin-right: 10px;
   
   font-family: "나눔스퀘어라운드OTF Light";
   font-size: 17px;
@@ -99,8 +98,7 @@ display:none;
 }
 
 .select-age {
-  width: 120px;
-  float: left;
+  display: inline-block;
   margin-right: 10px;
 
   outline: none;
@@ -112,7 +110,6 @@ display:none;
 
   font-family: "나눔스퀘어라운드OTF";
   font-weight: bold;
-  font-size: 15px;
 }
 
 .select-gender {
