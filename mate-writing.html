@@ -151,11 +151,11 @@
   <div id="card-exchange">
     <p class="writing-title-short">나이</p>
     <input class="input-age" type="text" placeholder="나이를 입력해주세요.">
-    <p class="text-age">세</p>
-    <label class="checkbox-delivery">
-      <input class="delivery-checkbox-input-first" type="radio" name="age" value="동갑">동갑
-      <input class="delivery-checkbox-input" type="radio" name="age" value="이상">이상
-      <input class="delivery-checkbox-input" type="radio" name="age" value="이하">이하
+    <p class="text-behind">세</p>
+    <label class="label-input">
+      <input class="input-button-first" type="radio" name="age" value="동갑">동갑
+      <input class="input-button" type="radio" name="age" value="이상">이상
+      <input class="input-button" type="radio" name="age" value="이하">이하
     </label>
   </div>
 
@@ -168,14 +168,189 @@
       <option value="상관없음">상관없음</option>
     </select>
   </div>
+
+  <div id="card-exchange">
+    <p class="writing-title-short">그룹</p>
+    <select class="select-group" name="group">
+      <optgroup label="남돌">
+        <option value="BTS">BTS</option>
+        <option value="TXT">TXT</option>
+        <option value="SHINee">SHINee</option>
+        <option value="EXO">EXO</option>
+        <option value="NCT 127">NCT 127</option>
+        <option value="NCT DREAM">NCT DREAM</option>
+        <option value="SEVENTEEN">SEVENTEEN</option>
+        <option value="THE BOYZ">THE BOYZ</option>
+        <option value="Stray Kids">Stray Kids</option>
+        <option value="기타">기타</option>
+      </optgroup>
+      <optgroup label="여돌">
+        <option value="BLACKPINK">BLACKPINK</option>
+        <option value="TWICE">TWICE</option>
+        <option value="ITZY">ITZY</option>
+        <option value="(G)I-DLE">(G)I-DLE</option>
+        <option value="OH MY GIRL">OH MY GIRL</option>
+        <option value="Red Velvet">Red Velvet</option>
+        <option value="IU">IU</option>
+        <option value="기타">기타</option>
+      </optgroup>
+    </select>
+  </div>
   
-  <!-- 소유멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">카테 고리</p>
+    <label class="label-input">
+      <input class="input-button-first" type="radio" name="category" value="콘서트">콘서트
+      <input class="input-button" type="radio" name="category" value="생일카페">생일카페
+      <input class="input-button" type="radio" name="category" value="전시회">전시회
+      <input class="input-button" type="radio" name="category" value="기타">기타
+    </label>
+  </div>
+
+  <!-- 회차 정보 -->
   <div id="card-exchange">
     <p class="writing-title-long">회차 정보</p>
     <input class="input-title" type="text" placeholder="회차정보를 정확히 입력해주세요.">
   </div>
 
-  <!-- 교환멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">일정</p>
+    <select class="select-calendar" name="month">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    <p class="text-behind">월</p>
+    <select class="select-calendar" name="day">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+    </select>
+    <p class="text-behind">일</p>
+    <select class="select-calendar" name="hour">
+      <option value="0">00</option>
+      <option value="1">01</option>
+      <option value="2">02</option>
+      <option value="3">03</option>
+      <option value="4">04</option>
+      <option value="5">05</option>
+      <option value="6">06</option>
+      <option value="7">07</option>
+      <option value="8">08</option>
+      <option value="9">09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">23</option>      
+    </select>
+    <p class="text-behind">시</p>
+    <select class="select-calendar" name="hour">
+      <option value="0">00</option>
+      <option value="1">01</option>
+      <option value="2">02</option>
+      <option value="3">03</option>
+      <option value="4">04</option>
+      <option value="5">05</option>
+      <option value="6">06</option>
+      <option value="7">07</option>
+      <option value="8">08</option>
+      <option value="9">09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+      <option value="32">32</option>
+      <option value="33">33</option>
+      <option value="34">34</option>
+      <option value="35">35</option>
+      <option value="36">36</option>
+      <option value="37">37</option>
+      <option value="38">38</option>
+      <option value="39">39</option>
+      <option value="40">40</option>
+      <option value="41">41</option>
+      <option value="42">42</option>
+      <option value="43">43</option>
+      <option value="44">44</option>
+      <option value="45">45</option>
+      <option value="46">46</option>
+      <option value="47">47</option>
+      <option value="48">48</option>
+      <option value="49">49</option>
+      <option value="50">50</option>
+      <option value="51">51</option>
+      <option value="52">52</option>
+      <option value="53">53</option>
+      <option value="54">54</option>
+      <option value="55">55</option>
+      <option value="56">56</option>
+      <option value="57">57</option>
+      <option value="58">58</option>
+      <option value="59">59</option>
+    </select>
+    <p class="text-behind">분</p>
+  </div>
+
+  <!-- 장소 -->
   <div id="card-exchange">
     <p class="writing-title-short">장소</p>
     <input class="input-title" type="text" placeholder="장소를 입력해주세요.">
