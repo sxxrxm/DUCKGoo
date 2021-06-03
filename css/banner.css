@@ -16,6 +16,11 @@ ul,li{
   overflow:hidden; /* 이미지가 크다면, 잘라서 보여줌 */
 }
 
+/* #banner .bannerslide{
+  position: relative;
+  z-index: 1;
+} */
+
 #banner ul{
   width:400%;
   height:100%;
@@ -34,6 +39,10 @@ ul,li{
 #banner label{
   display:inline-block;
   vertical-align:middle;
+  /* margin-left: 15px;
+  margin-right: 5px; */
+  margin: 9px;
+  margin-bottom: auto;
   width:13px;
   height:13px;
   border:2px solid #0044ef;
@@ -98,8 +107,9 @@ ul,li{
   color: white;
   text-align: center;
   font-size: 16pt;
-  top: 460px;
+  top: 390px;
   left: 370px;
+  opacity:0;'
 }
 
 /* 위 제목 폰트 */
@@ -109,7 +119,7 @@ ul,li{
   font-family: "나눔스퀘어라운드OTF Regular";
   font-size: 22pt;
   color: white;
-  top: 180px;
+  top: 142px;
   left: 370px;
 }
   
@@ -121,7 +131,7 @@ ul,li{
   font-size: 44pt;
   word-spacing: -5px;
   color: white;
-  top: 210px;
+  top: 198px;
   left: 370px;
 }
 
@@ -132,6 +142,6 @@ ul,li{
   font-size: 44pt;
   word-spacing: -5px;
   color: white;
-  top: 300px;
+  top: 290px;
   left: 370px;
 }
