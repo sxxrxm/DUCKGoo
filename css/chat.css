@@ -1,149 +1,85 @@
 @charset "utf-8";
 
+/* 채팅 기본 값 */
 .chat-container {
-  position: absolute;
   display: flex;
+  position: relative;
   margin: 0 auto;
-  height: 910px;
+  height: 830px;
 }
 
-#chatLeft::-webkit-scrollbar {
-  width: 10px;
-}
-#chatLeft::-webkit-scrollbar-thumb {
-  background-color: #0044ef;
-  border-radius: 10px;
-}
-#chatLeft::-webkit-scrollbar-track {
-  background-color: #dadada;
-  border-radius: 10px;
-}
-
+/* 채팅 왼쪽 */
 #chatLeft {
-  border: solid 0.1px #dadada;
   width: 870px;
-  overflow: auto;
+  border: solid 0.1px #dadada;
 }
 
+/* 채팅 오른쪽 */
 #chatRight {
-  border: solid 0.1px #dadada;
   width: 370px;
-}
-
-#chat {
   border: solid 0.1px #dadada;
-  width: 680px;
 }
 
+/* 채팅 가운데 */
+#chat {
+  width: 680px;
+  border: solid 0.1px #dadada;
+}
+
+/* 채팅 총 크기 */
 #chat-size {
   height: 700px;
 }
 
+/* 현재 클릭한 채팅 상자 */
+#chat-square-color{
+  height: 120px;
+  border: solid 0.1px #dadada;
+  background-color: rgba(0, 68, 239, 0.2);
+}
+
+/* 기본적인 채팅 상자 */
+#chat-square{
+  height: 120px;
+  border: solid 0.1px #dadada;
+}
+
+/* 오른쪽 스크롤을 주기 위해 위 아래 레이아웃 나눔 */
+#chat-profile{
+  position: relative;
+  height: 708px;
+  overflow: auto; 
+  overflow-x: hidden; 
+  overflow-y: auto;
+}
+
+/* 스크롤 디자인 */
+#chat-profile::-webkit-scrollbar {
+  width: 11px;
+}
+
+#chat-profile::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #0044ef;
+}
+
+#chat-profile::-webkit-scrollbar-track {
+  background-color: #dadada;
+}
+
+/* 메인 - 채팅 text 값 */
 .chat-title{
   position: relative;
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
-  font-size: 16pt;
   margin-top: 25px;
   margin-bottom: 0px;
   margin-left: 370px;
   color: #454545;
-}
-
-.chat-name{
-  position: relative;
+  font-size: 16pt;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
-  margin-top: 35px;
-  margin-left: 470px;
-  margin-bottom: 0px;
-  font-size: 14pt;
-  color: #454545;
+  white-space: nowrap;
 }
 
-.chat-content{
-  position: relative;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  margin-top: 9px;
-  margin-left: 470px;
-  font-size: 12pt;
-  color: #454545;
-}
-
-.chat-new-content{
-  position: relative;
-  font-family: "나눔스퀘어라운드OTF";
-  font-weight: bold;
-  margin-top: 9px;
-  margin-left: 470px;
-  font-size: 12pt;
-  color: #0044ef;
-}
-
-.new-chat-image{
-  position: relative;
-  width: 10px;
-  height: 10px;
-  top: -67px;
-  margin-left: 68px;
-}
-
-.chatting-name{
-  position: absolute;
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
-  margin-top: -95px;
-  margin-left: 140px;
-  font-size: 14pt;
-  color: #454545;
-}
-
-.chatting-content{
-  position: absolute;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  margin-top: -65px;
-  margin-left: 140px;
-  font-size: 12pt;
-  color: #454545;
-}
-
-.chatting-send-image{
-  position: absolute;
-  width: 30px;
-  height: 24px;
-  margin-top: 28px;
-  margin-left: 620px;
-}
-
-.chatting-emoticon-image{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  margin-top: 24px;
-  margin-left: 22px;
-}
-
-.chatting-picture-image{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  margin-top: 24px;
-  margin-left: 62px;
-}
-
-.chat-profile-details{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  margin-top: 45px;
-  margin-left: 400px;
-}
-
-.chat-writting{
-  position: relative;
-  width: 30px;
-  height: 30px;
-  top: -54px;
-  margin-left: 450px;
-}
-
+/* 채팅 프로필 이미지 사이즈 */
 .chat-profile-image{
   position: relative;
   width: 80px;
@@ -153,33 +89,51 @@
   padding: 19px;
 }
 
-.chat-profile{
+/* 채팅 이름 */
+.chat-name{
   position: relative;
-  width: 80px;
-  height: 80px;
-
-  margin-left: 17px;
-  padding: 24px;
+  margin-top: 35px;
+  margin-left: 470px;
+  margin-bottom: 0px;
+  font-size: 15pt;
+  color: #454545;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
 }
 
-#chatting-square{
-  border: solid 0.1px #dadada;
-  height: 700px;
+/* 채팅 내용 */
+.chat-content{
+  position: relative;
+  margin-top: 10px;
+  margin-left: 470px;
+  font-size: 12pt;
+  color: #454545;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: "나눔스퀘어라운드OTF Regular";
+ 
 }
 
-#chatting-text-square{
-  border: solid 0.1px #dadada;
-  height: 81px;
-  box-shadow: -7px -2px 10px 2px #f1f1f1;
+/* 채팅이 새로왔을 때 색상 값 */
+.chat-new-content{
+  position: relative;
+  margin-top: 10px;
+  margin-left: 470px;
+  font-size: 12pt;
+  color: #0044ef;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
 }
 
-#chat-square{
-  border: solid 0.1px #dadada;
-  height: 120px;
-}
-
-#chat-square-color{
-  border: solid 0.1px #dadada;
-  height: 120px;
-  background-color: rgba(0, 68, 239, 0.2);
+/* 채팅이 새로 왔을 때 이름 옆에 뜨는 이미지  */
+.new-chat-image{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-top: 39px;
+  margin-left: 540px;
 }

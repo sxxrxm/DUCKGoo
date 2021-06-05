@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
-  <link rel="stylesheet" href="css/post.css">
+  <link rel="stylesheet" href="css/writing.css">
   <link rel="shortcut icon" href="images/header_logo.png">
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
@@ -44,44 +44,6 @@
       </div>
     </section>
     <aside id="aisdeRight"></aside>
-  </div>
-  <div id="banner">
-    <input type="radio" name="rb" id="rb1" checked>
-    <input type="radio" name="rb" id="rb2">
-    <input type="radio" name="rb" id="rb3">
-    <input type="radio" name="rb" id="rb4">
-      <ul class="abc">
-      <li>
-        <div id="banner1">
-          <img id="banner" src="images/banner1.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-      <li>
-        <div id="banner2">
-          <img id="banner" src="images/banner2.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-      <li>
-        <div id="banner3">
-          <img id="banner" src="images/banner3.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-      <li>
-        <div id="banner4">
-          <img id="banner" src="images/banner4.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-    </ul>
-    <p class="rb">
-      <label id="noma" for="rb1"></label>
-      <label for="rb2"></label>
-      <label for="rb3"></label>
-      <label for="rb4"></label>
-    </p>
   </div>
 
   <!-- 배너 -->
@@ -123,20 +85,107 @@
       <label for="rb4"></label>
     </p>
   </div>
-  
-  <!-- 로그인 전 모달창 -->
-  <!-- <div class="login-modal">
-    <div class="login-modal-content">
-      <p class="login-modal-title-text">로그인을 해주세요.</p>
-      <p class="login-modal-text">
-        본인 인증 상의 문제로 카카오톡<br>
-        로그인만 지원하는 점 양해 부탁드립니다.
-      </p>
-      <button id="login-button" onclick="kakaoLogin()">카카오계정으로 로그인</button>
-    </div>
-  </div> -->
 
-  <!-- 로그인 후 모달 창 -->
+  <!-- 본문 -->
+  <p class="writing-title-text">리뷰 작성하기</p>
+  
+  <!-- 제목 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">제목</p>
+    <input class="input-title" type="text" placeholder="제목을 입력해주세요.">
+  </div>
+  
+  <!-- 상대성별 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">상대</p>
+    <select class="select-age" name="age">
+      <option value="10대">10대</option>
+      <option value="20대">20대</option>
+      <option value="30대">30대</option>
+      <option value="40대">40대</option>
+      <option value="50대">50대</option>
+      <option value="60대 이상">60대 이상</option>
+    </select>
+    <select class="select-gender" name="gender">
+      <option value="여자">여자</option>
+      <option value="남자">남자</option>
+      <option value="상관없음">상관없음</option>
+    </select>
+  </div>
+  
+  <!-- 그룹 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">그룹</p>
+    <select class="select-group" name="group">
+      <optgroup label="남돌">
+        <option value="BTS">BTS</option>
+        <option value="TXT">TXT</option>
+        <option value="SHINee">SHINee</option>
+        <option value="EXO">EXO</option>
+        <option value="NCT 127">NCT 127</option>
+        <option value="NCT DREAM">NCT DREAM</option>
+        <option value="SEVENTEEN">SEVENTEEN</option>
+        <option value="THE BOYZ">THE BOYZ</option>
+        <option value="Stray Kids">Stray Kids</option>
+        <option value="기타">기타</option>
+      </optgroup>
+      <optgroup label="여돌">
+        <option value="BLACKPINK">BLACKPINK</option>
+        <option value="TWICE">TWICE</option>
+        <option value="ITZY">ITZY</option>
+        <option value="(G)I-DLE">(G)I-DLE</option>
+        <option value="OH MY GIRL">OH MY GIRL</option>
+        <option value="Red Velvet">Red Velvet</option>
+        <option value="IU">IU</option>
+        <option value="기타">기타</option>
+      </optgroup>
+    </select>
+  </div>
+  
+  <!-- 소유멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">소유 멤버</p>
+    <input class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
+  </div>
+
+  <!-- 교환멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">교환 멤버</p>
+    <input class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
+  </div>
+
+  <div id="card-exchange">
+    <p class="writing-title-long">별점 평가</p>
+    <div class="star">
+      <input type="checkbox" name="star" id="star1" value="1" class="star-button" title="1점">
+      <label for="star1"></label>
+      <input type="checkbox" name="star" id="star2" value="2" class="star-button" title="2점">
+      <label for="star2"></label>
+      <input type="checkbox" name="star" id="star3" value="3" class="star-button" title="3점" >
+      <label for="star3"></label>
+      <input type="checkbox" name="star" id="star4" value="4" class="star-button" title="4점">
+      <label for="star4"></label>
+      <input type="checkbox" name="star" id="star5" value="5" class="star-button" title="5점">
+      <label for="star5"></label>
+  </div>
+  </div>
+
+  <div id="card-exchange">  
+    <p class="writing-title-long">첨부 파일</p>
+    <div class="filebox"> 
+      <label for="file">업로드</label> 
+      <input type="file" id="file"> 
+      <input class="upload-name" value="파일선택">
+    </div>
+  </div>
+  
+  <div id="card-exchange">  
+    <p class="writing-title-short">내용</p>
+    <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
+  </div>
+  <button class="submit-button">등록</button>
+
+  <!-- 로그인 후 모달창(매 페이지 맨 뒤로 보내주세요....) -->
   <div class="modal">
     <div class="modal-content">
       <img class="user-image" src="images/user-image.jpg">
@@ -156,7 +205,7 @@
     var modal = document.querySelector(".modal");
 
     var trigger = document.querySelector(".trigger");
-
+    
     // 클릭시 모달 창 보이게 하는 함수
     function toggleModal() {
       modal.classList.toggle("show-modal");
@@ -172,49 +221,43 @@
 
     trigger.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
-
+    
     Kakao.init('3fbbdc23623925f715e2c80b28de7810'); //카카오 발급 키
     console.log(Kakao.insInitialized());
-    function kakaoLogin() {
+    function kakaoLogin(){
       Kakao.Auth.login({
-        success: function (response) {
+        success: function(response){
           Kakao.API.request({
             url: '/v2/user/me',
-            success: function (response) {
+            success: function(response){
               console.log(response)
             },
-            fail: function (error) {
+            fail: function(error){
               console.log(error)
             },
           })
         },
-        fail: function (error) {
+        fail: function(error) {
           console.log(error)
         },
       })
     }
 
     function kakaoLogout() {
-      if (Kakao.Auth.getAccessToken()) {
-        Kakao.API.request({
-          url: '/v1/user/unlink',
-          success: function (response) {
-            console.log(response)
-          },
-          fail: function (error) {
-            console.log(error)
-          },
-        })
-        Kakao.Auth.setAccessToken(undefined)
-      }
+    if (Kakao.Auth.getAccessToken()) {
+      Kakao.API.request({
+        url: '/v1/user/unlink',
+        success: function (response) {
+        	console.log(response)
+        },
+        fail: function (error) {
+          console.log(error)
+        },
+      })
+      Kakao.Auth.setAccessToken(undefined)
     }
+  }  
   </script>
-<<<<<<< HEAD
-=======
-
-  <!-- 메뉴바 아래 본문 -->
-
-
->>>>>>> 7bc7e72021ab1d7cd552c6953080601d419945c2
 </body>
+
 </html>

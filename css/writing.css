@@ -1,174 +1,317 @@
 @charset "utf-8";
 
+.fixed{
+  position: absolute;
+}
+/* @media screen and (max-width: 1200px) {
+  .input-title, .select-gender, .select-group, .input-member, .input-button, .select-condition, .filebox, .input-text{
+    display:none;
+    overflow: hidden;
+  }
+  .input-button, .input-button-first{
+display:none;
+    overflow:hidden;
+    
+  }
+} */
 
 .writing-title-text{
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
-  font-size: 20pt;
-  color: #454545;
-  white-space: nowrap;
   margin-top: 96px;
   margin-bottom: 67px;
   margin-left: 370px;
-}
 
-.writing-title{
-  float: left;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  font-size: 15pt;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  font-size: 22pt;
   color: #454545;
   white-space: nowrap;
-  margin-right: 70px;
-  margin-left: 370px;
 }
 
-.writing-input-title {
-  margin-top: 16px;
-  width: 1080px;
-  border-radius: 15px;
-  border: 1px solid #454545;
-  padding: 6px;
-  position: absolute;
-  outline: none;
-  font-family: "나눔스퀘어라운드OTF Light";
-  font-size: 15px;
-  background-position: 12px;
-  padding-left: 16px;
-  box-sizing: border-box;
-}
-
-.writing-gender{
-  position: absolute;
-  float: left;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  font-size: 15pt;
-  color: #454545;
-  white-space: nowrap;
-  margin-top: 73px;
-  margin-right: 62px;
-  margin-left: 370px;
-}
-
-.gender-select {
-  margin-top: 70px;
-  width: 120px;
-  padding: 6px 15px;
-  border-radius: 15px;
-  border: 1px solid #454545;
-  font-family: "나눔스퀘어라운드OTF";
-  font-weight: bold;
-  font-size: 15px;
-  outline: none;
-  background: url(../images/select-list.png) no-repeat 90% 50%;
-  -webkit-appearance: none;
-}
-
-.writing-group{
-  position: absolute;
-  float: left;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  font-size: 15pt;
-  color: #454545;
-  white-space: nowrap;
+#card-exchange{
+  position: relative;
   margin-top: 28px;
-  margin-right: 62px;
-  margin-left: 370px;
 }
 
-.group-select {
-  position: absolute;
-  margin-top: 123px;
-  margin-left: -119px;
-  width: 180px;
+.writing-title-short{
+  float: left;
+  margin-left: 380px;
+  margin-right: 83px;
+  margin-top: 3px;
+
+  font-family: "나눔스퀘어라운드OTF Regular";
+  font-size: 15pt;
+  color: #454545;
+  white-space: nowrap;
+}
+
+.writing-title-long{
+  float: left;
+  margin-left: 380px;
+  margin-right: 42px;
+  margin-top: 3px;
+
+  font-family: "나눔스퀘어라운드OTF Regular";
+  font-size: 15pt;
+  color: #454545;
+  white-space: nowrap;
+}
+
+.input-title {
+  width: 600px;
+  
+  font-family: "나눔스퀘어라운드OTF Light";
+  font-size: 15px;
+  color: #454545;
+
+  border-radius: 15px;
+  border: 1px solid #454545;
+  padding: 6px;
+  outline: none;
+  background-position: 12px;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+.input-age{
+  width: 160px;
+  margin-right: 5px;
+
+  float: left;
+  font-family: "나눔스퀘어라운드OTF Light";
+  font-size: 15px;
+  color: #454545;
+
+  border-radius: 15px;
+  border: 1px solid #454545;
+  padding: 6px;
+  outline: none;
+  background-position: 12px;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+.text-behind{
+  position: relative;
+  display: inline-block;
+  top: 3px;
+  margin-right: 10px;
+  
+  font-family: "나눔스퀘어라운드OTF Light";
+  font-size: 17px;
+  color: #454545;
+}
+
+.select-age {
+  display: inline-block;
+  margin-right: 10px;
+  width: 120px;
+
+  outline: none;
   padding: 6px 15px;
   border-radius: 15px;
   border: 1px solid #454545;
+  background: url(../images/select-list.png) no-repeat 90% 50%;
+  -webkit-appearance: none;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+}
+
+.select-gender {
+  width: 120px;
+
+  outline: none;
+  padding: 6px 15px;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  background: url(../images/select-list.png) no-repeat 90% 50%;
+  -webkit-appearance: none;
+
   font-family: "나눔스퀘어라운드OTF";
   font-weight: bold;
   font-size: 15px;
+}
+
+.select-calendar {
+  width: 100px;
+
   outline: none;
+  padding: 6px 15px;
+  border-radius: 15px;
+  border: 1px solid #454545;
   background: url(../images/select-list.png) no-repeat 90% 50%;
   -webkit-appearance: none;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.writing-possession{
-  position: absolute;
-  float: left;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  font-size: 15pt;
-  color: #454545;
-  white-space: nowrap;
-  margin-top: 80px;
-  margin-right: 62px;
-  margin-left: 370px;
-}
+.select-group {
+  width: 200px;
 
-.possession-input {
-  position: absolute;
-  margin-left: -119px;
-  margin-top: 176px;
-  width: 300px;
+  outline: none;
+  padding: 6px 15px;
   border-radius: 15px;
   border: 1px solid #454545;
-  padding: 6px;
-  position: absolute;
-  outline: none;
-  font-family: "나눔스퀘어라운드OTF Light";
+  background: url(../images/select-list.png) no-repeat 90% 50%;
+  -webkit-appearance: none;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
   font-size: 15px;
+}
+
+.input-member {
+  width: 380px;
+
+  padding: 6px;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid #454545;
   background-position: 12px;
   padding-left: 16px;
   box-sizing: border-box;
-}
 
-.writing-exchange{
-  position: absolute;
-  float: left;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  font-size: 15pt;
-  color: #454545;
-  white-space: nowrap;
-  margin-top: 132px;
-  margin-right: 62px;
-  margin-left: 370px;
-}
-
-.exchange-input {
-  position: absolute;
-  margin-left: -119px;
-  margin-top: 230px;
-  width: 300px;
-  border-radius: 15px;
-  border: 1px solid #454545;
-  padding: 6px;
-  position: absolute;
-  outline: none;
   font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
-  background-position: 12px;
-  padding-left: 16px;
-  box-sizing: border-box;
 }
 
-.writing-delivery{
-  position: absolute;
-  float: left;
-  font-family: "나눔스퀘어라운드OTF Regular";
+.label-input{
+  position: relative;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
   font-size: 15pt;
   color: #454545;
-  white-space: nowrap;
-  margin-top: 184px;
-  margin-right: 62px;
-  margin-left: 370px;
+  display: inline-block;
 }
 
-.delivery-checkbox{
-  float: left;
-  font-family: "나눔스퀘어라운드OTF Regular";
-  font-size: 15pt;
-  color: #454545;
-  margin-top: 250px;
-}
-
-.delivery-checkbox-input{
-  margin-left: 4px;
+.input-button-first{
   margin-right: 4px;
+}
+
+.input-button{
+  margin-left: 10px;
+  margin-right: 4px;
+}
+
+.select-condition {
+  width: 200px;
+
+  outline: none;
+  padding: 6px 15px;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  background: url(../images/select-list.png) no-repeat 90% 50%;
+  -webkit-appearance: none;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.filebox input[type="file"] {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filebox label {
+  display: inline-block;
+  padding: 6px 15px;
+  cursor: pointer;
+  
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  
+  vertical-align: middle;
+  background-color: #0044ef;
+  border-radius: 15px;
+}
+
+.filebox .upload-name {
+  width: 270px;
+  display: inline-block;
+  padding: 6px 15px;
+  
+  outline: none;
+  font-family: "나눔스퀘어라운드OTF Light";
+  font-size: 15px;
+  color: #454545;
+
+  vertical-align: middle;
+  background-color: white;
+  border: 1px solid #454545;
+  border-radius: 15px;
+}
+
+.input-text {
+  width: 600px;
+  height: 300px;
+  resize: none;
+
+  padding: 6px;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  background-position: 12px;
+  padding-left: 16px;
+  box-sizing: border-box;
+
+  font-family: "나눔스퀘어라운드OTF Light";
+  font-size: 15px;
+}
+
+.submit-button{
+  display: block;
+  background-color: #0044ef;
+  border-radius: 25px;
+  margin-bottom: 100px;
+
+  position: relative;
+  width: 220px;
+  height: 50px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* 폰트 값 적용 */
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;  
+  
+  color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  font-size: 14pt;
+}
+
+.star .star-button {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.star .star-button + label {
+  position: relative;
+  display: inline-block;
+  margin-left: -4px;
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  background-image: url(../images/star.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.star .star-button:checked + label {
+  background-image: url(../images/check-star.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
