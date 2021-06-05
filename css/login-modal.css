@@ -9,7 +9,7 @@
   height: 45px;
   padding: 3px;
   /* 폰트 값 적용 */
-  font-family: "나눔스퀘어라운드OTF ExtraBold";  
+  font-family: Nanum EB;  
   color: white;
   text-align: center;
   cursor: pointer;
@@ -18,7 +18,7 @@
 
 /* 로그인 모달 창 제목 폰트 */
 .login-modal-title-text{
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  font-family: Nanum EB;
   font-size: 20pt;
   color: #454545;
   margin-bottom: 15px;
@@ -27,7 +27,7 @@
 
 /* 로그인 모달 창 본문 폰트 */
 .login-modal-text{
-  font-family: "나눔스퀘어라운드OTF Light";
+  font-family: Nanum L;
   font-size: 9pt;
   color: #454545;
   line-height: 16pt;

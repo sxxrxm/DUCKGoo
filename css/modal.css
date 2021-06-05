@@ -21,8 +21,7 @@ button{
   height: 40px;
   padding: 3px;
   /* 폰트 값 적용 */
-  font-family: "나눔스퀘어라운드OTF";
-  font-weight: bold; 
+  font-family: Nanum B; 
   color: white;
   text-align: center;
   cursor: pointer;
@@ -38,8 +37,7 @@ button{
   width: 280px;
   height: 40px;
   padding: 3px;
-  font-family: "나눔스퀘어라운드OTF";
-  font-weight: bold; 
+  font-family: Nanum B; 
   color: #0044ef;
   text-align: center;
   cursor: pointer;
@@ -53,7 +51,7 @@ button{
   width: 120px;
   height: 25px;
   padding: 5px;
-  font-family: "나눔스퀘어라운드OTF Regular";  
+  font-family: Nanum R;  
   color: #0044ef;
   cursor: pointer;
   text-align: center;
@@ -64,7 +62,7 @@ button{
 
 /* 모달 창 이름 */
 .modal-name{
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  font-family: Nanum EB;
   font-size: 18pt;
   color: #454545;
   margin-bottom: 7px;
@@ -73,7 +71,7 @@ button{
 
 /* 모달 창 이메일 */
 .modal-email{
-  font-family: "나눔스퀘어라운드OTF Light";
+  font-family: Nanum L;
   font-size: 13pt;
   color: #454545;
   margin-top: 7px;

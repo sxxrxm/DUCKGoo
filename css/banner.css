@@ -107,7 +107,7 @@ ul,li{
   padding: 3px;
   cursor: pointer;
   /* 폰트 값 적용 */
-  font-family: "나눔스퀘어라운드OTF ExtraBold";  
+  font-family: Nanum EB;  
   color: white;
   text-align: center;
   font-size: 16pt;
@@ -120,7 +120,7 @@ ul,li{
 /* .banner-title-text{
   position: absolute;
   white-space: nowrap;
-  font-family: "나눔스퀘어라운드OTF Regular";
+  font-family: Nanum EB;
   font-size: 22pt;
   color: white;
   top: 142px;
@@ -131,7 +131,7 @@ ul,li{
 /* .banner-text1{
   position: absolute;
   white-space: nowrap;
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  font-family: Nanum EB;
   font-size: 44pt;
   word-spacing: -5px;
   color: white;
@@ -142,7 +142,7 @@ ul,li{
 /* .banner-text2{
   position: absolute;  
   white-space: nowrap;
-  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  font-family: Nanum EB;
   font-size: 44pt;
   word-spacing: -5px;
   color: white;
