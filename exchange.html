@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/post.css">
   <link rel="shortcut icon" href="images/header_logo.png">
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 
 <body>
@@ -42,6 +44,46 @@
       </div>
     </section>
     <aside id="aisdeRight"></aside>
+  </div>
+
+  <!-- 배너 -->
+  <div id="banner">
+    <input type="radio" name="rb" id="rb1" checked>
+    <input type="radio" name="rb" id="rb2">
+    <input type="radio" name="rb" id="rb3">
+    <input type="radio" name="rb" id="rb4">
+    <ul class="abc">
+      <li>
+        <div id="banner1">
+          <img id="banner" src="images/banner1.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+      <li>
+        <div id="banner2">
+          <img id="banner" src="images/banner2.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+      <li>
+        <div id="banner3">
+          <img id="banner" src="images/banner3.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+      <li>
+        <div id="banner4">
+          <img id="banner" src="images/banner4.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+    </ul>
+    <p class="rb">
+      <label id="noma" for="rb1"></label>
+      <label for="rb2"></label>
+      <label for="rb3"></label>
+      <label for="rb4"></label>
+    </p>
   </div>
 
   <!-- 로그인 전 모달창 -->
@@ -79,16 +121,81 @@
     window.addEventListener("click", windowOnClick);
   </script>
 
-  <!-- 메뉴바 아래 본문 -->
-  <img id="banner" src="images/banner1.png">
-  <p class="banner-title-text">덕구를 이용해</p>
-  <p class="banner-text1">함께할 덕질 메이트를</p> 
-  <p class="banner-text2">구해보세요!</p>
-  <button id="mate-button">구하러가기</button>
+  <br><br>
 
+  <div class="post">
+    <div class="post-content">
+      <img class="poca-img" src="images/exchange_img/poca1.png">
+      <p class="title">해찬 포카 천러 교환 구합니다!</p>
+      <p class="content">하자 없구용. 준등기 교환 원합니당. <br> 자세한 사항은 DM 주세용.</p>
+      <p class="hashtag">#천러 #NCTDREAM</p>
+    </div>
+  </div>
 
+  <div class="post">
+    <div class="post-content">
+      <img class="poca-img" src="images/exchange_img/poca2.png">
+      <p class="title">해찬 포카 천러 교환 구합니다!</p>
+      <p class="content">하자 없구용. 준등기 교환 원합니당. <br> 자세한 사항은 DM 주세용.</p>
+      <p class="hashtag">#천러 #NCTDREAM</p>
+    </div>
+  </div>
 
+  <div class="post">
+    <div class="post-content">
+      <img class="poca-img" src="images/exchange_img/poca3.png">
+      <p class="title">해찬 포카 천러 교환 구합니다!</p>
+      <p class="content">하자 없구용. 준등기 교환 원합니당. <br> 자세한 사항은 DM 주세용.</p>
+      <p class="hashtag">#천러 #NCTDREAM</p>
+    </div>
+  </div>
 
+  <div class="post">
+    <div class="post-content">
+      <img class="poca-img" src="images/exchange_img/poca4.png">
+      <p class="title">해찬 포카 천러 교환 구합니다!</p>
+      <p class="content">하자 없구용. 준등기 교환 원합니당. <br> 자세한 사항은 DM 주세용.</p>
+      <p class="hashtag">#천러 #NCTDREAM</p>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="post">
+    <div class="post-content">
+      <img class="poca-img" src="images/exchange_img/poca1.png">
+      <p class="title">해찬 포카 천러 교환 구합니다!</p>
+      <p class="content">하자 없구용. 준등기 교환 원합니당. <br> 자세한 사항은 DM 주세용.</p>
+      <p class="hashtag">#천러 #NCTDREAM</p>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="post-content">
+      <img class="poca-img" src="images/exchange_img/poca2.png">
+      <p class="title">해찬 포카 천러 교환 구합니다!</p>
+      <p class="content">하자 없구용. 준등기 교환 원합니당. <br> 자세한 사항은 DM 주세용.</p>
+      <p class="hashtag">#천러 #NCTDREAM</p>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="post-content">
+      <img class="poca-img" src="images/exchange_img/poca3.png">
+      <p class="title">해찬 포카 천러 교환 구합니다!</p>
+      <p class="content">하자 없구용. 준등기 교환 원합니당. <br> 자세한 사항은 DM 주세용.</p>
+      <p class="hashtag">#천러 #NCTDREAM</p>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="post-content">
+      <img class="poca-img" src="images/exchange_img/poca4.png">
+      <p class="title">해찬 포카 천러 교환 구합니다!</p>
+      <p class="content">하자 없구용. 준등기 교환 원합니당. <br> 자세한 사항은 DM 주세용.</p>
+      <p class="hashtag">#천러 #NCTDREAM</p>
+    </div>
+  </div>
 
 </body>
 

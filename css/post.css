@@ -1,0 +1,47 @@
+.post { 
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 1440;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #e6e6e6;
+}
+.post-content { 
+    position: absolute;
+    background-color: white;
+    width: 280;
+    height: 430;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #e6e6e6;
+}
+/* 포카 이미지 */
+.poca-img {
+    width: 280;
+    height: 250;
+    border-radius: 30px 30px 3px 0px;
+}
+/* 해찬 포카 천러 교환 구합니당 */
+.title {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: "나눔스퀘어라운드OTF ExtraBold";
+    font-size: 14pt;
+    color: #454545;
+}
+/* 하자 없구용. 준등기 교환 원합니당 ... */
+.content {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: "나눔스퀘어라운드OTF Regular";
+    font-size: 12pt;
+    color: #454545;
+}
+/* #천러 #NCTDREAM */
+.hashtag {
+    padding-top: 2px;
+    padding-left: 10px;
+    font-family: "나눔스퀘어라운드OTF Regular";
+    font-size: 12pt;
+    color: #0044ef;
+}

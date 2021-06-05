@@ -46,17 +46,107 @@
     <aside id="aisdeRight"></aside>
   </div>
 
-  <!-- 로그인 전 모달창 -->
-  <!-- <div class="login-modal">
-    <div class="login-modal-content">
-      <p class="login-modal-title-text">로그인을 해주세요.</p>
-      <p class="login-modal-text">
-        본인 인증 상의 문제로 카카오톡<br>
-        로그인만 지원하는 점 양해 부탁드립니다.
-      </p>
-      <button id="login-button" onclick="kakaoLogin()">카카오계정으로 로그인</button>
+  <!-- 배너 -->
+  <div id="banner">
+    <input type="radio" name="rb" id="rb1" checked>
+    <input type="radio" name="rb" id="rb2">
+    <input type="radio" name="rb" id="rb3">
+    <input type="radio" name="rb" id="rb4">
+      <ul class="abc">
+      <li>
+        <div id="banner1">
+          <img id="banner" src="images/banner1.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+      <li>
+        <div id="banner2">
+          <img id="banner" src="images/banner2.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+      <li>
+        <div id="banner3">
+          <img id="banner" src="images/banner3.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+      <li>
+        <div id="banner4">
+          <img id="banner" src="images/banner4.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+    </ul>
+    <p class="rb">
+      <label id="noma" for="rb1"></label>
+      <label for="rb2"></label>
+      <label for="rb3"></label>
+      <label for="rb4"></label>
+    </p>
+  </div>
+
+  <!-- 본문 -->
+  <p class="writing-title-text">덕질메이트 구하기</p>
+  
+  <!-- 제목 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">제목</p>
+    <input class="input-title" type="text" placeholder="제목을 입력해주세요.">
+  </div>
+  
+  <div id="card-exchange">
+    <p class="writing-title-short">나이</p>
+    <input class="input-age" type="text" placeholder="나이를 입력해주세요.">
+    <p class="text-age">세</p>
+    <label class="checkbox-delivery">
+      <input class="delivery-checkbox-input-first" type="radio" name="age" value="동갑">동갑
+      <input class="delivery-checkbox-input" type="radio" name="age" value="이상">이상
+      <input class="delivery-checkbox-input" type="radio" name="age" value="이하">이하
+    </label>
+  </div>
+
+  <!-- 상대성별 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">성별</p>
+    <select class="select-gender" name="gender">
+      <option value="여자">여자</option>
+      <option value="남자">남자</option>
+      <option value="상관없음">상관없음</option>
+    </select>
+  </div>
+  
+  <!-- 소유멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-long">회차 정보</p>
+    <input class="input-title" type="text" placeholder="회차정보를 정확히 입력해주세요.">
+  </div>
+
+  <!-- 교환멤버 -->
+  <div id="card-exchange">
+    <p class="writing-title-short">장소</p>
+    <input class="input-title" type="text" placeholder="장소를 입력해주세요.">
+  </div>
+
+  <div id="card-exchange">
+    <p class="writing-title-long">해시 태그</p>
+    <input class="input-title" type="text" placeholder="해시태그를 입력해주세요.">
+  </div>
+
+  <div id="card-exchange">  
+    <p class="writing-title-long">첨부 파일</p>
+    <div class="filebox"> 
+      <label for="file">업로드</label> 
+      <input type="file" id="file"> 
+      <input class="upload-name" value="파일선택">
     </div>
-  </div> -->
+  </div>
+  
+  <div id="card-exchange">  
+    <p class="writing-title-short">내용</p>
+    <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
+  </div>
+  <button class="submit-button">등록</button>
 
   <!-- 로그인 후 모달 창 -->
   <div class="modal">
@@ -131,75 +221,6 @@
     }
   }  
   </script>
-
-  <!-- 메뉴바 아래 본문 -->
-  <img id="banner" src="images/banner1.png">
-  <p class="banner-title-text">덕구를 이용해</p>
-  <p class="banner-text1">함께할 덕질 메이트를</p> 
-  <p class="banner-text2">구해보세요!</p>
-  <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button>
-
-  <!-- 본문 -->
-  <p class="writing-title-text">덕질메이트 구하기</p>
-  
-  <!-- 제목 -->
-  <div id="card-exchange">
-    <p class="writing-title-short">제목</p>
-    <input class="input-title" type="text" placeholder="제목을 입력해주세요.">
-  </div>
-  
-  <div id="card-exchange">
-    <p class="writing-title-short">나이</p>
-    <input class="input-age" type="text" placeholder="나이를 입력해주세요.">
-    <p class="text-age">세</p>
-    <label class="checkbox-delivery">
-      <input class="delivery-checkbox-input-first" type="radio" name="age" value="동갑">동갑
-      <input class="delivery-checkbox-input" type="radio" name="age" value="이상">이상
-      <input class="delivery-checkbox-input" type="radio" name="age" value="이하">이하
-    </label>
-  </div>
-
-  <!-- 상대성별 -->
-  <div id="card-exchange">
-    <p class="writing-title-short">성별</p>
-    <select class="select-gender" name="gender">
-      <option value="여자">여자</option>
-      <option value="남자">남자</option>
-      <option value="상관없음">상관없음</option>
-    </select>
-  </div>
-  
-  <!-- 소유멤버 -->
-  <div id="card-exchange">
-    <p class="writing-title-long">회차 정보</p>
-    <input class="input-title" type="text" placeholder="회차정보를 정확히 입력해주세요.">
-  </div>
-
-  <!-- 교환멤버 -->
-  <div id="card-exchange">
-    <p class="writing-title-short">장소</p>
-    <input class="input-title" type="text" placeholder="장소를 입력해주세요.">
-  </div>
-
-  <div id="card-exchange">
-    <p class="writing-title-long">해시 태그</p>
-    <input class="input-title" type="text" placeholder="해시태그를 입력해주세요.">
-  </div>
-
-  <div id="card-exchange">  
-    <p class="writing-title-long">첨부 파일</p>
-    <div class="filebox"> 
-      <label for="file">업로드</label> 
-      <input type="file" id="file"> 
-      <input class="upload-name" value="파일선택">
-    </div>
-  </div>
-  
-  <div id="card-exchange">  
-    <p class="writing-title-short">내용</p>
-    <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
-  </div>
-  <button class="submit-button">등록</button>
 
 </body>
 
