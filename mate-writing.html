@@ -52,7 +52,7 @@
     <input type="radio" name="rb" id="rb2">
     <input type="radio" name="rb" id="rb3">
     <input type="radio" name="rb" id="rb4">
-      <ul class="abc">
+    <ul class="abc">
       <li>
         <div id="banner1">
           <img id="banner" src="images/banner1.png">
@@ -85,161 +85,15 @@
       <label for="rb4"></label>
     </p>
   </div>
-
   <!-- 본문 -->
   <p class="writing-title-text">덕질메이트 구하기</p>
-  
+
   <!-- 제목 -->
   <div id="card-exchange">
     <p class="writing-title-short">제목</p>
     <input class="input-title" type="text" placeholder="제목을 입력해주세요.">
   </div>
-  
-  <div id="card-exchange">
-    <p class="writing-title-short">나이</p>
-    <input class="input-age" type="text" placeholder="나이를 입력해주세요.">
-    <p class="text-age">세</p>
-    <label class="checkbox-delivery">
-      <input class="delivery-checkbox-input-first" type="radio" name="age" value="동갑">동갑
-      <input class="delivery-checkbox-input" type="radio" name="age" value="이상">이상
-      <input class="delivery-checkbox-input" type="radio" name="age" value="이하">이하
-    </label>
-  </div>
 
-  <!-- 상대성별 -->
-  <div id="card-exchange">
-    <p class="writing-title-short">성별</p>
-    <select class="select-gender" name="gender">
-      <option value="여자">여자</option>
-      <option value="남자">남자</option>
-      <option value="상관없음">상관없음</option>
-    </select>
-  </div>
-  
-  <!-- 소유멤버 -->
-  <div id="card-exchange">
-    <p class="writing-title-long">회차 정보</p>
-    <input class="input-title" type="text" placeholder="회차정보를 정확히 입력해주세요.">
-  </div>
-
-  <!-- 교환멤버 -->
-  <div id="card-exchange">
-    <p class="writing-title-short">장소</p>
-    <input class="input-title" type="text" placeholder="장소를 입력해주세요.">
-  </div>
-
-  <div id="card-exchange">
-    <p class="writing-title-long">해시 태그</p>
-    <input class="input-title" type="text" placeholder="해시태그를 입력해주세요.">
-  </div>
-
-  <div id="card-exchange">  
-    <p class="writing-title-long">첨부 파일</p>
-    <div class="filebox"> 
-      <label for="file">업로드</label> 
-      <input type="file" id="file"> 
-      <input class="upload-name" value="파일선택">
-    </div>
-  </div>
-  
-  <div id="card-exchange">  
-    <p class="writing-title-short">내용</p>
-    <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
-  </div>
-  <button class="submit-button">등록</button>
-
-  <!-- 로그인 후 모달 창 -->
-  <div class="modal">
-    <div class="modal-content">
-      <img class="user-image" src="images/user-image.jpg">
-      <p class="modal-name">김지연</p>
-      <p class="modal-email">s2019w24@e-mirim.hs.kr</p>
-      <button id="lookfor-mate-button" onclick="location.reload();">덕메 구하기</button>
-      <button id="cardtext-button" onclick="location.href='card-writing.html'">포카 교환글 작성</button>
-      <button id="logout-button">로그아웃</button>
-    </div>
-  </div>
-  
-  <!-- 모달 창 JS -->
-  <script type="text/javascript">
-    //로그인 모달
-    // var modal = document.querySelector(".login-modal");
-    //로그인 이후 모달 - 기본 모달
-    var modal = document.querySelector(".modal");
-
-    var trigger = document.querySelector(".trigger");
-    
-    // 클릭시 모달 창 보이게 하는 함수
-    function toggleModal() {
-      modal.classList.toggle("show-modal");
-    }
-
-    // 모달 창 외 다른 화면 클릭시 자동 꺼짐 & 버튼 색깔 회색으로 돌아옴
-    function windowOnClick(event) {
-      if (event.target === modal) {
-        toggleModal();
-        document.getElementById("img").src = "images/profile.png";
-      }
-    }
-
-    trigger.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-    
-    Kakao.init('3fbbdc23623925f715e2c80b28de7810'); //카카오 발급 키
-    console.log(Kakao.insInitialized());
-    function kakaoLogin(){
-      Kakao.Auth.login({
-        success: function(response){
-          Kakao.API.request({
-            url: '/v2/user/me',
-            success: function(response){
-              console.log(response)
-            },
-            fail: function(error){
-              console.log(error)
-            },
-          })
-        },
-        fail: function(error) {
-          console.log(error)
-        },
-      })
-    }
-
-    function kakaoLogout() {
-    if (Kakao.Auth.getAccessToken()) {
-      Kakao.API.request({
-        url: '/v1/user/unlink',
-        success: function (response) {
-        	console.log(response)
-        },
-        fail: function (error) {
-          console.log(error)
-        },
-      })
-      Kakao.Auth.setAccessToken(undefined)
-    }
-  }  
-  </script>
-
-<<<<<<< HEAD
-=======
-  <!-- 메뉴바 아래 본문 -->
-  <img id="banner" src="images/banner1.png">
-  <p class="banner-title-text">덕구를 이용해</p>
-  <p class="banner-text1">함께할 덕질 메이트를</p> 
-  <p class="banner-text2">구해보세요!</p>
-  <button id="mate-button" onclick="location.href='mate.html'">구하러가기</button>
-
-  <!-- 본문 -->
-  <p class="writing-title-text">덕질메이트 구하기</p>
-  
-  <!-- 제목 -->
-  <div id="card-exchange">
-    <p class="writing-title-short">제목</p>
-    <input class="input-title" type="text" placeholder="제목을 입력해주세요.">
-  </div>
-  
   <div id="card-exchange">
     <p class="writing-title-short">나이</p>
     <input class="input-age" type="text" placeholder="나이를 입력해주세요.">
@@ -288,7 +142,7 @@
       </optgroup>
     </select>
   </div>
-  
+
   <div id="card-exchange">
     <p class="writing-title-long">카테 고리</p>
     <label class="label-input">
@@ -377,7 +231,7 @@
       <option value="17">17</option>
       <option value="18">18</option>
       <option value="19">19</option>
-      <option value="20">23</option>      
+      <option value="20">23</option>
     </select>
     <p class="text-behind">시</p>
     <select class="select-calendar" name="hour">
@@ -453,22 +307,94 @@
     <input class="input-title" type="text" placeholder="해시태그를 입력해주세요.">
   </div>
 
-  <div id="card-exchange">  
+  <div id="card-exchange">
     <p class="writing-title-long">첨부 파일</p>
-    <div class="filebox"> 
-      <label for="file">업로드</label> 
-      <input type="file" id="file"> 
+    <div class="filebox">
+      <label for="file">업로드</label>
+      <input type="file" id="file">
       <input class="upload-name" value="파일선택">
     </div>
   </div>
-  
-  <div id="card-exchange">  
+
+  <div id="card-exchange">
     <p class="writing-title-short">내용</p>
     <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
   </div>
   <button class="submit-button">등록</button>
 
->>>>>>> 3c7e50f65f4f02e88eb9034f2a2fb2430bf08a84
+  <!-- 로그인 후 모달 창 -->
+  <div class="modal">
+    <div class="modal-content">
+      <img class="user-image" src="images/user-image.jpg">
+      <p class="modal-name">김지연</p>
+      <p class="modal-email">s2019w24@e-mirim.hs.kr</p>
+      <button id="lookfor-mate-button" onclick="location.reload();">덕메 구하기</button>
+      <button id="cardtext-button" onclick="location.href='card-writing.html'">포카 교환글 작성</button>
+      <button id="logout-button">로그아웃</button>
+    </div>
+  </div>
+
+  <!-- 모달 창 JS -->
+  <script type="text/javascript">
+    //로그인 모달
+    // var modal = document.querySelector(".login-modal");
+    //로그인 이후 모달 - 기본 모달
+    var modal = document.querySelector(".modal");
+
+    var trigger = document.querySelector(".trigger");
+
+    // 클릭시 모달 창 보이게 하는 함수
+    function toggleModal() {
+      modal.classList.toggle("show-modal");
+    }
+
+    // 모달 창 외 다른 화면 클릭시 자동 꺼짐 & 버튼 색깔 회색으로 돌아옴
+    function windowOnClick(event) {
+      if (event.target === modal) {
+        toggleModal();
+        document.getElementById("img").src = "images/profile.png";
+      }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+
+    Kakao.init('3fbbdc23623925f715e2c80b28de7810'); //카카오 발급 키
+    console.log(Kakao.insInitialized());
+    function kakaoLogin() {
+      Kakao.Auth.login({
+        success: function (response) {
+          Kakao.API.request({
+            url: '/v2/user/me',
+            success: function (response) {
+              console.log(response)
+            },
+            fail: function (error) {
+              console.log(error)
+            },
+          })
+        },
+        fail: function (error) {
+          console.log(error)
+        },
+      })
+    }
+
+    function kakaoLogout() {
+      if (Kakao.Auth.getAccessToken()) {
+        Kakao.API.request({
+          url: '/v1/user/unlink',
+          success: function (response) {
+            console.log(response)
+          },
+          fail: function (error) {
+            console.log(error)
+          },
+        })
+        Kakao.Auth.setAccessToken(undefined)
+      }
+    }
+  </script>
 </body>
 
 </html>
