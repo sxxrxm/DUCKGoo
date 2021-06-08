@@ -3,7 +3,6 @@
 .fixed{
   position: absolute;
 }
-
 /* @media screen and (max-width: 1200px) {
   .input-title, .select-gender, .select-group, .input-member, .input-button, .select-condition, .filebox, .input-text{
     display:none;
@@ -21,7 +20,7 @@ display:none;
   margin-bottom: 67px;
   margin-left: 370px;
 
-  font-family: Nanum EB;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
   font-size: 22pt;
   color: #454545;
   white-space: nowrap;
@@ -38,7 +37,7 @@ display:none;
   margin-right: 83px;
   margin-top: 3px;
 
-  font-family: Nanum R;
+  font-family: "나눔스퀘어라운드OTF Regular";
   font-size: 15pt;
   color: #454545;
   white-space: nowrap;
@@ -50,7 +49,7 @@ display:none;
   margin-right: 42px;
   margin-top: 3px;
 
-  font-family: Nanum R;
+  font-family: "나눔스퀘어라운드OTF Regular";
   font-size: 15pt;
   color: #454545;
   white-space: nowrap;
@@ -59,7 +58,7 @@ display:none;
 .input-title {
   width: 600px;
   
-  font-family: Nanum L;
+  font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
   color: #454545;
 
@@ -77,7 +76,7 @@ display:none;
   margin-right: 5px;
 
   float: left;
-  font-family: Nanum L;
+  font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
   color: #454545;
 
@@ -96,7 +95,7 @@ display:none;
   top: 3px;
   margin-right: 10px;
   
-  font-family: Nanum L;
+  font-family: "나눔스퀘어라운드OTF Light";
   font-size: 17px;
   color: #454545;
 }
@@ -113,7 +112,8 @@ display:none;
   background: url(../images/select-list.png) no-repeat 90% 50%;
   -webkit-appearance: none;
 
-  font-family: Nanum B;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
 }
 
 .select-gender {
@@ -126,7 +126,8 @@ display:none;
   background: url(../images/select-list.png) no-repeat 90% 50%;
   -webkit-appearance: none;
 
-  font-family: Nanum B;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
   font-size: 15px;
 }
 
@@ -140,7 +141,8 @@ display:none;
   background: url(../images/select-list.png) no-repeat 90% 50%;
   -webkit-appearance: none;
 
-  font-family: Nanum B;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
   font-size: 15px;
 }
 
@@ -154,7 +156,8 @@ display:none;
   background: url(../images/select-list.png) no-repeat 90% 50%;
   -webkit-appearance: none;
 
-  font-family: Nanum B;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
   font-size: 15px;
 }
 
@@ -169,13 +172,14 @@ display:none;
   padding-left: 16px;
   box-sizing: border-box;
 
-  font-family: Nanum L;
+  font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
 }
 
 .label-input{
   position: relative;
-  font-family: Nanum B;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
   font-size: 15pt;
   color: #454545;
   display: inline-block;
@@ -200,7 +204,8 @@ display:none;
   background: url(../images/select-list.png) no-repeat 90% 50%;
   -webkit-appearance: none;
 
-  font-family: Nanum B;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
   font-size: 15px;
 }
 
@@ -216,7 +221,8 @@ display:none;
   padding: 6px 15px;
   cursor: pointer;
   
-  font-family: Nanum B;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
   font-size: 15px;
   color: white;
   
@@ -231,7 +237,7 @@ display:none;
   padding: 6px 15px;
   
   outline: none;
-  font-family: Nanum L;
+  font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
   color: #454545;
 
@@ -254,7 +260,7 @@ display:none;
   padding-left: 16px;
   box-sizing: border-box;
 
-  font-family: Nanum L;
+  font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
 }
 
@@ -272,7 +278,8 @@ display:none;
   margin-right: auto;
 
   /* 폰트 값 적용 */
-  font-family: Nanum B;  
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;  
   
   color: rgb(255, 255, 255);
   text-align: center;

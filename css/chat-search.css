@@ -13,7 +13,7 @@
   padding-left: 34px;
   border-radius: 17px;
   background-color: #dadada;
-  font-family: Nanum R;
+  font-family: "나눔스퀘어라운드OTF Regular";
   background-image: url(../images/chat-search.png);
   background-repeat: no-repeat;
   background-position: 12px;
@@ -33,6 +33,6 @@
   padding-left: 20px;
   border-radius: 17.5px;
   background-color: #dadada;
-  font-family: Nanum R;
+  font-family: "나눔스퀘어라운드OTF Regular";
   box-sizing: border-box;
 }

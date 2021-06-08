@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* 메인 반응형 툴 */
+/* .main-container {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  height: 830px;
+}
+
+#mainLeft {
+  width: 370px;
+  border: solid 0.1px #ff1919;
+}
+
+#mainRight {
+  width: 370px;
+  border: solid 0.1px #fa1313;
+}
+
+#main {
+  width: 1180px;
+  border: solid 0.1px #ff2a2a;
+}
+
+#main-size {
+  height: 700px;
+} */
+
+#menu{
+  margin-left: 470px;
+}
+
+.menu-start{
+  position: relative;
+  float: left;
+}
+
+.menu-manual{
+  position: relative;
+  float: left;
+  margin-left: 250px;
+}
+
+.menu-review{
+  position: relative;
+  float: left;
+  margin-left: 278px;
+}
+
+.menu-title-text{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+
+  font-size: 15pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+}
+
+.menu-text{
+  position: relative;
+  float: left;
+  margin-top: 0px;
+  margin-left: 20px;
+
+  font-size: 13pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular"
+}

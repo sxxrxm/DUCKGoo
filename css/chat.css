@@ -75,7 +75,7 @@
   margin-left: 370px;
   color: #454545;
   font-size: 16pt;
-  font-family: Nanum EB;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
   white-space: nowrap;
 }
 
@@ -98,7 +98,7 @@
   font-size: 15pt;
   color: #454545;
   white-space: nowrap;
-  font-family: Nanum EB;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
 }
 
 /* 채팅 내용 */
@@ -111,7 +111,7 @@
   overflow: hidden; 
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-family: Nanum R;
+  font-family: "나눔스퀘어라운드OTF Regular";
  
 }
 
@@ -125,7 +125,8 @@
   overflow: hidden; 
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-family: Nanum B;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
 }
 
 /* 채팅이 새로 왔을 때 이름 옆에 뜨는 이미지  */
