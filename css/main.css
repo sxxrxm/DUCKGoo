@@ -1,34 +1,25 @@
 @charset "utf-8";
 
-/* 메인 반응형 툴 */
-/* .main-container {
-  display: flex;
-  position: relative;
-  margin: 0 auto;
-  height: 830px;
-}
-
-#mainLeft {
-  width: 370px;
-  border: solid 0.1px #ff1919;
-}
-
-#mainRight {
-  width: 370px;
-  border: solid 0.1px #fa1313;
-}
 
 #main {
   width: 1180px;
-  border: solid 0.1px #ff2a2a;
 }
 
 #main-size {
   height: 700px;
-} */
+}
 
-#menu{
-  margin-left: 470px;
+.main-container {
+  display: flex;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 2px #f0f0f0;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: " ";
+  visibility: hidden;
 }
 
 .menu-start{
