@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/post.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="images/header_logo.png">
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
@@ -44,44 +45,6 @@
       </div>
     </section>
     <aside id="aisdeRight"></aside>
-  </div>
-  <div id="banner">
-    <input type="radio" name="rb" id="rb1" checked>
-    <input type="radio" name="rb" id="rb2">
-    <input type="radio" name="rb" id="rb3">
-    <input type="radio" name="rb" id="rb4">
-      <ul class="abc">
-      <li>
-        <div id="banner1">
-          <img id="banner" src="images/banner1.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-      <li>
-        <div id="banner2">
-          <img id="banner" src="images/banner2.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-      <li>
-        <div id="banner3">
-          <img id="banner" src="images/banner3.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-      <li>
-        <div id="banner4">
-          <img id="banner" src="images/banner4.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-    </ul>
-    <p class="rb">
-      <label id="noma" for="rb1"></label>
-      <label for="rb2"></label>
-      <label for="rb3"></label>
-      <label for="rb4"></label>
-    </p>
   </div>
 
   <!-- 배너 -->
@@ -123,19 +86,42 @@
       <label for="rb4"></label>
     </p>
   </div>
-  
-  <!-- 로그인 전 모달창 -->
-  <!-- <div class="login-modal">
-    <div class="login-modal-content">
-      <p class="login-modal-title-text">로그인을 해주세요.</p>
-      <p class="login-modal-text">
-        본인 인증 상의 문제로 카카오톡<br>
-        로그인만 지원하는 점 양해 부탁드립니다.
-      </p>
-      <button id="login-button" onclick="kakaoLogin()">카카오계정으로 로그인</button>
-    </div>
-  </div> -->
 
+  <div class="container">
+    <aside id="aisdeLeft"></aside>
+    <section id="section">
+      <div class="manual">
+        <img class="menu-start" src="./images/start.png">
+        <p class="menu-title-text">덕구의 시작</p>
+        <p class="menu-text">덕구를 소개합니다.</p>
+        <img class="menu-manual" src="./images/manual.png">
+        <p class="menu-title-text">덕구 사용방법</p>
+        <p class="menu-text">덕구, 이렇게 사용하세요.</p>
+        <img class="menu-review" src="./images/review.png">
+        <p class="menu-title-text">덕구 리뷰</p>
+        <p class="menu-text">덕구로 하나되는 팬덤</p>
+      </div>
+      <div class="popular">
+          <p class="menu">인기 게시물</p>
+      </div>
+    </section>
+    <aside id="aisdeRight"></aside>
+  </div>
+
+  <!-- <div class="container"> -->
+    <!-- <div id="menu">
+      <img class="menu-start" src="./images/start.png">
+      <p class="menu-title-text">덕구의 시작</p>
+      <p class="menu-text">덕구를 소개합니다.</p>
+      <img class="menu-manual" src="./images/manual.png">
+      <p class="menu-title-text">덕구 사용방법</p>
+      <p class="menu-text">덕구, 이렇게 사용하세요.</p>
+      <img class="menu-review" src="./images/review.png">
+      <p class="menu-title-text">덕구 리뷰</p>
+      <p class="menu-text">덕구로 하나되는 팬덤</p>
+    </div> -->
+  <!-- </div> -->
+  
   <!-- 로그인 후 모달 창 -->
   <div class="modal">
     <div class="modal-content">
@@ -209,12 +195,5 @@
       }
     }
   </script>
-<<<<<<< HEAD
-=======
-
-  <!-- 메뉴바 아래 본문 -->
-
-
->>>>>>> 7bc7e72021ab1d7cd552c6953080601d419945c2
 </body>
 </html>

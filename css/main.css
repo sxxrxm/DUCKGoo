@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+
+#main {
+  width: 1180px;
+}
+
+#main-size {
+  height: 700px;
+}
+
+.main-container {
+  display: flex;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 2px #f0f0f0;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: " ";
+  visibility: hidden;
+}
+
+.menu-start{
+  position: relative;
+  float: left;
+}
+
+.menu-manual{
+  position: relative;
+  float: left;
+  margin-left: 250px;
+}
+
+.menu-review{
+  position: relative;
+  float: left;
+  margin-left: 278px;
+}
+
+.menu-title-text{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+
+  font-size: 15pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+}
+
+.menu-text{
+  position: relative;
+  float: left;
+  margin-top: 0px;
+  margin-left: 20px;
+
+  font-size: 13pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular"
+}
