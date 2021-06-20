@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/mid-banner.css">
   <link rel="stylesheet" href="css/post.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="images/header_logo.png">
@@ -47,7 +48,7 @@
     <aside id="aisdeRight"></aside>
   </div>
 
-  <!-- 배너 -->
+  <!-- 상단 배너 -->
   <div id="banner">
     <input type="radio" name="rb" id="rb1" checked>
     <input type="radio" name="rb" id="rb2">
@@ -121,42 +122,6 @@
       <p class="menu-text">덕구로 하나되는 팬덤</p>
     </div> -->
   <!-- </div> -->
-
-  <div id="banner">
-    <input type="radio" name="rb" id="rb5" checked>
-    <input type="radio" name="rb" id="rb6">
-    <input type="radio" name="rb" id="rb7">
-    <input type="radio" name="rb" id="rb8">
-      <ul class="abc">
-      <li>
-        <div id="banner1">
-          <img id="banner" src="images/mid-banner1.png">
-        </div>
-      </li>
-      <li>
-        <div id="banner2">
-          <img id="banner" src="images/mid-banner2.png">
-        </div>
-      </li>
-      <li>
-        <div id="banner3">
-          <img id="banner" src="images/mid-banner3.png">
-        </div>
-      </li>
-      <li>
-        <div id="banner4">
-          <img id="banner" src="mid-images/banner4.png">
-        </div>
-      </li>
-    </ul>
-    <p class="rb">
-      <label id="noma" for="rb5"></label>
-      <label for="rb6"></label>
-      <label for="rb7"></label>
-      <label for="rb8"></label>
-    </p>
-  </div>
-
   
   <!-- 로그인 후 모달 창 -->
   <div class="modal">
@@ -231,5 +196,45 @@
       }
     }
   </script>
+
+  <!-- 중간 배너 -->
+  <div id="mid-banner">
+    <input type="radio" name="rb" id="rb5" checked>
+    <input type="radio" name="rb" id="rb6">
+    <input type="radio" name="rb" id="rb7">
+    <input type="radio" name="rb" id="rb8">
+      <ul>
+      <li>
+        <div id="banner1">
+          <img src="images/mid-banner1.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+      <li>
+        <div id="banner2">
+          <img src="images/mid-banner2.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+      <li>
+        <div id="banner3">
+          <img src="images/mid-banner3.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+      <li>
+        <div id="banner4">
+          <img src="images/mid-banner4.png">
+          <button id="mate-button" onclick="location.href='mate.html'"></button>
+        </div>
+      </li>
+    </ul>
+    <p class="rb">
+      <label id="noma" for="rb5"></label>
+      <label for="rb6"></label>
+      <label for="rb7"></label>
+      <label for="rb8"></label>
+    </p>
+  </div>
 </body>
 </html>
