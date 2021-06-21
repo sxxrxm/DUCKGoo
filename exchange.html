@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/post.css">
+  <link rel="stylesheet" href="css/filter.css">
   <link rel="shortcut icon" href="images/header_logo.png">
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
@@ -85,6 +86,110 @@
       <label for="rb4"></label>
     </p>
   </div>
+  <div id="card-exchange">
+    <select class="select-gender" name="gender" onchange="genderChange(this)" required>
+        <option value="male" selected>남자 아이돌</option>
+        <option value="female">여자 아이돌</option>
+    </select>
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <select class="select-group" name="group" id="group" onchange="groupChange(this)" required>
+          <option value="BTS">BTS</option>
+          <option value="TXT">TXT</option>
+          <option value="SHINee">SHINee</option>
+          <option value="EXO">EXO</option>
+          <option value="NCT 127">NCT 127</option>
+          <option value="NCT DREAM">NCT DREAM</option>
+          <option value="SEVENTEEN">SEVENTEEN</option>
+          <option value="THE BOYZ">THE BOYZ</option>
+          <option value="Stray Kids">Stray Kids</option>
+          <option value="기타">기타</option>
+          </optgroup>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select class="select-member" name="member" id="member" required>
+          <!-- <option value="jin">진</option>
+          <option value="v">뷔</option>
+          <option value="jung">정국</option>
+          <option value="sugar">슈가</option>
+          <option value="rm">RM</option>
+          <option value="j-hope">제이홉</option> -->
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select class="select-member" name="member1" id="member1" required>
+      <!-- <option value="jin">진</option>
+      <option value="v">뷔</option>
+      <option value="jung">정국</option>
+      <option value="sugar">슈가</option>
+      <option value="rm">RM</option>
+      <option value="j-hope">제이홉</option> -->
+</select>
+  </div>
+  
+  <script>
+    function genderChange(e) {
+    var male = ["BTS", "TXT", "SHINee", "EXO", "NCT 127", "NCT DREAM", "SEVENTEEN", "THE BOYZ", "Stray Kids", "기타"];
+    var female = ["BLACKPINK", "TWICE", "ITZY", "(G)I-DLE", "OH MY GIRL", "Red Velvet", "IU", "기타"];
+    var target = document.getElementById("group");
+    var target1 = document.getElementById("member");
+    var target2 = document.getElementById("member1");
+  
+    if(e.value == "male") var d = male;
+    else if(e.value == "female") var d = female;
+  
+    target.options.length = 0;
+    target1.options.length = 0;
+    target2.options.length = 0;
+  
+    for (x in d) {
+      var opt = document.createElement("option");
+      opt.value = d[x];
+      opt.innerHTML = d[x];
+      target.appendChild(opt);
+    }	
+  }
+
+  function groupChange(e) {
+    var BTS = ["진", "뷔", "정국", "슈가", "RM", "제이홉"];
+    var TXT = ["연준", "수빈", "휴닝카이", "범규", "태현"];
+    var SHINee = ["민호", "키", "태민", "온유", "종현"];
+    var EXO = ["시우민", "수호", "백현", "찬열", "디오", "카이", "세훈", "레이"];
+    var NCT127 = ["재현", "쟈니", "도영", "해찬", "유타", "태용", "태일", "윈윈", "정우", "마크"];
+    var NCTDREAM = ["마크", "런쥔", "제노", "해찬", "재민", "천러", "지성"];
+    var SEVENTEEN = [""]
+    var target = document.getElementById("member");
+    var target1 = document.getElementById("member1");
+  
+    if(e.value == "BTS") var d = BTS;
+    else if(e.value == "TXT") var d = TXT;
+    else if(e.value == "SHINee") var d = SHINee;
+    else if(e.value == "EXO") var d = EXO;
+    else if(e.value == "NCT 127") var d = NCT127;
+    else if(e.value == "NCT DREAM") var d = NCTDREAM;
+
+  
+    target.options.length = 0;
+    target1.options.length = 0;
+  
+    for (x in d) {
+      var opt = document.createElement("option");
+      opt.value = d[x];
+      opt.innerHTML = d[x];
+      target.appendChild(opt);
+    } 
+
+    for (x in d) {
+      var opt = document.createElement("option");
+      opt.value = d[x];
+      opt.innerHTML = d[x];
+      target1.appendChild(opt);
+    } 
+  }
+
+  
+ 
+  </script>
+
   <a href="./exchange-detail.html">
     <img src="./images/demo-exchange.png">  
   </a>

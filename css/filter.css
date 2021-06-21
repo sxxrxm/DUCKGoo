@@ -1,0 +1,71 @@
+#card-exchange {
+    display: flex;
+    position: relative;
+    margin: auto 22%;
+  }
+
+.select-group {
+  width: 255px;
+  height: 40px;
+
+  outline: none;
+  padding: 6px 15px;
+  border-radius: 20px;
+  border: 1px solid #F2F2F2;
+  background: url(../images/select-list.png) no-repeat 90% 50%;
+  box-shadow: 1px 1px 10px #D8D8D8;
+  -webkit-appearance: none;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  font-size: 17px;
+  color: #454545;
+
+      position: relative;
+      margin-top: 28px;
+
+  }
+
+.select-gender {
+  width: 200px;
+  height: 40px;
+
+  outline: none;
+  padding: 6px 15px;
+  border-radius: 20px;
+  border: 1px solid #F2F2F2;
+  background: url(../images/select-list.png) no-repeat 90% 50%;
+  box-shadow: 1px 1px 10px #D8D8D8;
+  -webkit-appearance: none;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  font-size: 17px;
+  color: #454545;
+
+      position: relative;
+      margin-top: 28px;
+
+  }
+
+  .select-member {
+    width: 202px;
+    height: 40px;
+  
+    outline: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    border: 1px solid #F2F2F2;
+    background: url(../images/select-list.png) no-repeat 90% 50%;
+    box-shadow: 1px 1px 10px #D8D8D8;
+    -webkit-appearance: none;
+  
+    font-family: "나눔스퀘어라운드OTF";
+    font-weight: bold;
+    font-size: 17px;
+    color: #454545;
+  
+        position: relative;
+        margin-top: 28px;
+
+  }
