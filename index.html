@@ -143,6 +143,11 @@
 
     var trigger = document.querySelector(".trigger");
 
+    function removeElements() {
+        $('div').remove('.login-modal');
+        $('.modal').css("display", "block");
+    }
+
     // 클릭시 모달 창 보이게 하는 함수
     function toggleModal() {
       modal.classList.toggle("show-modal");
