@@ -1,8 +1,10 @@
+@charset "utf-8";
+
 .detail-container {
   display: flex;
   position: relative;
   margin: 0 auto;
-  height: 830px;
+  height: 1126px;
 }
 
 #detailLeft {
@@ -22,8 +24,19 @@
   border: solid 0.1px #dadada;
 }
 
+@media screen and (max-width: 1400px) {
+  #detailLeft{
+    display: none;
+  }
+  #detailRight {
+    border: none;
+  }
+
+}
+
+
 #detail-size {
-  height: 700px;
+  height: 1126px;
 }
 
 #member{
@@ -31,16 +44,6 @@
   float: left;
   margin-top: 10px;
   margin-right: 10px;
-}
-
-#gender{
-  position: relative;
-  margin-top: 10px;
-}
-
-#condition{
-  position: relative;
-  margin-top: 10px;
 }
 
 .clear{
@@ -54,10 +57,18 @@
 
 .detail-title{
   margin-top: 130px;
-  margin-bottom: 40px;
+  margin-bottom: 58px;
   font-size: 24pt;
   color: #454545;
   font-family: "나눔스퀘어라운드OTF ExtraBold";
+}
+
+.detail-date{
+  margin-bottom: 15px;
+
+  font-size: 14pt;
+  color: #acacac;
+  font-family: "나눔스퀘어라운드OTF Regular";
 }
 
 .detail{
@@ -82,19 +93,62 @@
   font-size: 12pt;
   color: #454545;
   margin-top: 10px;
-  font-family: "나눔스퀘어라운드OTF Regular";
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
 }
 
 .content{
   width: 500px;  
   float: left;
-  word-break:break-all;
+  word-break: break-all;
   border: solid 0.1px #e1e1e1;
   padding: 9px 20px 9px;
   border-radius: 0px 18px 18px 0px;
   font-size: 12pt;
   margin-top: 10px;
   color: #454545;
-  word-break:break-all;
-  font-family: "나눔스퀘어라운드OTF Regular";
+  word-break: break-all;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+}
+
+.content-text{
+  margin-top: 10px;
+  width: 500px;  
+  float: left;
+  word-break: break-all;
+  border: solid 0.1px #e1e1e1;
+
+  padding: 14px 20px 20px 20px;
+  border-radius: 0px 18px 18px 0px;
+
+  font-size: 12pt;
+  line-height: 24pt;
+  color: #454545;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  
+}
+
+.line{
+  width: 680px;
+  margin-bottom: 40px;
+}
+
+.chat-button{
+  position: relative;
+  background-color: #0044ef;
+  border-radius: 20px;
+
+  width: 180px;
+  height: 42px;
+  margin-top: 30px;
+  margin-left: 240px;
+
+  font-size: 13pt;
+  font-family: "나눔스퀘어라운드OTF ExtraBold";
+  
+  color: white;
+  text-align: center;
+  cursor: pointer;
 }
