@@ -1,19 +1,27 @@
 #card-exchange {
-    display: flex;
-    position: relative;
-    margin: auto 22%;
-  }
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 370px;
+}
+
+#mate {
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 370px;
+}
 
 .select-group {
-  width: 255px;
+  width: 260px;
   height: 40px;
 
   outline: none;
-  padding: 6px 15px;
+  padding: 6px 20px;
   border-radius: 20px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
   background: url(../images/select-list.png) no-repeat 90% 50%;
-  box-shadow: 1px 1px 10px #D8D8D8;
+  box-shadow: 1px 1px 10px #d8d8d8;
   -webkit-appearance: none;
 
   font-family: "나눔스퀘어라운드OTF";
@@ -21,21 +29,40 @@
   font-size: 17px;
   color: #454545;
 
-      position: relative;
-      margin-top: 28px;
-
-  }
+  position: relative;
+  margin-right: 20px;
+}
 
 .select-gender {
   width: 200px;
   height: 40px;
 
   outline: none;
-  padding: 6px 15px;
+  padding: 6px 20px;
   border-radius: 20px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
   background: url(../images/select-list.png) no-repeat 90% 50%;
-  box-shadow: 1px 1px 10px #D8D8D8;
+  box-shadow: 1px 1px 10px #d8d8d8;
+  -webkit-appearance: none;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  font-size: 17px;
+  color: #454545;
+  position: relative;
+  margin-right: 20px;
+}
+
+.select-member {
+  width: 200px;
+  height: 40px;
+
+  outline: none;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: 1px solid #f2f2f2;
+  background: url(../images/select-list.png) no-repeat 90% 50%;
+  box-shadow: 1px 1px 10px #d8d8d8;
   -webkit-appearance: none;
 
   font-family: "나눔스퀘어라운드OTF";
@@ -43,29 +70,35 @@
   font-size: 17px;
   color: #454545;
 
-      position: relative;
-      margin-top: 28px;
+  position: relative;
+  margin-right: 20px;
+}
 
-  }
+.select-type {
+  width: 202px;
+  height: 40px;
 
-  .select-member {
-    width: 202px;
-    height: 40px;
-  
-    outline: none;
-    padding: 6px 15px;
-    border-radius: 20px;
-    border: 1px solid #F2F2F2;
-    background: url(../images/select-list.png) no-repeat 90% 50%;
-    box-shadow: 1px 1px 10px #D8D8D8;
-    -webkit-appearance: none;
-  
-    font-family: "나눔스퀘어라운드OTF";
-    font-weight: bold;
-    font-size: 17px;
-    color: #454545;
-  
-        position: relative;
-        margin-top: 28px;
+  outline: none;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: 1px solid #f2f2f2;
+  background: url(../images/select-list.png) no-repeat 90% 50%;
+  box-shadow: 1px 1px 10px #d8d8d8;
+  -webkit-appearance: none;
 
-  }
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  font-size: 17px;
+  color: #454545;
+
+  position: relative;
+  margin-right: 20px;
+}
+
+.result {
+  color: #0044ef;
+  margin-top: 10px;
+  margin-left: 123px;
+  font-weight: bold;
+  font-size: 14pt;
+}

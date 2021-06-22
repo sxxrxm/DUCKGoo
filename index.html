@@ -1,114 +1,132 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>덕구</title>
+    <script src="js/change_color.js"></script>
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/login-modal.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/post.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="images/header_logo.png" />
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>덕구</title>
-  <script src="js/change_color.js"></script>
-  <link rel="stylesheet" href="css/search.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/login-modal.css">
-  <link rel="stylesheet" href="css/banner.css">
-  <link rel="stylesheet" href="css/post.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="shortcut icon" href="images/header_logo.png">
-  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <aside id="aisdeLeft"></aside>
-    <section id="section">
-      <div class="header">
-        <div class="navbar">
-          <!-- 로고 -->
-          <div class="menu-margin-left">
-            <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
-          </div>
-          <!-- 검색창 메뉴 -->
-          <div class="search" id="search-margin">
-            <input class="search-input" type="text" placeholder="검색어를 입력해주세요.">
-          </div>
-          <!-- 텍스트 메뉴 -->
-          <div class="tab">
-            <li class="menu"><a href="mate.html">MATE</a></li>
-            <li class="menu"><a href="exchange.html">EXCHANGE</a></li>
-            <li class="menu"><a href="talk.html">TALK</a></li>
-          </div>
-          <!-- 프로필 메뉴 -->
-          <div class="menu-margin-right">
-            <button class="trigger" onclick="toggleImg()" id="profile-button">
-              <img id="img" class="profile-image" src="images/profile.png">
-            </button>
+  <body>
+    <div class="container">
+      <aside id="aisdeLeft"></aside>
+      <section id="section">
+        <div class="header">
+          <div class="navbar">
+            <!-- 로고 -->
+            <div class="menu-margin-left">
+              <a href="index.html"
+                ><img class="logo-image" src="images/logo.png"
+              /></a>
+            </div>
+            <!-- 검색창 메뉴 -->
+            <div class="search" id="search-margin">
+              <input
+                class="search-input"
+                type="text"
+                placeholder="검색어를 입력해주세요."
+              />
+            </div>
+            <!-- 텍스트 메뉴 -->
+            <div class="tab">
+              <li class="menu"><a href="mate.html">MATE</a></li>
+              <li class="menu"><a href="exchange.html">EXCHANGE</a></li>
+              <li class="menu"><a href="talk.html">TALK</a></li>
+            </div>
+            <!-- 프로필 메뉴 -->
+            <div class="menu-margin-right">
+              <button class="trigger" onclick="toggleImg()" id="profile-button">
+                <img id="img" class="profile-image" src="images/profile.png" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <aside id="aisdeRight"></aside>
-  </div>
+      </section>
+      <aside id="aisdeRight"></aside>
+    </div>
 
-  <!-- 배너 -->
-  <div id="banner">
-    <input type="radio" name="rb" id="rb1" checked>
-    <input type="radio" name="rb" id="rb2">
-    <input type="radio" name="rb" id="rb3">
-    <input type="radio" name="rb" id="rb4">
+    <!-- 배너 -->
+    <div id="banner">
+      <input type="radio" name="rb" id="rb1" checked />
+      <input type="radio" name="rb" id="rb2" />
+      <input type="radio" name="rb" id="rb3" />
+      <input type="radio" name="rb" id="rb4" />
       <ul class="abc">
-      <li>
-        <div id="banner1">
-          <img id="banner" src="images/banner1.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-      <li>
-        <div id="banner2">
-          <img id="banner" src="images/banner2.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-      <li>
-        <div id="banner3">
-          <img id="banner" src="images/banner3.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-      <li>
-        <div id="banner4">
-          <img id="banner" src="images/banner4.png">
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
-        </div>
-      </li>
-    </ul>
-    <p class="rb">
-      <label id="noma" for="rb1"></label>
-      <label for="rb2"></label>
-      <label for="rb3"></label>
-      <label for="rb4"></label>
-    </p>
-  </div>
+        <li>
+          <div id="banner1">
+            <img id="banner" src="images/banner1.png" />
+            <button
+              id="mate-button"
+              onclick="location.href='mate.html'"
+            ></button>
+          </div>
+        </li>
+        <li>
+          <div id="banner2">
+            <img id="banner" src="images/banner2.png" />
+            <button
+              id="mate-button"
+              onclick="location.href='mate.html'"
+            ></button>
+          </div>
+        </li>
+        <li>
+          <div id="banner3">
+            <img id="banner" src="images/banner3.png" />
+            <button
+              id="mate-button"
+              onclick="location.href='mate.html'"
+            ></button>
+          </div>
+        </li>
+        <li>
+          <div id="banner4">
+            <img id="banner" src="images/banner4.png" />
+            <button
+              id="mate-button"
+              onclick="location.href='mate.html'"
+            ></button>
+          </div>
+        </li>
+      </ul>
+      <p class="rb">
+        <label id="noma" for="rb1"></label>
+        <label for="rb2"></label>
+        <label for="rb3"></label>
+        <label for="rb4"></label>
+      </p>
+    </div>
 
-  <div class="container">
-    <aside id="aisdeLeft"></aside>
-    <section id="section">
-      <div class="manual">
-        <img class="menu-start" src="./images/start.png">
-        <p class="menu-title-text">덕구의 시작</p>
-        <p class="menu-text">덕구를 소개합니다.</p>
-        <img class="menu-manual" src="./images/manual.png">
-        <p class="menu-title-text">덕구 사용방법</p>
-        <p class="menu-text">덕구, 이렇게 사용하세요.</p>
-        <img class="menu-review" src="./images/review.png">
-        <p class="menu-title-text">덕구 리뷰</p>
-        <p class="menu-text">덕구로 하나되는 팬덤</p>
-      </div>
-      <div class="popular">
+    <div class="container">
+      <aside id="aisdeLeft"></aside>
+      <section id="section">
+        <div class="manual">
+          <img class="menu-start" src="./images/start.png" />
+          <p class="menu-title-text">덕구의 시작</p>
+          <p class="menu-text">덕구를 소개합니다.</p>
+          <img class="menu-manual" src="./images/manual.png" />
+          <p class="menu-title-text">덕구 사용방법</p>
+          <p class="menu-text">덕구, 이렇게 사용하세요.</p>
+          <img class="menu-review" src="./images/review.png" />
+          <p class="menu-title-text">덕구 리뷰</p>
+          <p class="menu-text">덕구로 하나되는 팬덤</p>
+        </div>
+        <div class="popular">
           <p class="menu">인기 게시물</p>
-      </div>
-    </section>
-    <aside id="aisdeRight"></aside>
-  </div>
+        </div>
+      </section>
+      <aside id="aisdeRight"></aside>
+    </div>
 
-  <!-- <div class="container"> -->
+    <!-- <div class="container"> -->
     <!-- <div id="menu">
       <img class="menu-start" src="./images/start.png">
       <p class="menu-title-text">덕구의 시작</p>
@@ -120,118 +138,91 @@
       <p class="menu-title-text">덕구 리뷰</p>
       <p class="menu-text">덕구로 하나되는 팬덤</p>
     </div> -->
-  <!-- </div> -->
+    <!-- </div> -->
 
-  <div id="banner">
-    <input type="radio" name="rb" id="rb5" checked>
-    <input type="radio" name="rb" id="rb6">
-    <input type="radio" name="rb" id="rb7">
-    <input type="radio" name="rb" id="rb8">
+    <div id="banner">
+      <input type="radio" name="rb" id="rb5" checked />
+      <input type="radio" name="rb" id="rb6" />
+      <input type="radio" name="rb" id="rb7" />
+      <input type="radio" name="rb" id="rb8" />
       <ul class="abc">
-      <li>
-        <div id="banner1">
-          <img id="banner" src="images/mid-banner1.png">
-        </div>
-      </li>
-      <li>
-        <div id="banner2">
-          <img id="banner" src="images/mid-banner2.png">
-        </div>
-      </li>
-      <li>
-        <div id="banner3">
-          <img id="banner" src="images/mid-banner3.png">
-        </div>
-      </li>
-      <li>
-        <div id="banner4">
-          <img id="banner" src="mid-images/banner4.png">
-        </div>
-      </li>
-    </ul>
-    <p class="rb">
-      <label id="noma" for="rb5"></label>
-      <label for="rb6"></label>
-      <label for="rb7"></label>
-      <label for="rb8"></label>
-    </p>
-  </div>
-
-  
-  <!-- 로그인 후 모달 창 -->
-  <div class="modal">
-    <div class="modal-content">
-      <a href="./profile.html">
-        <img class="user-image" src="images/user-image.jpg">
-      </a>
-      <p class="modal-name">김지연</p>
-      <p class="modal-email">s2019w24@e-mirim.hs.kr</p>
-      <button id="lookfor-mate-button" onclick="location.href='mate-writing.html'">덕메 구하기</button>
-      <button id="cardtext-button" onclick="location.href='card-writing.html'">포카 교환글 작성</button>
-      <button id="logout-button">로그아웃</button>
+        <li>
+          <div id="banner1">
+            <img id="banner" src="images/mid-banner1.png" />
+          </div>
+        </li>
+        <li>
+          <div id="banner2">
+            <img id="banner" src="images/mid-banner2.png" />
+          </div>
+        </li>
+        <li>
+          <div id="banner3">
+            <img id="banner" src="images/mid-banner3.png" />
+          </div>
+        </li>
+        <li>
+          <div id="banner4">
+            <img id="banner" src="mid-images/banner4.png" />
+          </div>
+        </li>
+      </ul>
+      <p class="rb">
+        <label id="noma" for="rb5"></label>
+        <label for="rb6"></label>
+        <label for="rb7"></label>
+        <label for="rb8"></label>
+      </p>
     </div>
-  </div>
 
-  <!-- 모달 창 JS -->
-  <script type="text/javascript">
-    //로그인 모달
-    // var modal = document.querySelector(".login-modal");
-    //로그인 이후 모달 - 기본 모달
-    var modal = document.querySelector(".modal");
+    <!-- 로그인 후 모달 창 -->
+    <div class="modal">
+      <div class="modal-content">
+        <a href="./profile.html">
+          <img class="user-image" src="images/user-image.jpg" />
+        </a>
+        <p class="modal-name">김지연</p>
+        <p class="modal-email">s2019w24@e-mirim.hs.kr</p>
+        <button
+          id="lookfor-mate-button"
+          onclick="location.href='mate-writing.html'"
+        >
+          덕메 구하기
+        </button>
+        <button
+          id="cardtext-button"
+          onclick="location.href='card-writing.html'"
+        >
+          포카 교환글 작성
+        </button>
+        <button id="logout-button">로그아웃</button>
+      </div>
+    </div>
 
-    var trigger = document.querySelector(".trigger");
+    <!-- 모달 창 JS -->
+    <script type="text/javascript">
+      //로그인 모달
+      // var modal = document.querySelector(".login-modal");
+      //로그인 이후 모달 - 기본 모달
+      var modal = document.querySelector(".modal");
 
-    // 클릭시 모달 창 보이게 하는 함수
-    function toggleModal() {
-      modal.classList.toggle("show-modal");
-    }
+      var trigger = document.querySelector(".trigger");
 
-    // 모달 창 외 다른 화면 클릭시 자동 꺼짐 & 버튼 색깔 회색으로 돌아옴
-    function windowOnClick(event) {
-      if (event.target === modal) {
-        toggleModal();
-        document.getElementById("img").src = "images/profile.png";
+      // 클릭시 모달 창 보이게 하는 함수
+      function toggleModal() {
+        modal.classList.toggle("show-modal");
       }
-    }
 
-    trigger.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-
-    Kakao.init('3fbbdc23623925f715e2c80b28de7810'); //카카오 발급 키
-    console.log(Kakao.insInitialized());
-    function kakaoLogin() {
-      Kakao.Auth.login({
-        success: function (response) {
-          Kakao.API.request({
-            url: '/v2/user/me',
-            success: function (response) {
-              console.log(response)
-            },
-            fail: function (error) {
-              console.log(error)
-            },
-          })
-        },
-        fail: function (error) {
-          console.log(error)
-        },
-      })
-    }
-
-    function kakaoLogout() {
-      if (Kakao.Auth.getAccessToken()) {
-        Kakao.API.request({
-          url: '/v1/user/unlink',
-          success: function (response) {
-            console.log(response)
-          },
-          fail: function (error) {
-            console.log(error)
-          },
-        })
-        Kakao.Auth.setAccessToken(undefined)
+      // 모달 창 외 다른 화면 클릭시 자동 꺼짐 & 버튼 색깔 회색으로 돌아옴
+      function windowOnClick(event) {
+        if (event.target === modal) {
+          toggleModal();
+          document.getElementById("img").src = "images/profile.png";
+        }
       }
-    }
-  </script>
-</body>
+
+      trigger.addEventListener("click", toggleModal);
+      window.addEventListener("click", windowOnClick);
+    </script>
+  </body>
 </html>
