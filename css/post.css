@@ -2,22 +2,66 @@
 
 .post { 
     position: relative;
-    text-align: center;
+    margin-left: 280px;
+    margin-top: 100px;
+}
+
+.post-content { 
+    position: relative;
     background-color: white;
-    width: 1440;
-    height: 100%;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 280px;
+    height: 370px;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 2px #e6e6e6;
 }
 
-.post-content { 
-    position: absolute;
+.post-content1 { 
+    position: relative;
     background-color: white;
-    width: 280;
-    height: 430;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 280px;
+    height: 370px;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 2px #e6e6e6;
 }
+/* .post-content2 { 
+    position: absolute;
+    display:inline-block;
+    vertical-align:middle;
+    float: left;
+    background-color: white;
+    width: 280px;
+    height: 380px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #e6e6e6;
+}
+.post-content3 { 
+    position: absolute;
+    display:inline-block;
+    vertical-align:middle;
+    float: left;
+    background-color: white;
+    width: 280px;
+    height: 380px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #e6e6e6;
+}
+.post-content4 { 
+    position: absolute;
+    display:inline-block;
+    vertical-align:middle;
+    float: left;
+    background-color: white;
+    width: 280px;
+    height: 380px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #e6e6e6;
+} */
 
 /* 포카 이미지 */
 .poca-img {
