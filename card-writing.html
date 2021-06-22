@@ -89,11 +89,10 @@
   <!-- 본문 -->
   <p class="writing-title-text">포토카드 교환하기</p>
   
-  <form role="form" method="post" action="mate_insert.php">
   <!-- 제목 -->
   <div id="card-exchange">
     <p class="writing-title-short">제목</p>
-    <input name="title" class="input-title" type="text" placeholder="제목을 입력해주세요.">
+    <input class="input-title" type="text" placeholder="제목을 입력해주세요.">
   </div>
   
   <!-- 상대성별 -->
@@ -138,26 +137,26 @@
   <!-- 소유멤버 -->
   <div id="card-exchange">
     <p class="writing-title-long">소유 멤버</p>
-    <input name="own" class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
+    <input class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
   </div>
 
   <!-- 교환멤버 -->
   <div id="card-exchange">
     <p class="writing-title-long">교환 멤버</p>
-    <input name="exch" class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
+    <input class="input-member" type="text" placeholder="활동명을 정확히 입력해주세요.">
   </div>
 
   <!-- 배송방식 -->
   <div id="card-exchange">
     <p class="writing-title-long">배송 방식</p>
     <label class="label-input">
-      <input class="input-button" type="checkbox" name="delivery[]" value="직거래">직거래
-      <input class="input-button" type="checkbox" name="delivery[]" value="우편">우편
-      <input class="input-button" type="checkbox" name="delivery[]" value="준등기">준등기
-      <input class="input-button" type="checkbox" name="delivery[]" value="등기">등기
-      <input class="input-button" type="checkbox" name="delivery[]" value="택배">택배
-      <input class="input-button" type="checkbox" name="delivery[]" value="반값 택배">반값 택배
-      <input class="input-button" type="checkbox" name="delivery[]" value="편의점 택배">편의점 택배
+      <input class="input-button-first" type="checkbox" name="delivery" value="직거래">직거래
+      <input class="input-button" type="checkbox" name="delivery" value="우편">우편
+      <input class="input-button" type="checkbox" name="delivery" value="준등기">준등기
+      <input class="input-button" type="checkbox" name="delivery" value="등기">등기
+      <input class="input-button" type="checkbox" name="delivery" value="택배">택배
+      <input class="input-button" type="checkbox" name="delivery" value="반값 택배">반값 택배
+      <input class="input-button" type="checkbox" name="delivery" value="편의점 택배">편의점 택배
     </label>
   </div>
 
@@ -174,20 +173,18 @@
 
   <div id="card-exchange">  
     <p class="writing-title-long">첨부 파일</p>
-      <input type="file" id="file" name="file"/>
-    <!-- <div class="filebox">  -->
-      <!-- <input type="file" id="img" name="img"> -->
-      <!-- <label for="file">업로드</label> -->
-      <!-- <input type="submit" class="upload-name" value="파일선택"> -->
-    <!-- </div> -->
+    <div class="filebox"> 
+      <label for="file">업로드</label> 
+      <input type="file" id="file"> 
+      <input class="upload-name" value="파일선택">
+    </div>
   </div>
   
   <div id="card-exchange">  
     <p class="writing-title-short">내용</p>
-    <input class="input-text" name="content" placeholder="내용을 입력하세요."></textarea>
+    <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
   </div>
-  <button class="submit-button">등록</button>
-  </form>
+  <button class="submit-button" onclick="location.href='exchange-detail.html'">등록</button>
 
   <!-- 로그인 후 모달 창 -->
   <div class="modal">
@@ -225,42 +222,7 @@
 
     trigger.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
-    
-    Kakao.init('3fbbdc23623925f715e2c80b28de7810'); //카카오 발급 키
-    console.log(Kakao.insInitialized());
-    function kakaoLogin(){
-      Kakao.Auth.login({
-        success: function(response){
-          Kakao.API.request({
-            url: '/v2/user/me',
-            success: function(response){
-              console.log(response)
-            },
-            fail: function(error){
-              console.log(error)
-            },
-          })
-        },
-        fail: function(error) {
-          console.log(error)
-        },
-      })
-    }
-
-    function kakaoLogout() {
-    if (Kakao.Auth.getAccessToken()) {
-      Kakao.API.request({
-        url: '/v1/user/unlink',
-        success: function (response) {
-        	console.log(response)
-        },
-        fail: function (error) {
-          console.log(error)
-        },
-      })
-      Kakao.Auth.setAccessToken(undefined)
-    }
-  }  
+     
   </script>
 
 </body>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>덕구</title>
+  <script src="js/change_color.js"></script>
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/login-modal.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/post.css">
+  <link rel="shortcut icon" href="images/header_logo.png">
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <aside id="aisdeLeft"></aside>
+    <section id="section">
+      <div class="header">
+        <div class="navbar">
+          <!-- 로고 -->
+          <div class="menu-margin-left">
+            <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
+          </div>
+          <!-- 검색창 메뉴 -->
+          <div class="search" id="search-margin">
+            <input class="search-input" type="text" placeholder="검색어를 입력해주세요.">
+          </div>
+          <!-- 텍스트 메뉴 -->
+          <div class="tab">
+            <li class="menu"><a href="mate.html">MATE</a></li>
+            <li class="menu"><a href="exchange.html" id="click">EXCHANGE</a></li>
+            <li class="menu"><a href="talk.html">TALK</a></li>
+          </div>
+          <!-- 프로필 메뉴 -->
+          <div class="menu-margin-right">
+            <button class="trigger" onclick="toggleImg()" id="profile-button">
+              <img id="img" class="profile-image" src="images/profile.png">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside id="aisdeRight"></aside>
+  </div>
+
+  <img src="./images/demo-exchange-detail.png">
+
+  <!-- 로그인 전 모달창 -->
+  <div class="login-modal">
+    <div class="login-modal-content">
+      <p class="login-modal-title-text">로그인을 해주세요.</p>
+      <p class="login-modal-text">
+        본인 인증 상의 문제로 카카오톡<br>
+        로그인만 지원하는 점 양해 부탁드립니다.
+      </p>
+      <button id="login-button" onclick="kakaoLogin()">카카오계정으로 로그인</button>
+    </div>
+  </div>
+
+  <!-- 모달 창 JS -->
+  <script type="text/javascript">
+    var modal = document.querySelector(".login-modal");
+    // var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+
+    // 클릭시 모달 창 보이게 하는 함수
+    function toggleModal() {
+      modal.classList.toggle("show-modal");
+    }
+
+    // 모달 창 외 다른 화면 클릭시 자동 꺼짐 & 버튼 색깔 회색으로 돌아옴
+    function windowOnClick(event) {
+      if (event.target === modal) {
+        toggleModal();
+        document.getElementById("img").src = "images/profile.png";
+      }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+  </script>
+
+</body>
+
+</html>
