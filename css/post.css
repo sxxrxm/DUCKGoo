@@ -7,62 +7,30 @@
 }
 
 .post-content { 
+    width: 280px;
+    height: 400px;
+
     position: relative;
     background-color: white;
     float: left;
-    margin-right: 50px;
+    margin-left: 20px;
     margin-bottom: 50px;
-    width: 280px;
-    height: 370px;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 2px #e6e6e6;
 }
 
 .post-content1 { 
+    width: 280px;
+    height: 400px;
+
     position: relative;
     background-color: white;
     float: left;
-    margin-right: 50px;
+    margin-left: 20px;
     margin-bottom: 50px;
-    width: 280px;
-    height: 370px;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 2px #e6e6e6;
 }
-/* .post-content2 { 
-    position: absolute;
-    display:inline-block;
-    vertical-align:middle;
-    float: left;
-    background-color: white;
-    width: 280px;
-    height: 380px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px 2px #e6e6e6;
-}
-.post-content3 { 
-    position: absolute;
-    display:inline-block;
-    vertical-align:middle;
-    float: left;
-    background-color: white;
-    width: 280px;
-    height: 380px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px 2px #e6e6e6;
-}
-.post-content4 { 
-    position: absolute;
-    display:inline-block;
-    vertical-align:middle;
-    float: left;
-    background-color: white;
-    width: 280px;
-    height: 380px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px 2px #e6e6e6;
-} */
-
 /* 포카 이미지 */
 .poca-img {
     width: 280;
