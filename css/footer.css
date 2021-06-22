@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-.foot{
+.foot {
   border: solid 1px #dadada;
 }
-.footer{
+.footer {
   bottom: 0;
   margin-top: 40px;
   width: 100%;
@@ -11,7 +11,7 @@
   justify-content: space-between;
 }
 
-.footer-logo-image{
+.footer-logo-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -19,7 +19,7 @@
   height: 35px;
 }
 
-.footer-copy-text{
+.footer-copy-text {
   font-family: "Noto Sans KR";
   text-align: center;
   font-size: 12pt;
@@ -32,14 +32,14 @@
   float: left;
   width: 0px;
   margin-left: 50%;
-
 }
 /* text 메뉴 값끼리의 거리 */
-.footer-menu{
+.footer-menu {
   display: flex;
   float: left;
   font-family: "Noto Sans KR";
   margin-top: 30px;
   margin-right: 40px;
   vertical-align: middle;
+  font-size: 10pt;
 }

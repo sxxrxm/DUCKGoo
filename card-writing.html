@@ -222,42 +222,7 @@
 
     trigger.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
-    
-    Kakao.init('3fbbdc23623925f715e2c80b28de7810'); //카카오 발급 키
-    console.log(Kakao.insInitialized());
-    function kakaoLogin(){
-      Kakao.Auth.login({
-        success: function(response){
-          Kakao.API.request({
-            url: '/v2/user/me',
-            success: function(response){
-              console.log(response)
-            },
-            fail: function(error){
-              console.log(error)
-            },
-          })
-        },
-        fail: function(error) {
-          console.log(error)
-        },
-      })
-    }
-
-    function kakaoLogout() {
-    if (Kakao.Auth.getAccessToken()) {
-      Kakao.API.request({
-        url: '/v1/user/unlink',
-        success: function (response) {
-        	console.log(response)
-        },
-        fail: function (error) {
-          console.log(error)
-        },
-      })
-      Kakao.Auth.setAccessToken(undefined)
-    }
-  }  
+     
   </script>
 
 </body>
