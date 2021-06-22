@@ -31,8 +31,8 @@
 
 /* 해찬 포카 천러 교환 구합니당 */
 .title {
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 18px;
+    padding-left: 20px;
     font-family: "나눔스퀘어라운드OTF ExtraBold";
     font-size: 14pt;
     color: #454545;
@@ -40,8 +40,9 @@
 
 /* 하자 없구용. 준등기 교환 원합니당 ... */
 .content {
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 13px;
+    padding-left: 20px;
+    line-height: 24px;
     font-family: "나눔스퀘어라운드OTF Regular";
     font-size: 12pt;
     color: #454545;
@@ -49,8 +50,8 @@
 
 /* #천러 #NCTDREAM */
 .hashtag {
-    padding-top: 2px;
-    padding-left: 10px;
+    padding-left: 20px;
+    line-height: 24px;
     font-family: "나눔스퀘어라운드OTF Regular";
     font-size: 12pt;
     color: #0044ef;
