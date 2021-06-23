@@ -55,63 +55,74 @@
       <div class="post">
 
         <p class="detail-title">NEO ZONE ver.N 도영 포카 교환 구합니다!</p>
+
+        <p class="detail-date">2021.06.23</p>
+
+        <hr class="line">
+
         <div class="margin-image">
-          <img class="card-image" src="./images/card-image/nct-taeyong.jpg">
-          <img class="card-image" src="./images/card-image/nct-doyoung.jpg">
+          <img class="card-image" src="./images/exchange-image/nct-taeyong.jpg">
+          <img class="card-image" src="./images/exchange-image/nct-doyoung.jpg">
         </div>
 
-        <div id="member">
-          <p class="detail-member">갖고 있는 멤버</p>
-          <p class="member-content">태용</p>
+        <div class="clear">
+          <div id="member">
+            <p class="detail">갖고 있는 멤버</p>
+            <p class="member-content">태용</p>
+          </div>
+          <div id="member">
+            <p class="detail">원하는 멤버</p>
+            <p class="member-content">도영</p>
+          </div>
         </div>
 
-        <div id="member">
-          <p class="detail-member">원하는 멤버</p>
-          <p class="member-content">도영</p>
-        </div>
-
-        <div id="gender">
-          <p class="detail-gender">교환 대상자 성별</p>
+        <div class="clear">
+          <p class="detail">교환 대상자 성별</p>
           <p class="content">상관 없음</p>
         </div>
 
-        <div id="condition">
-          <p class="detail-condition">포토카드 상태</p>
+        <div class="clear">
+          <p class="detail">포토카드 상태</p>
           <p class="content">이상 없음</p>
         </div>
 
-        <div id="delivery">
-          <p class="detail-delivery">교환 방법</p>
+        <div class="clear">
+          <p class="detail">교환 방법</p>
           <p class="content">준등기, 편의점 택배</p>
         </div>
 
-        <div id="content">
-          <p class="detail-delivery">내용</p>
-          <p class="content">포카 상태 아주 좋습니당... 정말 굿이에요...스크래치는 무슨 먼지 한 톨 안묻어있어용~!
-            인증 빡세게 가능하구요! 추금도 가능합니다. 
+        <div class="clear">
+          <p class="detail">내용</p>
+          <p class="content-text">
+            포카 상태 아주 좋습니당... 정말 굿이에요...스크래치는 무슨 먼지 한 톨 안묻어있어용~!
+            인증 빡세게 가능하구요! 추금도 가능합니다.
             직거래는 제 주거지역에서 가까우면 가능할 것 같아요~!
-             자세한 사항은 DM 주시면 감사하겠습당.
-            #NCT #NCT127 #태용 #도영
-            </p>
+            자세한 사항은 DM 주시면 감사하겠습당.            
+          </p>
+        </div>
+
+        <div class="clear">
+          <p class="detail">해시태그</p>
+          <p class="hashtag-content">#NCT #NCT127 #태용 #도영</p>
+        </div>
+        
+        <div class="clear">
+          <button class="chat-button" onclick="location.href='./talk.html'">DM 보내기</button>
         </div>
 
       </div>
     </div>
   </div>
 
-
-
-  <img src="./images/demo-exchange-detail.png">
-
-  <!-- 로그인 전 모달창 -->
-  <div class="login-modal">
-    <div class="login-modal-content">
-      <p class="login-modal-title-text">로그인을 해주세요.</p>
-      <p class="login-modal-text">
-        본인 인증 상의 문제로 카카오톡<br>
-        로그인만 지원하는 점 양해 부탁드립니다.
-      </p>
-      <button id="login-button" onclick="kakaoLogin()">카카오계정으로 로그인</button>
+  <!-- 로그인 후 모달 창 -->
+  <div class="modal">
+    <div class="modal-content">
+      <img class="user-image" src="images/user-image.jpg">
+      <p class="modal-name">김지연</p>
+      <p class="modal-email">s2019w24@e-mirim.hs.kr</p>
+      <button id="lookfor-mate-button" onclick="location.href='mate-writing.html'">덕메 구하기</button>
+      <button id="cardtext-button" onclick="location.reload();">포카 교환글 작성</button>
+      <button id="logout-button">로그아웃</button>
     </div>
   </div>
 

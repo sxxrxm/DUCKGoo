@@ -3,6 +3,7 @@
 .foot {
   border: solid 1px #dadada;
 }
+
 .footer {
   bottom: 0;
   margin-top: 40px;
@@ -33,13 +34,25 @@
   width: 0px;
   margin-left: 50%;
 }
+
 /* text 메뉴 값끼리의 거리 */
 .footer-menu {
   display: flex;
   float: left;
   font-family: "Noto Sans KR";
-  margin-top: 30px;
   margin-right: 40px;
   vertical-align: middle;
   font-size: 10pt;
 }
+
+.center{
+  margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.clear{
+  clear: both;
+}
+
