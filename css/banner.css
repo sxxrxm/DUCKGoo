@@ -16,11 +16,6 @@ ul,li{
   overflow:hidden; /* 이미지가 크다면, 잘라서 보여줌 */
 }
 
-/* #banner .bannerslide{
-  position: relative;
-  z-index: 1;
-} */
-
 #banner ul{
   width:400%;
   height:100%;
