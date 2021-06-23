@@ -86,7 +86,7 @@
     </p>
   </div>
 
-  <form method="POST" action="card_insert.php">
+  <form method="POST" action="card_insert.php" id="frm" name="frm"  enctype="multipart/form-data">
     <!-- 본문 -->
     <p class="writing-title-text">포토카드 교환하기</p>
 
@@ -176,16 +176,18 @@
       <p class="writing-title-long">첨부 파일</p>
       <!-- <div class="filebox">
         <label for="file">업로드</label> -->
-        <input type="file" id="file" name="file">
+        <!-- <input type="file" id="file" name="file"> -->
         <!-- <input class="upload-name" value="파일선택">
       </div> -->
+        <label for="file">Filename:</label>
+        <input type="file" name="file" id="file"><br>
     </div>
-
+    
     <div id="card-exchange">
       <p class="writing-title-short">내용</p>
       <textarea class="input-text" name="content" placeholder="내용을 입력하세요."></textarea>
     </div>
-    <button class="submit-button" onclick="location.href='exchange-detail.html'">등록</button>
+    <button class="submit-button" onclick="document.frm.submit();">등록</button>
 
     <!-- 로그인 후 모달 창 -->
     <div class="modal">
