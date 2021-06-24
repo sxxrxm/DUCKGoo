@@ -148,7 +148,7 @@
      <!-- 게시글 -->
      <?php
       $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-      $sql = "select card_img, title, content, hashtag from card";
+      $sql = "select mate_img, title, content, hashtag from mate";
 
       mysqli_query($conn,"set names utf8;");
       $result = mysqli_query($conn, $sql);
@@ -157,12 +157,13 @@
       for($i = 0 ; $i < $num ; $i++) {
         $re = mysqli_fetch_array($result);
     ?>
+
     <div class="clear">
       <div id="post">
         <div class="post-content">
-          <a href="./exchange-detail.php?title=<?=urlencode($re[1])?>">
+          <a href="./mate-detail.php?title=<?=urlencode($re[1])?>">
       
-            <img class="poca-img" src="<?=$re[0]?>" />
+            <img class="mate-img" src="<?=$re[0]?>" />
             <p class="title" name="ent_title"><?=$re[1]?></p>
             <p class="content">
               <?=$re[2]?>

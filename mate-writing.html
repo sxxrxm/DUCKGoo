@@ -86,23 +86,24 @@
       <label for="rb4"></label>
     </p>
   </div>
+  <form method="POST" action="mate_insert.php" id="frm" name="frm"  enctype="multipart/form-data">
   <!-- 본문 -->
   <p class="writing-title-text">덕질메이트 구하기</p>
 
   <!-- 제목 -->
   <div id="card-exchange">
     <p class="writing-title-short">제목</p>
-    <input class="input-title" type="text" placeholder="제목을 입력해주세요.">
+    <input class="input-title" name="title" type="text" placeholder="제목을 입력해주세요.">
   </div>
 
   <div id="card-exchange">
     <p class="writing-title-short">나이</p>
-    <input class="input-age" type="text" placeholder="나이를 입력해주세요.">
+    <input class="input-age" type="text" name="age" placeholder="나이를 입력해주세요.">
     <p class="text-behind">세</p>
-    <label class="label-input">
-      <input class="input-button-first" type="radio" name="age" value="동갑">동갑
-      <input class="input-button" type="radio" name="age" value="이상">이상
-      <input class="input-button" type="radio" name="age" value="이하">이하
+    <label class="label-input" name="agerange">
+      <input class="input-button-first" type="radio" name="agerange" value="동갑">동갑
+      <input class="input-button" type="radio" name="agerange" value="이상">이상
+      <input class="input-button" type="radio" name="agerange" value="이하">이하
     </label>
   </div>
 
@@ -146,7 +147,7 @@
 
   <div id="card-exchange">
     <p class="writing-title-long">카테 고리</p>
-    <label class="label-input">
+    <label class="label-input" name="catagory">
       <input class="input-button-first" type="radio" name="category" value="콘서트">콘서트
       <input class="input-button" type="radio" name="category" value="생일카페">생일카페
       <input class="input-button" type="radio" name="category" value="전시회">전시회
@@ -157,7 +158,7 @@
   <!-- 회차 정보 -->
   <div id="card-exchange">
     <p class="writing-title-long">회차 정보</p>
-    <input class="input-title" type="text" placeholder="회차정보를 정확히 입력해주세요.">
+    <input class="input-title" name="round" type="text" placeholder="회차정보를 정확히 입력해주세요.">
   </div>
 
   <div id="card-exchange">
@@ -235,7 +236,7 @@
       <option value="20">23</option>
     </select>
     <p class="text-behind">시</p>
-    <select class="select-calendar" name="hour">
+    <select class="select-calendar" name="minute">
       <option value="0">00</option>
       <option value="1">01</option>
       <option value="2">02</option>
@@ -300,7 +301,7 @@
   <!-- 장소 -->
   <div id="card-exchange">
     <p class="writing-title-short">장소</p>
-    <input class="input-title" type="text" placeholder="장소를 입력해주세요.">
+    <input class="input-title" name="place" type="text" placeholder="장소를 입력해주세요.">
   </div>
 
   <div id="card-exchange">
@@ -314,16 +315,16 @@
 
   <div id="card-exchange">
     <p class="writing-title-short">내용</p>
-    <textarea class="input-text" placeholder="내용을 입력하세요."></textarea>
+    <textarea class="input-text" name="content" placeholder="내용을 입력하세요."></textarea>
   </div>
 
   <div id="card-exchange">
     <p class="writing-title-long">해시 태그</p>
-    <input class="input-title" type="text" placeholder="해시태그를 입력해주세요.">
+    <input class="input-title" name="hashtag" type="text" placeholder="해시태그를 입력해주세요.">
   </div>
 
-  <button class="submit-button" onclick="location.href='mate-detail.html'">등록</button>
-
+  <button class="submit-button" onclick="document.frm.submit();">등록</button>
+</form>
    <!-- 로그인 후 모달 창 -->
    <div class="modal">
     <div class="modal-content">
