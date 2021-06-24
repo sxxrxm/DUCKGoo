@@ -34,6 +34,12 @@
   width: 0px;
   margin-left: 50%;
 }
+.footer-tab1 {
+  display: flex;
+  float: left;
+  width: 0px;
+  margin-left: 60%;
+}
 
 /* text 메뉴 값끼리의 거리 */
 .footer-menu {
@@ -41,6 +47,7 @@
   float: left;
   font-family: "Noto Sans KR";
   margin-right: 40px;
+  margin-bottom: 20px;
   vertical-align: middle;
   font-size: 10pt;
 }
@@ -48,6 +55,7 @@
 .center{
   margin-top: 30px;
   position: absolute;
+  line-height: 20pt;
   left: 50%;
   transform: translate(-50%);
 }
