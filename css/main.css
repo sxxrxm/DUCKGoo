@@ -35,12 +35,10 @@
   }
 }
 
-
-
 /* .start{
   position: relative;
-  margin
-}
+} */
+
 
 .menu-start {
   position: relative;
@@ -50,18 +48,15 @@
 .menu-manual {
   position: relative;
   float: left;
-  margin-left: 250px;
 }
 
 .menu-review {
   position: relative;
   float: left;
-  margin-left: 278px;
 }
 
 .menu-title-text {
-  position: relative;
-  margin-top: 50px;
+  position: absolute;
 
   font-size: 15pt;
   color: #454545;
@@ -72,10 +67,10 @@
 }
 
 .menu-text {
-  position: relative;
-  float: left;
-  margin-top: 0px;
+  position: absolute;
+  margin-top: 37px;
   margin-left: 20px;
+  float: left;
 
   font-size: 13pt;
   color: #454545;
@@ -84,8 +79,7 @@
   font-family: "나눔스퀘어라운드OTF Regular"
 }
 
-
 .clear {
   clear: both;
-} */
+}
 
