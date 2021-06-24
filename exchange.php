@@ -109,6 +109,7 @@
     </div>
 
     <!-- 필터링 -->
+    <form method="POST" action="search.php" id="sf" name="sf" enctype="multipart/form-data"> 
     <div id="card-exchange">
       <select
         class="select-gender"
@@ -116,8 +117,8 @@
         onchange="genderChange(this)"
         required
       >
-        <option value="male" selected>남자 아이돌</option>
-        <option value="female">여자 아이돌</option>
+        <option value="남자 아이돌" selected>남자 아이돌</option>
+        <option value="여자 아이돌">여자 아이돌</option>
       </select>
 
       <select
@@ -158,27 +159,27 @@
         <option value="j-hope">제이홉</option> -->
       </select>
 
-      <p class="result">검색 결과 323건</p>
+      <!-- <button class="search" type="submit" onclick="document.sf.submit();">검색</button> -->
+
+      <!-- <p class="result">검색 결과 323건</p> -->
     </div>
-
-    <!-- 게시글 -->
-    <?php
-      $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-      $sql = "select card_img, title, content, hashtag from card";
-
-      mysqli_query($conn,"set names utf8;");
-      $result = mysqli_query($conn, $sql);
-      $num = mysqli_num_rows($result);
-            
-      for($i = 0 ; $i < $num ; $i++) {
-        $re = mysqli_fetch_array($result);
-    ?>
     <div class="clear">
       <div id="post">
+        <!-- 게시글 -->
+          <?php
+            $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
+            $sql = "select card_img, title, content, hashtag, idx from card";
+
+            mysqli_query($conn,"set names utf8;");
+            $result = mysqli_query($conn, $sql);
+            $num = mysqli_num_rows($result);
+                  
+            for($i = 0 ; $i < $num ; $i++) {
+              $re = mysqli_fetch_array($result);
+          ?>  
         <div class="post-content">
           <a href="./exchange-detail.php?title=<?=urlencode($re[1])?>">
-      
-            <img class="poca-img" src="<?=$re[0]?>" />
+          <img class="poca-img" src="/images/<?=$re['idx']?>.jpg" />
             <p class="title" name="ent_title"><?=$re[1]?></p>
             <p class="content">
               <?=$re[2]?>

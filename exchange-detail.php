@@ -55,7 +55,7 @@
       <?php
           $title = $_POST['ent_title'];
           $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-          $sql = "select title, card_img, own, exch, gender, state, deliver, content, hashtag from card where title = '".urldecode($_GET['title'])."'";
+          $sql = "select title, card_img, own, exch, gender, state, deliver, content, hashtag, idx from card where title = '".urldecode($_GET['title'])."'";
       
           mysqli_query($conn,"set names utf8;");
           $result = mysqli_query($conn, $sql);
@@ -73,7 +73,7 @@
 
         <div class="margin-image">
           
-          <img class="card-image" src="<?=$re['card_img']?>">
+          <img class="card-image" src="/images/<?=$re['idx']?>.jpg">
         </div>
 
         <div class="clear">
