@@ -121,8 +121,6 @@
     </div>
   </div>
 
-
-
    <!-- 로그인 후 모달 창 -->
    <div class="modal">
     <div class="modal-content">
