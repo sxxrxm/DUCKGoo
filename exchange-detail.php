@@ -125,20 +125,14 @@
    <div class="modal">
     <div class="modal-content">
       <a href="./profile.html">
-        <img class="user-image" src="images/user-image.jpg" />
+        <img class="user-image" src="images/header_logo.png" />
       </a>
-      <p class="modal-name">김지연</p>
-      <p class="modal-email">s2019w24@e-mirim.hs.kr</p>
-      <button
-        id="lookfor-mate-button"
-        onclick="location.href='mate-writing.html'"
-      >
+      <p class="modal-name">덕구</p>
+      <p class="modal-email">DUCKGoo@e-mirim.hs.kr</p>
+      <button id="lookfor-mate-button" onclick="location.href='mate-writing.html'">
         덕메 구하기
       </button>
-      <button
-        id="cardtext-button"
-        onclick="location.href='card-writing.html'"
-      >
+      <button id="cardtext-button" onclick="location.href='card-writing.html'">
         포카 교환글 작성
       </button>
       <button id="logout-button" onclick="nologout()">로그아웃</button>
