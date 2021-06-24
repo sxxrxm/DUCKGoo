@@ -174,8 +174,48 @@
 
   font-family: "나눔스퀘어라운드OTF Regular"
 }
+
 .start-duck-image{
   position: absolute;
   margin-left: 1000px;
   top: 313px;
+}
+
+.use-title{
+  position: relative;
+  margin-top: 267px;
+
+  font-size: 26pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF ExtraBold"
+}
+
+.use-image{
+  margin-top: 40px;
+  float: left;
+}
+
+.use-text1{
+  position: relative;
+  margin-top: 128px;
+  line-height: 26pt;
+
+  font-size: 16pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular"
+}
+.use-text2{
+  position: relative;
+  margin-top: 220px;
+  line-height: 26pt;
+
+  font-size: 16pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular";
 }
