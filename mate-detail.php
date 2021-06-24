@@ -55,7 +55,7 @@
       <?php
           $title = $_POST['ent_title'];
           $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-          $sql = "select title, age, gender, idol, category, round, date, place, mate_img, content, hashtag, date from mate where title = '".urldecode($_GET['title'])."'";
+          $sql = "select title, age, agerange, gender, idol, category, round, month, day, hour, minute,  place, mate_img, content, hashtag, date from mate where title = '".urldecode($_GET['title'])."'";
       
           mysqli_query($conn,"set names utf8;");
           $result = mysqli_query($conn, $sql);
@@ -89,12 +89,12 @@
 
         <div class="clear">
           <p class="detail">카테고리</p>
-          <p class="content"><?=$re['categorys']?></p>
+          <p class="content"><?=$re['category']?></p>
         </div>
 
         <div class="clear">
           <p class="detail">일정</p>
-          <p class="content"><?=$re['schedule']?></p>
+          <p class="content"><?=$re['month']?>월 <?=$re['day']?>일 <?=$re['hour']?>시 <?=$re['minute']?>분</p>
         </div>
 
         <div class="clear">
