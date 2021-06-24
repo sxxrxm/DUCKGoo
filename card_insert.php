@@ -11,10 +11,11 @@ $_deliver = $_POST['delivery'];
 $_state = $_POST['condition'];
 $_file = $_FILES['file'];
 $_content = $_POST['content'];
+$_hashtag = $_POST['hashtag'];
 
 mysqli_query($conn,"set names utf8;");
-$sql = "insert into card(title, gender, idol, own, exch, deliver, state, card_img, content)
-values('$_title', '$_gender', '$_idol', '$_own', '$_exch', '$_deliver', '$_state', '$_file', '$_content')";
+$sql = "insert into card(title, gender, idol, own, exch, deliver, state, card_img, content, hashtag)
+values('$_title', '$_gender', '$_idol', '$_own', '$_exch', '$_deliver', '$_state', '$_file', '$_content', '$_hashtag')";
 
 ///mysqli_query($conn, $sql);
 if (mysqli_query($conn, $sql)) {
