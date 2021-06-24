@@ -4,19 +4,23 @@ $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
 
 $_title = $_POST['title'];
 $_age = $_POST['age'];
+$_agerange = $_POST['agerange'];
 $_gender = $_POST['gender'];
 $_idol = $_POST['group'];
 $_category = $_POST['category'];
 $_round = $_POST['round'];
-$_date = $_POST['date'];
+$_month= $_POST['month'];
+$_day= $_POST['day'];
+$_hour= $_POST['hour'];
+$_minute= $_POST['minute'];
 $_place = $_POST['place'];
 $_file = $_POST['file'];
 $_content = $_POST['content'];
 $_hashtag = $_POST['hashtag'];
 
 mysqli_query($conn,"set names utf8;");
-$sql = "insert into mate(title, age, gender, idol, category, round, date, place, mate_img, content, hashtag)
-values('$_title', '$_age','$_gender', '$_idol', '$_catagory', '$_round', '$_date', '$_place', '$_file', '$_content', '$_hashtag')";
+$sql = "insert into mate(title, age, agerange, gender, idol, category, round, month, day, hour, minute, place, mate_img, content, hashtag)
+values('$_title', '$_age','$_agerange','$_gender', '$_idol', '$_category', '$_round', '$_month','$_day', '$_hour','$_minute','$_place', '$_file', '$_content', '$_hashtag')";
 
 ///mysqli_query($conn, $sql);
 if (mysqli_query($conn, $sql)) {
