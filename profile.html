@@ -7,6 +7,7 @@
   <script src="js/alert.js"></script>
   <link rel="stylesheet" href="css/search.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/profile.css">
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
@@ -30,7 +31,7 @@
           <!-- 텍스트 메뉴 -->
           <div class="tab">
             <li class="menu"><a href="mate.html" id="click">MATE</a></li>
-            <li class="menu"><a href="exchange.html">EXCHANGE</a></li>
+            <li class="menu"><a href="exchange.php">EXCHANGE</a></li>
             <li class="menu"><a href="talk.html">TALK</a></li>
           </div>
           <!-- 프로필 메뉴 -->
@@ -48,10 +49,23 @@
   <a href="./user-post.html">
     <img src="./images/demo-profile.png">
   </a>
-  
 
-  <!-- 로그인 후 모달 창 -->
-  <div class="modal">
+  <div id="banner1">
+    <img id="banner" src="images/banner-nct127.png"/>
+    <button
+      id="mate-button"
+      onclick="location.href='mate.html'"
+    ></button>
+  </div>
+
+  <div id="profile">
+
+  </div>
+
+
+
+   <!-- 로그인 후 모달 창 -->
+   <div class="modal">
     <div class="modal-content">
       <a href="./profile.html">
         <img class="user-image" src="images/user-image.jpg" />

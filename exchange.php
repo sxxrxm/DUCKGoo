@@ -40,7 +40,7 @@
             <div class="tab">
               <li class="menu"><a href="mate.html">MATE</a></li>
               <li class="menu">
-                <a href="exchange.html" id="click">EXCHANGE</a>
+                <a href="exchange.php" id="click">EXCHANGE</a>
               </li>
               <li class="menu"><a href="talk.html">TALK</a></li>
             </div>

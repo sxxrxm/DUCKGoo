@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.fixed{
+.fixed {
   position: absolute;
 }
 /* @media screen and (max-width: 1200px) {
@@ -15,7 +15,7 @@ display:none;
   }
 } */
 
-.writing-title-text{
+.writing-title-text {
   margin-top: 96px;
   margin-bottom: 67px;
   margin-left: 370px;
@@ -26,12 +26,12 @@ display:none;
   white-space: nowrap;
 }
 
-#card-exchange{
+#card-exchange {
   position: relative;
   margin-top: 28px;
 }
 
-.writing-title-short{
+.writing-title-short {
   float: left;
   margin-left: 380px;
   margin-right: 83px;
@@ -43,7 +43,19 @@ display:none;
   white-space: nowrap;
 }
 
-.writing-title-long{
+.writing-hashtag-short {
+  float: left;
+  margin-left: 380px;
+  margin-right: 50px;
+  margin-top: 3px;
+
+  font-family: "나눔스퀘어라운드OTF Regular";
+  font-size: 15pt;
+  color: #454545;
+  white-space: nowrap;
+}
+
+.writing-title-long {
   float: left;
   margin-left: 380px;
   margin-right: 42px;
@@ -57,7 +69,7 @@ display:none;
 
 .input-title {
   width: 600px;
-  
+
   font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
   color: #454545;
@@ -71,7 +83,7 @@ display:none;
   box-sizing: border-box;
 }
 
-.input-age{
+.input-age {
   width: 160px;
   margin-right: 5px;
 
@@ -89,12 +101,12 @@ display:none;
   box-sizing: border-box;
 }
 
-.text-behind{
+.text-behind {
   position: relative;
   display: inline-block;
   top: 3px;
   margin-right: 10px;
-  
+
   font-family: "나눔스퀘어라운드OTF Light";
   font-size: 17px;
   color: #454545;
@@ -176,7 +188,7 @@ display:none;
   font-size: 15px;
 }
 
-.label-input{
+.label-input {
   position: relative;
   font-family: "나눔스퀘어라운드OTF";
   font-weight: bold;
@@ -185,11 +197,11 @@ display:none;
   display: inline-block;
 }
 
-.input-button-first{
+.input-button-first {
   margin-right: 4px;
 }
 
-.input-button{
+.input-button {
   margin-left: 10px;
   margin-right: 4px;
 }
@@ -220,12 +232,12 @@ display:none;
   display: inline-block;
   padding: 6px 15px;
   cursor: pointer;
-  
+
   font-family: "나눔스퀘어라운드OTF";
   font-weight: bold;
   font-size: 15px;
   color: white;
-  
+
   vertical-align: middle;
   background-color: #0044ef;
   border-radius: 15px;
@@ -235,7 +247,7 @@ display:none;
   width: 270px;
   display: inline-block;
   padding: 6px 15px;
-  
+
   outline: none;
   font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
@@ -265,7 +277,7 @@ display:none;
 }
 .input-tag {
   width: 600px;
-  
+
   font-family: "나눔스퀘어라운드OTF Light";
   font-size: 15px;
   color: #454545;
@@ -278,7 +290,7 @@ display:none;
   padding-left: 16px;
   box-sizing: border-box;
 }
-.submit-button{
+.submit-button {
   display: block;
   background-color: #0044ef;
   border-radius: 25px;
@@ -293,8 +305,8 @@ display:none;
 
   /* 폰트 값 적용 */
   font-family: "나눔스퀘어라운드OTF";
-  font-weight: bold;  
-  
+  font-weight: bold;
+
   color: rgb(255, 255, 255);
   text-align: center;
   cursor: pointer;

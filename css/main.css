@@ -6,62 +6,54 @@
   margin: 0 auto;
 }
 
-/* 채팅 왼쪽 */
 #mainLeft {
   width: 370px;
-  border: solid 0.1px #dadada;
 }
 
-/* 채팅 오른쪽 */
 #mainRight {
   width: 370px;
-  border: solid 0.1px #dadada;
 }
 
-/* 채팅 가운데 */
 #main {
   width: 1180px;
-  border: solid 0.1px #dadada;
 }
 
-/* 채팅 총 크기 */
 #main-size {
-  height: 700px;
+  height: 200px;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1550px) {
   #mainLeft, #mainRight {
     display:none;
   }
 }
 
-
-
-/* .start{
-  position: relative;
-  margin
+.manual{
+  margin-top: 80px;
 }
 
 .menu-start {
+  margin-left: 100px;
   position: relative;
   float: left;
 }
 
 .menu-manual {
+  margin-left: 250px;
   position: relative;
   float: left;
-  margin-left: 250px;
 }
 
 .menu-review {
+  margin-left: 270px;
   position: relative;
   float: left;
-  margin-left: 278px;
 }
 
-.menu-title-text {
-  position: relative;
-  margin-top: 50px;
+.menu-title-text1 {
+  position: absolute;
+  top: 110px;
+  margin-left: 220px;
 
   font-size: 15pt;
   color: #454545;
@@ -71,11 +63,11 @@
   font-weight: bold;
 }
 
-.menu-text {
-  position: relative;
+.menu-text1 {
+  position: absolute;
+  top: 137px;
+  margin-left: 220px;
   float: left;
-  margin-top: 0px;
-  margin-left: 20px;
 
   font-size: 13pt;
   color: #454545;
@@ -84,8 +76,146 @@
   font-family: "나눔스퀘어라운드OTF Regular"
 }
 
+.menu-title-text2 {
+  position: absolute;
+  top: 110px;
+  margin-left: 570px;
+
+
+  font-size: 15pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+}
+
+.menu-text2 {
+  position: absolute;
+  top: 137px;
+  margin-left: 570px;
+  float: left;
+
+  font-size: 13pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular"
+}
+
+.menu-title-text3 {
+  position: absolute;
+  top: 110px;
+  margin-left: 940px;
+
+  font-size: 15pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+}
+
+.menu-text3 {
+  position: absolute;
+  top: 137px;
+  margin-left: 940px;
+  float: left;
+
+  font-size: 13pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular"
+}
 
 .clear {
   clear: both;
-} */
+}
 
+.start-title{
+  position: relative;
+  margin-top: 172px;
+
+  font-size: 26pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF ExtraBold"
+}
+
+.start-image{
+  position: relative;
+  width: 300px;
+  height: 71px;
+  margin-top: 40px;
+}
+
+.start-text{
+  position: relative;
+  margin-top: 40px;
+  line-height: 26pt;
+
+  font-size: 16pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular"
+}
+
+.start-text2{
+  position: relative;
+  margin-top: 40px;
+  line-height: 26pt;
+
+  font-size: 16pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular"
+}
+
+.start-duck-image{
+  position: absolute;
+  margin-left: 1000px;
+  top: 313px;
+}
+
+.use-title{
+  position: relative;
+  margin-top: 267px;
+
+  font-size: 26pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF ExtraBold"
+}
+
+.use-image{
+  margin-top: 40px;
+  float: left;
+}
+
+.use-text1{
+  position: relative;
+  margin-top: 128px;
+  line-height: 26pt;
+
+  font-size: 16pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular"
+}
+.use-text2{
+  position: relative;
+  margin-top: 220px;
+  line-height: 26pt;
+
+  font-size: 16pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular";
+}
