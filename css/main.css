@@ -1,25 +1,45 @@
 @charset "utf-8";
 
-
-#main {
-  width: 1180px;
+.main-container {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
 }
 
+/* 채팅 왼쪽 */
+#mainLeft {
+  width: 370px;
+  border: solid 0.1px #dadada;
+}
+
+/* 채팅 오른쪽 */
+#mainRight {
+  width: 370px;
+  border: solid 0.1px #dadada;
+}
+
+/* 채팅 가운데 */
+#main {
+  width: 1180px;
+  border: solid 0.1px #dadada;
+}
+
+/* 채팅 총 크기 */
 #main-size {
   height: 700px;
 }
 
-.main-container {
-  display: flex;
-  margin: 0 auto;
-  box-shadow: 0px 0px 10px 2px #f0f0f0;
+@media screen and (max-width: 1250px) {
+  #mainLeft, #mainRight {
+    display:none;
+  }
 }
 
-.clearfix::after {
-  display: block;
-  clear: both;
-  content: " ";
-  visibility: hidden;
+
+
+/* .start{
+  position: relative;
+  margin
 }
 
 .menu-start{
@@ -41,9 +61,7 @@
 
 .menu-title-text{
   position: relative;
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-bottom: 0px;
+  margin-top: 50px;
 
   font-size: 15pt;
   color: #454545;
@@ -65,3 +83,8 @@
 
   font-family: "나눔스퀘어라운드OTF Regular"
 }
+
+
+.clear {
+  clear: both;
+} */
