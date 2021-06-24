@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>덕구</title>
   <script src="js/change_color.js"></script>
+  <script src="js/alert.js"></script>
   <link rel="stylesheet" href="css/search.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/modal.css">
@@ -26,7 +27,7 @@
           </div>
           <!-- 검색창 메뉴 -->
           <div class="search" id="search-margin">
-            <input class="search-input" type="text" placeholder="검색어를 입력해주세요.">
+            <input class="search-input" onkeyup="enterkey();" type="text" placeholder="검색어를 입력해주세요.">
           </div>
           <!-- 텍스트 메뉴 -->
           <div class="tab">

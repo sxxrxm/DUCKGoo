@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>덕구</title>
     <script src="js/change_color.js"></script>
+    <script src="js/alert.js"></script>
     <link rel="stylesheet" href="css/search.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/modal.css" />
@@ -30,6 +31,7 @@
             <div class="search" id="search-margin">
               <input
                 class="search-input"
+                onkeyup="enterkey();"
                 type="text"
                 placeholder="검색어를 입력해주세요."
               />
@@ -357,7 +359,7 @@
         }
       }
     </script>
-    <!-- 로그인 전 모달창 -->
+    <!-- 로그인 전 모달창
     <div class="login-modal">
       <div class="login-modal-content">
         <p class="login-modal-title-text">로그인을 해주세요.</p>
@@ -369,12 +371,36 @@
           카카오계정으로 로그인
         </button>
       </div>
+    </div> -->
+
+    <!-- 로그인 후 모달 창 -->
+    <div class="modal">
+      <div class="modal-content">
+        <a href="./profile.html">
+          <img class="user-image" src="images/user-image.jpg" />
+        </a>
+        <p class="modal-name">김지연</p>
+        <p class="modal-email">s2019w24@e-mirim.hs.kr</p>
+        <button
+          id="lookfor-mate-button"
+          onclick="location.href='mate-writing.html'"
+        >
+          덕메 구하기
+        </button>
+        <button
+          id="cardtext-button"
+          onclick="location.href='card-writing.html'"
+        >
+          포카 교환글 작성
+        </button>
+        <button id="logout-button" onclick="nologout();">로그아웃</button>
+      </div>
     </div>
 
     <!-- 모달 창 JS -->
     <script type="text/javascript">
-      var modal = document.querySelector(".login-modal");
-      // var modal = document.querySelector(".modal");
+      // var modal = document.querySelector(".login-modal");
+      var modal = document.querySelector(".modal");
       var trigger = document.querySelector(".trigger");
 
       // 클릭시 모달 창 보이게 하는 함수
