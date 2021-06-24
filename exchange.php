@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/post.css" />
     <link rel="stylesheet" href="css/filter.css" />
     <link rel="stylesheet" href="css/footer.css">
-  
     <link rel="shortcut icon" href="images/header_logo.png" />
   </head>
 
