@@ -153,11 +153,24 @@
 
 .start-text{
   position: relative;
-  margin-top: 172px;
+  margin-top: 40px;
+  line-height: 26pt;
 
-  font-size: 24pt;
+  font-size: 16pt;
   color: #454545;
   white-space: nowrap;
 
-  font-family: "나눔스퀘어라운드OTF ExtraBold"
+  font-family: "나눔스퀘어라운드OTF Regular"
+}
+
+.start-text2{
+  position: relative;
+  margin-top: 40px;
+  line-height: 26pt;
+
+  font-size: 16pt;
+  color: #454545;
+  white-space: nowrap;
+
+  font-family: "나눔스퀘어라운드OTF Regular"
 }
