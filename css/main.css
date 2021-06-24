@@ -22,6 +22,10 @@
   height: 200px;
 }
 
+#main2-size {
+  height: 780px;
+}
+
 @media screen and (max-width: 1550px) {
   #mainLeft, #mainRight {
     display:none;
@@ -222,11 +226,23 @@
 }
 
 .trend-text{
-  position: relative;
+  position: absolute;
   font-size: 22pt;
   color: #454545;
   white-space: nowrap;
   font-family: "나눔스퀘어라운드OTF ExtraBold"
+}
+
+.trend-small-image{
+  position: relative;
+}
+
+.trend-small-image img{
+  position: absolute;
+  filter: brightness(50%); 
+  width: 480px;
+  height: 480px;
+  clip: rect(70px, 480px, 370px, 0px);
 }
 
 .trend-image{
@@ -235,13 +251,125 @@
 
 .trend-image img{
   position: absolute;
-  
+  margin-left: 500px;
+  top: -120px;
+  filter: brightness(50%); 
+  width: 680px;
+  height: 680px;
+  clip: rect(190px, 680px, 490px, 0px);
+}
+
+.trend-small2-image{
+  position: relative;
+}
+
+.trend-small2-image img{
+  position: absolute;
+  margin-top: 320px;
+  margin-left: 700px;
+  filter: brightness(50%); 
   width: 480px;
   height: 480px;
   clip: rect(70px, 480px, 370px, 0px);
 }
 
-.c{
+.trend-image2{
   position: relative;
-  clip: rect(300px, 480px, 480px, 300px);
+}
+
+.trend-image2 img{
+  position: absolute;
+  margin-top: 200px;
+  filter: brightness(50%); 
+  width: 680px;
+  height: 680px;
+  clip: rect(190px, 680px, 490px, 0px);
+}
+
+.trend-title{
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 40px;
+  line-height: 22pt;
+  font-size: 16pt;
+  color: white;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF Regular";
+}
+
+.trend-viewmore{
+  position: absolute;
+  margin-top: 310px;
+  margin-left: 40px;
+  line-height: 22pt;
+  font-size: 14pt;
+  color: white;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF Light";
+}
+
+.trend-title3{
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 540px;
+  line-height: 22pt;
+  font-size: 16pt;
+  color: white;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF Regular";
+}
+
+.trend-viewmore3{
+  position: absolute;
+  margin-top: 310px;
+  margin-left: 540px;
+  line-height: 22pt;
+  font-size: 14pt;
+  color: white;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF Light";
+}
+
+.trend-title1{
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 40px;
+  line-height: 22pt;
+  font-size: 16pt;
+  color: white;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF Regular";
+}
+
+.trend-viewmore1{
+  position: absolute;
+  margin-top: 630px;
+  margin-left: 40px;
+  line-height: 22pt;
+  font-size: 14pt;
+  color: white;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF Light";
+}
+
+.trend-title2{
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 740px;
+  line-height: 22pt;
+  font-size: 16pt;
+  color: white;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF Regular";
+}
+
+.trend-viewmore2{
+  position: absolute;
+  margin-top: 630px;
+  margin-left: 740px;
+  line-height: 22pt;
+  font-size: 14pt;
+  color: white;
+  white-space: nowrap;
+  font-family: "나눔스퀘어라운드OTF Light";
 }

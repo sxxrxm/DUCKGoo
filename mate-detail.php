@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/detail.css">
+  <link rel="stylesheet" href="css/footer.css">  
   <link rel="shortcut icon" href="images/header_logo.png">
 </head>
 
@@ -30,7 +31,7 @@
           </div>
           <!-- 텍스트 메뉴 -->
           <div class="tab">
-            <li class="menu"><a href="mate.html" id="click">MATE</a></li>
+            <li class="menu"><a href="mate.php" id="click">MATE</a></li>
             <li class="menu"><a href="exchange.php">EXCHANGE</a></li>
             <li class="menu"><a href="talk.html">TALK</a></li>
           </div>
@@ -119,6 +120,23 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="foot">
+    <footer class="footer">
+      <a href="index.html"><img class="footer-logo-image" src="images/logo.png"></a>
+      <p class="footer-copy-text">© 2021 DUCK GOO OFFICIAL WEB</p>
+      <div class="clear">
+        <div class="center">
+          <p class="footer-tab">
+            <li class="footer-menu"><span style="color: #0044ef; cursor: pointer;"
+                onclick="location.href='information.html'">개인정보취급 방침</span></li>
+            <li class="footer-menu"><img src="images/line.png"></li>
+            <li class="footer-menu"><span style="color: #0044ef;">이용약관</span></li>
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 
    <!-- 로그인 후 모달 창 -->
