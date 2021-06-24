@@ -26,22 +26,22 @@
         <div class="navbar">
           <!-- 로고 -->
           <div class="menu-margin-left">
-            <a href="index.html"><img class="logo-image" src="images/logo.png" /></a>
+            <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
           </div>
           <!-- 검색창 메뉴 -->
           <div class="search" id="search-margin">
-            <input class="search-input" type="text" placeholder="검색어를 입력해주세요." onkeyup="enterkey();" />
+            <input class="search-input" onkeyup="enterkey();" type="text" placeholder="검색어를 입력해주세요.">
           </div>
           <!-- 텍스트 메뉴 -->
           <div class="tab">
-            <li class="menu"><a href="mate.html">MATE</a></li>
+            <li class="menu"><a href="mate.html" id="click">MATE</a></li>
             <li class="menu"><a href="exchange.php">EXCHANGE</a></li>
             <li class="menu"><a href="talk.html">TALK</a></li>
           </div>
           <!-- 프로필 메뉴 -->
           <div class="menu-margin-right">
             <button class="trigger" onclick="toggleImg()" id="profile-button">
-              <img id="img" class="profile-image" src="images/profile.png" />
+              <img id="img" class="profile-image" src="images/profile.png">
             </button>
           </div>
         </div>
@@ -77,8 +77,8 @@
       </li>
       <li>
         <div id="banner4">
-          <img id="banner" src="images/banner4.png" />
-          <button id="mate-button" onclick="location.href='mate.html'"></button>
+          <img id="banner" src="images/banner5.png" />
+          <button id="mate-button" onclick="location.href='https://forms.gle/8mq4TWBrHr3n14BC6'"></button>
         </div>
       </li>
     </ul>
@@ -89,7 +89,6 @@
       <label for="rb4"></label>
     </p>
   </div>
-
   <div class="main-container">
     <div id="mainLeft"></div>
     <div id="main">
@@ -99,11 +98,13 @@
           <p class="menu-title-text1">덕구의 시작</p>
           <p class="menu-text1">덕구를 소개합니다.</p>
         </div>
+
         <div class="manual">
           <img class="menu-manual" src="./images/manual.png" />
           <p class="menu-title-text2">덕구 사용방법</p>
           <p class="menu-text2">덕구, 이렇게 사용하세요.</p>
         </div>
+
         <div class="manual">
           <img class="menu-review" src="./images/review.png" />
           <p class="menu-title-text3">덕구 리뷰</p>
@@ -111,8 +112,9 @@
         </div>
       </div>
     </div>
-    <div id="mainRight"></div>
   </div>
+  <div id="mainRight"></div>
+</div>
 
   <div id="mid-banner">
     <input type="radio" name="rb" id="rb5" checked />
@@ -154,7 +156,7 @@
     <div id="main">
       <div id="main-size">
         <p class="start-title">덕구의 시작</p>
-        <img class="start-image" src="images/logo.png"> 
+        <img class="start-image" src="images/logo.png">
         <p class="start-text">
           덕구 개발 전, 설문조사 단계부터 많은 관심을 받아덕구의 성장이 가속화되었습니다. <br>
           실제로 덕질하시는 분들이 포토카드 교환과 덕질 메이트를 <br>
@@ -165,7 +167,7 @@
     </div>
     <div id="mainRight"></div>
   </div>
-  
+
   <!-- 로그인 후 모달 창 -->
   <div class="modal">
     <div class="modal-content">
