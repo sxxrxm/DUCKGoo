@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <head>
@@ -86,6 +87,7 @@
           <!-- 채팅 내용 -->
           <div class="chatting">
             <div class="chat-view">
+
               <!-- 내 메세지 -->
               <li class="clearfix">
                 <p class="message my-message">
