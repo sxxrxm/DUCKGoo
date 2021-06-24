@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/post.css" />
     <link rel="stylesheet" href="css/filter.css" />
+    <link rel="stylesheet" href="css/footer.css">
+  
     <link rel="shortcut icon" href="images/header_logo.png" />
   </head>
 
@@ -359,6 +361,24 @@
         }
       }
     </script>
+
+    <!-- <div class="foot">
+      <footer class="footer">
+        <a href="index.html"><img class="footer-logo-image" src="images/logo.png"></a>
+        <p class="footer-copy-text">© 2021 DUCK GOO OFFICIAL WEB</p>
+        <div class="clear">
+          <div class="center">
+            <p class="footer-tab">
+              <li class="footer-menu"><span style="color: #0044ef; cursor: pointer;"
+                  onclick="location.href='information.html'">개인정보취급 방침</span></li>
+              <li class="footer-menu"><img src="images/line.png"></li>
+              <li class="footer-menu"><span style="color: #0044ef;">이용약관</span></li>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div> -->
+    
     <!-- 로그인 전 모달창
     <div class="login-modal">
       <div class="login-modal-content">
