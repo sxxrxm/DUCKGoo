@@ -162,176 +162,33 @@
     </div>
 
     <!-- 게시글 -->
+    <?php
+      $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
+      $sql = "select card_img, title, content, hashtag from card";
 
+      mysqli_query($conn,"set names utf8;");
+      $result = mysqli_query($conn, $sql);
+      $num = mysqli_num_rows($result);
+            
+      for($i = 0 ; $i < $num ; $i++) {
+        $re = mysqli_fetch_array($result);
+    ?>
     <div class="clear">
       <div id="post">
         <div class="post-content">
-          <a href="./exchange-detail.html">
-            <img class="poca-img" src="images/exchange-image/poca1.png" />
-            <p class="title">해찬 포카 천러 교환 구합니다!</p>
+          <a href="./exchange-detail.php?title=<?=urlencode($re[1])?>">
+      
+            <img class="poca-img" src="<?=$re[0]?>" />
+            <p class="title" name="ent_title"><?=$re[1]?></p>
             <p class="content">
-              하자 없구용. 준등기 교환 원합니당. <br />
-              자세한 사항은 DM 주세용.
+              <?=$re[2]?>
             </p>
-            <p class="hashtag">#천러 #NCTDREAM</p>
+            <p class="hashtag"><?=$re[3]?></p>
           </a>
         </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca2.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca3.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca4.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="clear">
-      <div id="post">
-        <div class="post-content">
-          <a href="./">
-            <img class="poca-img" src="images/exchange-image/poca1.png" />
-            <p class="title">해찬 포카 천러 교환 구합니다!</p>
-            <p class="content">
-              하자 없구용. 준등기 교환 원합니당. <br />
-              자세한 사항은 DM 주세용.
-            </p>
-            <p class="hashtag">#천러 #NCTDREAM</p>
-          </a>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca2.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca3.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca4.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="clear">
-      <div id="post">
-        <div class="post-content">
-          <a href="./">
-            <img class="poca-img" src="images/exchange-image/poca1.png" />
-            <p class="title">해찬 포카 천러 교환 구합니다!</p>
-            <p class="content">
-              하자 없구용. 준등기 교환 원합니당. <br />
-              자세한 사항은 DM 주세용.
-            </p>
-            <p class="hashtag">#천러 #NCTDREAM</p>
-          </a>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca2.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca3.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca4.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="clear">
-      <div id="post">
-        <div class="post-content">
-          <a href="./">
-            <img class="poca-img" src="images/exchange-image/poca1.png" />
-            <p class="title">해찬 포카 천러 교환 구합니다!</p>
-            <p class="content">
-              하자 없구용. 준등기 교환 원합니당. <br />
-              자세한 사항은 DM 주세용.
-            </p>
-            <p class="hashtag">#천러 #NCTDREAM</p>
-          </a>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca2.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca3.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
-        <div class="post-content">
-          <img class="poca-img" src="images/exchange-image/poca4.png" />
-          <p class="title">해찬 포카 천러 교환 구합니다!</p>
-          <p class="content">
-            하자 없구용. 준등기 교환 원합니당. <br />
-            자세한 사항은 DM 주세용.
-          </p>
-          <p class="hashtag">#천러 #NCTDREAM</p>
-        </div>
+      <?php
+        }
+      ?>
       </div>
     </div>
 
