@@ -32,24 +32,24 @@
 }
 
 /* 현재 클릭한 채팅 상자 */
-#chat-square-color{
+#chat-square-color {
   height: 120px;
   border: solid 0.1px #dadada;
   background-color: rgba(0, 68, 239, 0.2);
 }
 
 /* 기본적인 채팅 상자 */
-#chat-square{
+#chat-square {
   height: 120px;
   border: solid 0.1px #dadada;
 }
 
 /* 오른쪽 스크롤을 주기 위해 위 아래 레이아웃 나눔 */
-#chat-profile{
+#chat-profile {
   position: relative;
   height: 708px;
-  overflow: auto; 
-  overflow-x: hidden; 
+  overflow: auto;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -68,7 +68,7 @@
 }
 
 /* 메인 - 채팅 text 값 */
-.chat-title{
+.chat-title {
   position: relative;
   margin-top: 25px;
   margin-bottom: 0px;
@@ -80,7 +80,7 @@
 }
 
 /* 채팅 프로필 이미지 사이즈 */
-.chat-profile-image{
+.chat-profile-image {
   position: relative;
   width: 80px;
   height: 80px;
@@ -90,7 +90,7 @@
 }
 
 /* 채팅 이름 */
-.chat-name{
+.chat-name {
   position: relative;
   margin-top: 35px;
   margin-left: 470px;
@@ -102,27 +102,26 @@
 }
 
 /* 채팅 내용 */
-.chat-content{
+.chat-content {
   position: relative;
   margin-top: 10px;
   margin-left: 470px;
   font-size: 12pt;
   color: #454545;
-  overflow: hidden; 
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-family: "나눔스퀘어라운드OTF Regular";
- 
 }
 
 /* 채팅이 새로왔을 때 색상 값 */
-.chat-new-content{
+.chat-new-content {
   position: relative;
   margin-top: 10px;
   margin-left: 470px;
   font-size: 12pt;
   color: #0044ef;
-  overflow: hidden; 
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-family: "나눔스퀘어라운드OTF";
@@ -130,7 +129,7 @@
 }
 
 /* 채팅이 새로 왔을 때 이름 옆에 뜨는 이미지  */
-.new-chat-image{
+.new-chat-image {
   position: absolute;
   width: 10px;
   height: 10px;
