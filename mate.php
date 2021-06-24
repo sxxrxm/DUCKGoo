@@ -142,11 +142,10 @@
         <option value="none">상관 없음</option>
       </select>
 
-      <p class="result">검색 결과 323건</p>
+      <p class="result">검색 결과 </p>
     </div>
 
-     <!-- 게시글 -->
-     <?php
+    <?php
       $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
       $sql = "select mate_img, title, content, hashtag from mate";
 

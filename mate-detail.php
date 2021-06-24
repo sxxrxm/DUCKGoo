@@ -78,7 +78,7 @@
           <div class="clear">
           <div id="member">
             <p class="detail">원하는 덕메 나이</p>
-            <p class="member-content"><?=$re['age']?><?=$re['agerange']?></p>
+            <p class="member-content"><?=$re['age']?>세 <?=$re['agerange']?></p>
           </div>
 
           <div id="member">
@@ -147,8 +147,8 @@
 
   <!-- 모달 창 JS -->
   <script type="text/javascript">
-    var modal = document.querySelector(".login-modal");
-    // var modal = document.querySelector(".modal");
+    // var modal = document.querySelector(".login-modal");
+    var modal = document.querySelector(".modal");
     var trigger = document.querySelector(".trigger");
 
     // 클릭시 모달 창 보이게 하는 함수
