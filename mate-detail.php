@@ -33,7 +33,7 @@
           <div class="tab">
             <li class="menu"><a href="mate.php" id="click">MATE</a></li>
             <li class="menu"><a href="exchange.php">EXCHANGE</a></li>
-            <li class="menu"><a href="talk.html">TALK</a></li>
+            <li class="menu"><a href="talk.php">TALK</a></li>
           </div>
           <!-- 프로필 메뉴 -->
           <div class="menu-margin-right">

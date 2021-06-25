@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <div class="container">
+  <div class="container">
       <aside id="aisdeLeft"></aside>
       <section id="section">
         <div class="header">
@@ -41,7 +41,7 @@
             <div class="tab">
               <li class="menu"><a href="mate.php" id="click">MATE</a></li>
               <li class="menu"><a href="exchange.php">EXCHANGE</a></li>
-              <li class="menu"><a href="talk.html">TALK</a></li>
+              <li class="menu"><a href="talk.php">TALK</a></li>
             </div>
             <!-- 프로필 메뉴 -->
             <div class="menu-margin-right">
@@ -91,10 +91,10 @@
         </li>
         <li>
           <div id="banner4">
-            <img id="banner" src="images/banner4.png" />
+            <img id="banner" src="images/banner5.png" />
             <button
               id="mate-button"
-              onclick="location.href='mate.html'"
+              onclick="location.href='https://forms.gle/8mq4TWBrHr3n14BC6'"
             ></button>
           </div>
         </li>
@@ -106,7 +106,6 @@
         <label for="rb4"></label>
       </p>
     </div>
-
     <!-- 필터링 -->
     <form method="POST" action="mate_search.php" id="sf" name="sf" enctype="multipart/form-data"> 
     <div id="mate">

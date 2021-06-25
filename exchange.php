@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <div class="container">
+  <div class="container">
       <aside id="aisdeLeft"></aside>
       <section id="section">
         <div class="header">
@@ -40,10 +40,8 @@
             <!-- 텍스트 메뉴 -->
             <div class="tab">
               <li class="menu"><a href="mate.php">MATE</a></li>
-              <li class="menu">
-                <a href="exchange.php" id="click">EXCHANGE</a>
-              </li>
-              <li class="menu"><a href="talk.html">TALK</a></li>
+              <li class="menu"><a href="exchange.php" id="click">EXCHANGE</a></li>
+              <li class="menu"><a href="talk.php">TALK</a></li>
             </div>
             <!-- 프로필 메뉴 -->
             <div class="menu-margin-right">
@@ -93,10 +91,10 @@
         </li>
         <li>
           <div id="banner4">
-            <img id="banner" src="images/banner4.png" />
+            <img id="banner" src="images/banner5.png" />
             <button
               id="mate-button"
-              onclick="location.href='mate.html'"
+              onclick="location.href='https://forms.gle/8mq4TWBrHr3n14BC6'"
             ></button>
           </div>
         </li>
