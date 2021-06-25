@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <head>
@@ -87,7 +86,6 @@
           <!-- 채팅 내용 -->
           <div class="chatting">
             <div class="chat-view">
-
               <!-- 내 메세지 -->
               <li class="clearfix">
                 <p class="message my-message">
@@ -148,13 +146,6 @@
             <li class="footer-menu"><span style="color: #0044ef; cursor: pointer;" onclick="location.href='information.html'">개인정보취급 방침</span></li>
             <li class="footer-menu"><img src="images/line.png"></li>
             <li class="footer-menu"><span style="color: #0044ef;">이용약관</span></li>
-            <li class="footer-menu"><img src="images/line.png"></li>
-            <li class="footer-menu">연락처 :  02-872-4071   </li>
-          </p>          
-          <p class="footer-tab">
-            <li class="footer-menu">주소 : 서울특별시 관악구 대학동 호암로 546</li>
-            <li class="footer-menu"><img src="images/line.png"></li>
-            <li class="footer-menu">전자우편주소 :  https://www.e-mirim.hs.kr/main.do</li>
           </p>
         </div>        
       </div>      
