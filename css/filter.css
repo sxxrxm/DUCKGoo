@@ -102,3 +102,16 @@
   font-size: 14pt;
   white-space: nowrap;
 }
+
+.submit-btn{
+  width: 60px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 15px;
+  font-family: "나눔스퀘어라운드OTF";
+  font-weight: bold;
+  font-size: 17px;
+  padding: 8px ;
+  color: white;
+  background-color: #0044ef;
+}
