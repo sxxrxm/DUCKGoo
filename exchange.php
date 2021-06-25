@@ -361,7 +361,7 @@
       }
     </script>
 
-    <!-- <div class="foot">
+    <div class="foot">
       <footer class="footer">
         <a href="index.html"><img class="footer-logo-image" src="images/logo.png"></a>
         <p class="footer-copy-text">© 2021 DUCK GOO OFFICIAL WEB</p>
@@ -376,7 +376,7 @@
           </div>
         </div>
       </footer>
-    </div> -->
+    </div>
     
     <!-- 로그인 전 모달창
     <div class="login-modal">
