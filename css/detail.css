@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 .detail-container {
+  left: 560px;
   display: flex;
   position: relative;
   margin: 0 auto;

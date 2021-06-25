@@ -142,6 +142,8 @@
         <option value="male">남성</option>
         <option value="none">상관 없음</option>
       </select>
+      
+      <button type="submit" class="submit-btn" onclick="">검색</button>
 
       <p class="result">검색 결과 </p>
     </div>
@@ -216,6 +218,7 @@
     <script type="text/javascript">
       function genderChange(e) {
         var male = [
+          "그룹을 선택해주세요",
           "BTS",
           "TXT",
           "SHINee",
@@ -228,6 +231,7 @@
           "기타",
         ];
         var female = [
+          "그룹을 선택해주세요",
           "BLACKPINK",
           "TWICE",
           "ITZY",

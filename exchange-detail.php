@@ -48,76 +48,70 @@
   </div>
 
   <div class="detail-container">
-    <!-- 왼쪽 영역 -->
-    <div id="detailLeft">
-    </div>
-    오른쪽 영역
-    <div id="detailRight">
-      <?php
-          $title = $_POST['ent_title'];
-          $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-          $sql = "select title, card_img, own, exch, gender, state, deliver, content, hashtag from card where title = '".urldecode($_GET['title'])."'";
-      
-          mysqli_query($conn,"set names utf8;");
-          $result = mysqli_query($conn, $sql);
-          $num = mysqli_num_rows($result);
-          $re = mysqli_fetch_array($result);
-          //print_r($re);
-			?>
-      <div class="post">
+    <?php
+        $title = $_POST['ent_title'];
+        $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
+        $sql = "select title, card_img, own, exch, gender, state, deliver, content, hashtag from card where title = '".urldecode($_GET['title'])."'";
+    
+        mysqli_query($conn,"set names utf8;");
+        $result = mysqli_query($conn, $sql);
+        $num = mysqli_num_rows($result);
+        $re = mysqli_fetch_array($result);
+        //print_r($re);
+    ?>
+    <div class="post">
 
-        <p class="detail-title"><?=$re['title']?></p>
+      <p class="detail-title"><?=$re['title']?></p>
 
-        <p class="detail-date">2021.06.23</p>
+      <p class="detail-date">2021.06.23</p>
 
-        <hr class="line">
+      <hr class="line">
 
-        <div class="margin-image">
-          
-          <img class="card-image" src="<?=$re['card_img']?>">
-        </div>
-
-        <div class="clear">
-          <div id="member">
-            <p class="detail">갖고 있는 멤버</p>
-            <p class="member-content"><?=$re['own']?></p>
-          </div>
-          <div id="member">
-            <p class="detail">원하는 멤버</p>
-            <p class="member-content"><?=$re['exch']?></p>
-          </div>
-        </div>
-
-        <div class="clear">
-          <p class="detail">교환 대상자 성별</p>
-          <p class="content"><?=$re['gender']?></p>
-        </div>
-
-        <div class="clear">
-          <p class="detail">포토카드 상태</p>
-          <p class="content"><?=$re['state']?></p>
-        </div>
-
-        <div class="clear">
-          <p class="detail">교환 방법</p>
-          <p class="content"><?=$re['deliver']?></p>
-        </div>
-
-        <div class="clear">
-          <p class="detail">내용</p>
-          <p class="content-text">
-            <?=$re['content']?>            
-          </p>
-        </div>
-
-        <div class="clear">
-          <p class="detail">해시태그</p>
-          <p class="hashtag-content"><?=$re['hashtag']?> </p>
-        </div>
+      <div class="margin-image">
         
-        <div class="clear">
-          <button class="chat-button" onclick="location.href='./talk.html'">DM 보내기</button>
+        <img class="card-image" src="<?=$re['card_img']?>">
+      </div>
+
+      <div class="clear">
+        <div id="member">
+          <p class="detail">갖고 있는 멤버</p>
+          <p class="member-content"><?=$re['own']?></p>
         </div>
+        <div id="member">
+          <p class="detail">원하는 멤버</p>
+          <p class="member-content"><?=$re['exch']?></p>
+        </div>
+      </div>
+
+      <div class="clear">
+        <p class="detail">교환 대상자 성별</p>
+        <p class="content"><?=$re['gender']?></p>
+      </div>
+
+      <div class="clear">
+        <p class="detail">포토카드 상태</p>
+        <p class="content"><?=$re['state']?></p>
+      </div>
+
+      <div class="clear">
+        <p class="detail">교환 방법</p>
+        <p class="content"><?=$re['deliver']?></p>
+      </div>
+
+      <div class="clear">
+        <p class="detail">내용</p>
+        <p class="content-text">
+          <?=$re['content']?>            
+        </p>
+      </div>
+
+      <div class="clear">
+        <p class="detail">해시태그</p>
+        <p class="hashtag-content"><?=$re['hashtag']?> </p>
+      </div>
+      
+      <div class="clear">
+        <button class="chat-button" onclick="location.href='./talk.html'">DM 보내기</button>
       </div>
     </div>
   </div>
