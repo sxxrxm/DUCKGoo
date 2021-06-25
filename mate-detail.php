@@ -51,7 +51,7 @@
     <!-- 왼쪽 영역 -->
     <div id="detailLeft">
     </div>
-    <!-- 오른쪽 영억 -->
+    <!-- 오른쪽 영역 -->
     <div id="detailRight">
       <?php
           $title = $_POST['ent_title'];
@@ -119,7 +119,6 @@
           <button class="chat-button" onclick="location.href='./talk.html'">DM 보내기</button>
         </div>
       </div>
-    </div>
   </div>
 
   <div class="foot">
