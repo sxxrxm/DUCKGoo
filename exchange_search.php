@@ -163,6 +163,7 @@
       <button type="submit" class="submit-btn" onclick="document.sf.submit();">검색</button>
 
       <!-- <p class="result">검색 결과 323건</p> -->
+      </form>
     </div>
 
     <!-- <p class="result">검색 결과 323건</p> -->
@@ -170,8 +171,13 @@
       <div id="post">
         <!-- 게시글 -->
           <?php
+            $gender = $_POST['gender'];
+            $group = $_POST['group'];
+            $member = $_POST['member'];
+            $member1 = $_POST['member1'];
+
             $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-            $sql = "select card_img, title, content, hashtag, idx from card";
+            $sql = "select card_img, title, content, hashtag, idx, idol, own, exch from card where idol = '{$group}' and own = '{$member}' and exch = '{$member1}'";
 
             mysqli_query($conn,"set names utf8;");
             $result = mysqli_query($conn, $sql);
@@ -195,6 +201,7 @@
       ?>
       </div>
     </div>
+
     <script>
       function genderChange(e) {
         var male = [

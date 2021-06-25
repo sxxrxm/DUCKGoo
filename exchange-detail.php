@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/login-modal.css">
   <link rel="stylesheet" href="css/banner.css">
-  <link rel="stylesheet" href="css/detail.css"><link rel="stylesheet" href="css/footer.css">
-  
+  <link rel="stylesheet" href="css/detail.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="shortcut icon" href="images/header_logo.png">
 </head>
 
