@@ -5,6 +5,7 @@
   <title>덕구</title>
   <script src="js/change_color.js"></script>
   <script src="js/alert.js"></script>
+  <script src="js/chat.js"></script>
   <link rel="stylesheet" href="css/search.css">
   <link rel="stylesheet" href="css/chat-search.css">
   <link rel="stylesheet" href="css/header.css">
@@ -48,6 +49,7 @@
     </section>
     <aside id="aisdeRight"></aside>
   </div>
+  <dl id="list"></dl>
 
   <!-- 채팅 -->
   <div class="chat-container">
@@ -82,6 +84,17 @@
             <img class="chat-writting" src="images/writting.png">
           </button>
         </div>
+    <?php
+      $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
+      $sql = "select card_img, title, content, hashtag from card";
+
+      mysqli_query($conn,"set names utf8;");
+      $result = mysqli_query($conn, $sql);
+      $num = mysqli_num_rows($result);
+            
+      for($i = 0 ; $i < $num ; $i++) {
+        $re = mysqli_fetch_array($result);
+    ?>
         <div id="chatting-square">
           <!-- 채팅 내용 -->
           <div class="chatting">
@@ -115,6 +128,7 @@
         </div>
         <!-- 가운데 하단 영역 -->
         <div id="chatting-text-square">
+          <form method="POST" action="chat_insert.php" id="frm" name="frm" enctype="multipart/form-data">
           <!-- 이모티콘 버튼 -->
           <button id="profile-button" onclick="ready();">
             <img class="chatting-emoticon-image" src="images/emoticon.png">
@@ -123,12 +137,13 @@
           <button id="profile-button" onclick="ready();">
             <img class="chatting-picture-image" src="images/picture.png">
           </button>
-          <!-- 채팅 입력창 -->
-          <input class="chatting-message" onclick="ready();" type="text" placeholder="내용을 입력하세요.">
-          <!-- 보내기 버튼 -->
-          <button id="profile-button">
-            <img class="chatting-send-image" onclick="ready();" src="images/send.png">
-          </button>
+            <!-- 채팅 입력창 -->
+            <input class="chatting-message" name="comment" type="text" placeholder="내용을 입력하세요.">
+            <!-- 보내기 버튼 -->
+            <button id="profile-button" onclick="document.frm.submit();">
+              <img class="chatting-send-image" src="images/send.png">
+            </button>    
+          </form>
         </div>
       </div>
     </div>
