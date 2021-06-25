@@ -164,7 +164,7 @@
       <!-- <button class="search" type="submit" onclick="document.sf.submit();">검색</button> -->
 
       <!-- <p class="result">검색 결과 323건</p> -->
-    </div>
+    </div> 
     <div class="clear">
       <div id="post">
         <!-- 게시글 -->
@@ -179,16 +179,16 @@
             for($i = 0 ; $i < $num ; $i++) {
               $re = mysqli_fetch_array($result);
           ?>  
-        <div class="post-content">
-          <a href="./exchange-detail.php?title=<?=urlencode($re[1])?>">
-          <img class="poca-img" src="/images/<?=$re['idx']?>.jpg" />
-            <p class="title" name="ent_title"><?=$re[1]?></p>
-            <p class="content">
-              <?=$re[2]?>
-            </p>
-            <p class="hashtag"><?=$re[3]?></p>
-          </a>
-        </div>
+            <div class="post-content">
+              <a href="./exchange-detail.php?title=<?=urlencode($re[1])?>">
+                <img class="poca-img" src="/images/exchange/<?=$re['idx']?>.jpg" />
+                  <p class="title" name="ent_title"><?=$re[1]?></p>
+                  <p class="content">
+                    <?=$re[2]?>
+                  </p>
+                  <p class="hashtag"><?=$re[3]?></p>
+              </a>
+            </div>
       <?php
         }
       ?>

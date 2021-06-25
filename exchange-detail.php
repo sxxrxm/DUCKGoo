@@ -31,8 +31,8 @@
           </div>
           <!-- 텍스트 메뉴 -->
           <div class="tab">
-            <li class="menu"><a href="mate.php" id="click">MATE</a></li>
-            <li class="menu"><a href="exchange.php">EXCHANGE</a></li>
+            <li class="menu"><a href="mate.php">MATE</a></li>
+            <li class="menu"><a href="exchange.php" id="click">EXCHANGE</a></li>
             <li class="menu"><a href="talk.html">TALK</a></li>
           </div>
           <!-- 프로필 메뉴 -->
@@ -51,12 +51,12 @@
     <!-- 왼쪽 영역 -->
     <div id="detailLeft">
     </div>
-    오른쪽 영역
+    <!-- 오른쪽 영억 -->
     <div id="detailRight">
       <?php
           $title = $_POST['ent_title'];
           $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-          $sql = "select title, card_img, own, exch, gender, state, deliver, content, hashtag, idx from card where title = '".urldecode($_GET['title'])."'";
+          $sql = "select title, card_img, own, exch, gender, state, deliver, content, hashtag, idx, date from card where title = '".urldecode($_GET['title'])."'";
       
           mysqli_query($conn,"set names utf8;");
           $result = mysqli_query($conn, $sql);
@@ -68,13 +68,13 @@
 
         <p class="detail-title"><?=$re['title']?></p>
 
-        <p class="detail-date">2021.06.23</p>
+        <p class="detail-date"><?=$re['date']?></p>
 
         <hr class="line">
 
         <div class="margin-image">
           
-          <img class="card-image" src="/images/<?=$re['idx']?>.jpg">
+          <img class="card-image" src="/images/exchange/<?=$re['idx']?>.jpg">
         </div>
 
         <div class="clear">
@@ -133,14 +133,14 @@
                 onclick="location.href='information.html'">개인정보취급 방침</span></li>
             <li class="footer-menu"><img src="images/line.png"></li>
             <li class="footer-menu"><span style="color: #0044ef;">이용약관</span></li>
+
           </p>
         </div>
       </div>
     </footer>
   </div>
 
-   <!-- 로그인 후 모달 창 -->
-   <div class="modal">
+  <div class="modal">
     <div class="modal-content">
       <a href="./profile.html">
         <img class="user-image" src="images/header_logo.png" />
@@ -159,7 +159,7 @@
 
   <!-- 모달 창 JS -->
   <script type="text/javascript">
-    var modal = document.querySelector(".login-modal");
+    var modal = document.querySelector(".modal");
     // var modal = document.querySelector(".modal");
     var trigger = document.querySelector(".trigger");
 
@@ -179,6 +179,7 @@
     trigger.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
   </script>
-  
+
 </body>
+
 </html>
