@@ -48,11 +48,6 @@
   </div>
 
   <div class="detail-container">
-    <!-- 왼쪽 영역 -->
-    <div id="detailLeft">
-    </div>
-    오른쪽 영역
-    <div id="detailRight">
       <?php
           $title = $_POST['ent_title'];
           $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
@@ -119,7 +114,6 @@
           <button class="chat-button" onclick="location.href='./talk.html'">DM 보내기</button>
         </div>
       </div>
-    </div>
   </div>
 
   <div class="foot">
