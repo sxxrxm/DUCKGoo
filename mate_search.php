@@ -134,29 +134,33 @@
       </select>
 
       <select class="select-type" name="type" id="type" required>
-        <option value="생일카페">생일카페</option>
-        <option value="콘서트">콘서트</option>
-        <option value="전시회">전시회</option>
-        <option value="기타">기타</option>
+        <option value="birthcafe">생일카페</option>
+        <option value="concert">콘서트</option>
+        <option value="exhibit">전시회</option>
+        <option value="etc">기타</option>
       </select>
 
       <select class="select-gender" name="m-gender" id="m-gender" required>
-        <option value="여자">여자</option>
-        <option value="남자">남자</option>
-        <option value="상관 없음">상관 없음</option>
+        <option value="female">여자</option>
+        <option value="male">남자</option>
+        <option value="none">상관 없음</option>
       </select>
       
       <button type="submit" class="submit-btn" onclick="document.sf.submit();">검색</button>
 
       <!-- <p class="result">검색 결과 </p> -->
     </div>
-</form>
 
     <div class="clear">
       <div id="post">
         <?php
+          $gender = $_POST['gender'];
+          $group = $_POST['group'];
+          $type = $_POST['type'];
+          $mgender = $_POST['m-gender'];
+
           $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-          $sql = "select mate_img, title, content, hashtag from mate";
+          $sql = "select mate_img, title, content, hashtag, idol, category, gender from mate where idol = '{$group}' and category = '{$type}' and gender = '{$mgender}'";
 
           mysqli_query($conn,"set names utf8;");
           $result = mysqli_query($conn, $sql);
@@ -199,23 +203,23 @@
     </footer>
   </div> -->
 
-     <!-- 로그인 후 모달 창 -->
+  <!-- 로그인 후 모달 창 -->
   <div class="modal">
-    <div class="modal-content">
-      <!-- <a href="./profile.html"> -->
-        <img class="user-image" src="images/header_logo.png" />
-      <!-- </a> -->
-      <p class="modal-name">덕구</p>
-      <p class="modal-email">DUCKGoo@e-mirim.hs.kr</p>
-      <button id="lookfor-mate-button" onclick="location.href='mate-writing.html'">
-        덕메 구하기
-      </button>
-      <button id="cardtext-button" onclick="location.href='card-writing.html'">
-        포카 교환글 작성
-      </button>
-      <button id="logout-button" onclick="nologout()">로그아웃</button>
+      <div class="modal-content">
+        <!-- <a href="./profile.html"> -->
+          <img class="user-image" src="images/header_logo.png" />
+        <!-- </a> -->
+        <p class="modal-name">덕구</p>
+        <p class="modal-email">DUCKGoo@e-mirim.hs.kr</p>
+        <button id="lookfor-mate-button" onclick="location.href='mate-writing.html'">
+          덕메 구하기
+        </button>
+        <button id="cardtext-button" onclick="location.href='card-writing.html'">
+          포카 교환글 작성
+        </button>
+        <button id="logout-button" onclick="nologout()">로그아웃</button>
+      </div>
     </div>
-  </div>
 
     <!-- 모달 창 JS -->
     <script type="text/javascript">
