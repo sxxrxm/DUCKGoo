@@ -142,6 +142,8 @@
         <option value="male">남성</option>
         <option value="none">상관 없음</option>
       </select>
+      
+      <button type="submit" class="submit-btn" onclick="">검색</button>
 
       <p class="result">검색 결과 </p>
     </div>

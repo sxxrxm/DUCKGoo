@@ -159,6 +159,8 @@
         <option value="j-hope">제이홉</option> -->
       </select>
 
+      <button type="submit" class="submit-btn" onclick="">검색</button>
+
       <p class="result">검색 결과 323건</p>
     </div>
 
