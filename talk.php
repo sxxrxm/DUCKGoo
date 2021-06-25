@@ -36,7 +36,7 @@
           <div class="tab">
             <li class="menu"><a href="mate.php">MATE</a></li>
             <li class="menu"><a href="exchange.php">EXCHANGE</a></li>
-            <li class="menu"><a href="talk.html" id="click">TALK</a></li>
+            <li class="menu"><a href="talk.php" id="click">TALK</a></li>
           </div>
           <!-- 프로필 메뉴 -->
           <div class="menu-margin-right">
@@ -63,8 +63,17 @@
       <!-- 왼쪽 하단 - 사용자 & 채팅 미리보기 -->
       <div id="chat-profile">
         <div id="chat-square-color">
-          <p class="chat-name">김덕구</p>
-          <p class="chat-content">포카 교환 되었나요?</p>
+          <p class="chat-name">덕구</p>
+          <?php
+      $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
+      $sql = "select comment from chat where idx = (select max(idx) from chat)";
+
+      mysqli_query($conn,"set names utf8;");
+      $max = mysqli_query($conn, $sql);
+
+        $re = mysqli_fetch_array($max);
+    ?>
+          <p class="chat-content"><?=$re[0]?></p>
           <img class="chat-profile-image" src="images/header_logo.png">
         </div>
       </div>
@@ -75,7 +84,7 @@
         <!-- 가운데 상단 - 사용자 정보 -->
         <div id="chat-square">
           <img class="chat-profile" src="images/header_logo.png">
-          <p class="chatting-name">김덕구</p>
+          <p class="chatting-name">덕구</p>
           <p class="chatting-content">천러 파이팅. 천러 많이 넣어야지.</p>
           <button id="profile-button" onclick="ready();">
             <img class="chat-profile-details" src="images/profile-details.png">
@@ -84,9 +93,17 @@
             <img class="chat-writting" src="images/writting.png">
           </button>
         </div>
-    <?php
+    <!-- 채팅 -->
+    
+    <div id="chatting-square">
+    
+          <!-- 채팅 내용 -->
+          <div class="chatting" id="chatting">
+          
+            <div class="chat-view">
+            <?php
       $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-      $sql = "select card_img, title, content, hashtag from card";
+      $sql = "select comment from chat";
 
       mysqli_query($conn,"set names utf8;");
       $result = mysqli_query($conn, $sql);
@@ -95,37 +112,20 @@
       for($i = 0 ; $i < $num ; $i++) {
         $re = mysqli_fetch_array($result);
     ?>
-        <div id="chatting-square">
-          <!-- 채팅 내용 -->
-          <div class="chatting">
-            <div class="chat-view">
-              <!-- 내 메세지 -->
-              <li class="clearfix">
+            <li class="clearfix">
                 <p class="message my-message">
-                  저기..
+                <?=$re[0]?>
                 </p>
-              </li>
-              <li class="clearfix">
-                <p class="message my-message">
-                  에이전트 버전 런쥔이 포카 있는데<br>혹시 지성이 있으신가요 ㅜㅜ
-                </p>
-              </li>
-              <!-- 상대 메세지 -->
-              <li>
-                <p class="message other-message">
-                  헉 네네!! 기재한 것처럼 오염 있는데 <br>괜찮으신가요 ㅜㅜ??
-                </p>
-              </li>
-              <li class="clearfix">
-                <p class="message my-message">
-                  혹시 상태 볼 수 있을까요 ㅠㅠ<br>
-                  오염 심한가용...
-                </p>
-              </li>
-              
+            </li>
+            <?php
+        }
+      ?>
             </div>
+            
           </div>
+        
         </div>
+      
         <!-- 가운데 하단 영역 -->
         <div id="chatting-text-square">
           <form method="POST" action="chat_insert.php" id="frm" name="frm" enctype="multipart/form-data">
@@ -207,7 +207,6 @@
 
     trigger.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
- 
   </script>
 
 </body>
