@@ -218,6 +218,7 @@
     <script type="text/javascript">
       function genderChange(e) {
         var male = [
+          "그룹을 선택해주세요",
           "BTS",
           "TXT",
           "SHINee",
@@ -230,6 +231,7 @@
           "기타",
         ];
         var female = [
+          "그룹을 선택해주세요",
           "BLACKPINK",
           "TWICE",
           "ITZY",
