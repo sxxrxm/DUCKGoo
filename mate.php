@@ -143,27 +143,26 @@
         <option value="none">상관 없음</option>
       </select>
 
-      <p class="result">검색 결과 </p>
+      <!-- <p class="result">검색 결과 </p> -->
     </div>
-
-    <?php
-      $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
-      $sql = "select mate_img, title, content, hashtag from mate";
-
-      mysqli_query($conn,"set names utf8;");
-      $result = mysqli_query($conn, $sql);
-      $num = mysqli_num_rows($result);
-            
-      for($i = 0 ; $i < $num ; $i++) {
-        $re = mysqli_fetch_array($result);
-    ?>
 
     <div class="clear">
       <div id="post">
+        <?php
+          $conn = mysqli_connect('localhost', 'duckgoo', 'OFnWiNlXhBE4JYzS', 'duckgoo');
+          $sql = "select mate_img, title, content, hashtag from mate";
+
+          mysqli_query($conn,"set names utf8;");
+          $result = mysqli_query($conn, $sql);
+          $num = mysqli_num_rows($result);
+                
+          for($i = 0 ; $i < $num ; $i++) {
+            $re = mysqli_fetch_array($result);
+        ?>
         <div class="post-content">
           <a href="./mate-detail.php?title=<?=urlencode($re[1])?>">
       
-            <img class="mate-img" src="<?=$re[0]?>" />
+            <img class="mate-img" src="/images/mate/<?=$re['idx']?>.png" />
             <p class="title" name="ent_title"><?=$re[1]?></p>
             <p class="content">
               <?=$re[2]?>

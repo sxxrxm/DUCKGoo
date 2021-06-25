@@ -51,7 +51,7 @@
     <!-- 왼쪽 영역 -->
     <div id="detailLeft">
     </div>
-    오른쪽 영역
+    <!-- 오른쪽 영억 -->
     <div id="detailRight">
       <?php
           $title = $_POST['ent_title'];
@@ -73,7 +73,7 @@
         <hr class="line">
 
         <div class="margin-image">
-          <img class="mate-image" src="<?=$re['mate_img']?>">
+          <img class="mate-image" src="/images/mate/<?=$re['idx']?>.png">
         </div>
          
           <div class="clear">

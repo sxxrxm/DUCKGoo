@@ -14,7 +14,7 @@ $_day= $_POST['day'];
 $_hour= $_POST['hour'];
 $_minute= $_POST['minute'];
 $_place = $_POST['place'];
-$_file = $_POST['file'];
+$_file = $_FILES['file'];
 $_content = $_POST['content'];
 $_hashtag = $_POST['hashtag'];
 
